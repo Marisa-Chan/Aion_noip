@@ -1,0 +1,14 @@
+Target : game.dll
+md5:5a61db2f97eeeb102f0849f3a6a32839
+key:DD05BF2C
+patch:0020EEBF|83FF|EBCE
+patch:001D8C1F|50E8|EB12
+
+
+Target:aion.bin
+md5:cb6f27e88d2c6b24ea5e2ce28a556732
+key:FCD8F92D
+#No frost
+patch:000041AE|7505|eb05
+patch:000044B8|750b|eb0b
+patch:0000450C|7505|eb05

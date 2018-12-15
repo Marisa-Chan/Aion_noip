@@ -1,0 +1,17 @@
+4.7.5
+	game.dll 5a61db2f97eeeb102f0849f3a6a32839
+		push    dword ptr [edx+eax]
+		pop     esi
+		sub     esi, 524185FBh
+		sub     esi, 308D0CFDh
+		sub     esi, 5A372C34h
+		mov     [eax+edx], esi
+
+	aion.bin cb6f27e88d2c6b24ea5e2ce28a556732
+		push    dword ptr [edx+ecx]
+		pop     ebx
+		sub     ebx, 2D4B8D95h
+		sub     ebx, 57E5E8B6h
+		sub     ebx, 77A782E2h
+		push    ebx
+		pop     dword ptr [ecx+edx]
