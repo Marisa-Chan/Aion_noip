@@ -4,11 +4,17 @@ import sys
 import os
 import hashlib
 
+dryrun = False
+
 class PESection:
 	VAddr = 0
 	VSize = 0
 	Addr = 0
 	Size = 0
+
+class KeyOp:
+	k = 0
+	op = 0
 
 Sections = list()
 
@@ -66,6 +72,30 @@ def GetSec(vaddr, sz):
 			return z
 	return None
 
+def ApplyKey(i, key, r = False):
+	t = i
+	if not r:
+		for k in key:
+			if k.op == 1:
+				t = (t - k.k) & 0xFFFFFFFF
+			elif k.op == 2:
+				t = (t + k.k) & 0xFFFFFFFF
+			elif k.op == 3:
+				t = (t ^ k.k) & 0xFFFFFFFF
+			elif k.op == 4:
+				t = (~t) & 0xFFFFFFFF
+	else:
+		for k in reversed(key):
+			if k.op == 1:
+				t = (t + k.k) & 0xFFFFFFFF
+			elif k.op == 2:
+				t = (t - k.k) & 0xFFFFFFFF
+			elif k.op == 3:
+				t = (t ^ k.k) & 0xFFFFFFFF
+			elif k.op == 4:
+				t = (~t) & 0xFFFFFFFF
+	return t
+
 def Patch(fl, key, pch):
 	sec = GetSec(pch[0], len(pch[1]))
 	if (sec == None):
@@ -84,7 +114,7 @@ def Patch(fl, key, pch):
 		while i < its:
 			raw = fl.read(4)
 			decr = int.from_bytes(raw, byteorder="little")
-			decr = (decr - key) & 0xFFFFFFFF
+			decr = ApplyKey(decr, key, False)
 			tmp = bytearray(decr.to_bytes(4, byteorder="little"))
 
 			j = 0
@@ -105,13 +135,13 @@ def Patch(fl, key, pch):
 
 		i = 0
 		while i < its:
-			log = {}
+			log = []
 			raw = fl.read(4)
-			log[0] = raw
+			log.append(raw)
 			decr = int.from_bytes(raw, byteorder="little")
-			decr = (decr - key) & 0xFFFFFFFF
+			decr = ApplyKey(decr, key, False)
 			tmp = bytearray(decr.to_bytes(4, byteorder="little"))
-			log[1] = tmp.copy()
+			log.append(tmp.copy())
 
 			j = 0
 			while j < 4:
@@ -120,16 +150,17 @@ def Patch(fl, key, pch):
 					tmp[j] = pch[2][btid]
 				j += 1
 			
-			log[2] = tmp.copy()
+			log.append(tmp.copy())
 			encr = int.from_bytes(tmp, byteorder="little")
-			encr = (encr + key) & 0xFFFFFFFF
+			encr = ApplyKey(encr, key, True)
 			ptch = encr.to_bytes(4, byteorder="little")
-			log[3] = ptch
+			log.append(ptch)
 			
 			print("\t  Patching:", log[1].hex(), "(", log[0].hex(),") ->", log[2].hex(), "(", log[3].hex(), ")")
 			
-			fl.seek(-4, 1)
-			fl.write(ptch)
+			if not dryrun:
+				fl.seek(-4, 1)
+				fl.write(ptch)
 			
 			i += 4
 
@@ -138,16 +169,17 @@ def Patch(fl, key, pch):
 
 ##### main:
 
-if len(sys.argv) != 2:
+if len(sys.argv) < 2:
 	print("Filename!")
 	exit(-1)
 
-key = 0
+key = {}
 wfl=None
 rdy = -2
 pchn = 0
 
-
+if (len(sys.argv) == 3 and sys.argv[2] == "dry"):
+	dryrun = True
 
 f = open(sys.argv[1], "r")
 
@@ -166,7 +198,7 @@ for ln in f:
 			wfl = open(a[1], "rb+")
 			if readPE(wfl):
 				rdy = -1
-				print("Wrk fl: ", a[1])
+				print("Target: ", a[1])
 			else:
 				print("Error: ", a[1])
 		elif a[0] == "md5" and rdy == -1:
@@ -174,10 +206,36 @@ for ln in f:
 			if md5 == getMD5(wfl):
 				rdy = 0
 			else:
-				print("\tBad md5")
+				print("\tCan't apply - another md5")
 		elif a[0] == "key" and rdy == 0:
-			key = int(a[1], 16)
-			rdy = 1
+			key = []
+			kk = a[1].split("|")
+			for s in kk:
+				s = s.strip()
+				op = s[0]
+				if op == "-":
+					op = 1
+				elif op == "+":
+					op = 2
+				elif op == "^":
+					op = 3
+				elif op == "!":
+					op = 4
+				else:
+					op = 0
+					key = {}
+					print ("\tKey error:", a[1])
+					break
+				
+				if op > 0:
+					t = KeyOp()
+					t.k = int(s[1:], 16)
+					t.op = op
+					key.append(t)
+					
+			if len(key) > 0:
+				rdy = 1
+			
 		elif a[0] == "patch" and rdy == 1:
 			b = a[1].split("|")
 			pchn += 1

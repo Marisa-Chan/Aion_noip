@@ -15,3 +15,25 @@
 		sub     ebx, 77A782E2h
 		push    ebx
 		pop     dword ptr [ecx+edx]
+
+
+4.7.5?
+	game.dll 83c3c6988dc1c795a0f189fe76b58d6f
+		mov     esi, [edx+edi]
+		xor     esi, 0ED13421h
+		add     esi, 13863C00h
+		sub     esi, 52E8800h
+		mov     [edx+edi], esi
+	
+	aion.bin c1e4283e7368597ba73a8356f065903f
+		PUSH	DWORD PTR DS:[ECX+EBX]
+		POP		EDI
+		SUB		EDI,0x71B64617
+		XOR		EDI,0x17CAA52F
+		XOR		EDI,0x6CFB0A2F
+		MOV		DWORD PTR DS:[EBX+ECX],EDI
+
+
+
+
+
