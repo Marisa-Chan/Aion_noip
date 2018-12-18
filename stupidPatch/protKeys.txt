@@ -1,4 +1,4 @@
-4.7.5
+4.7.5.15 (47515.0924.0310.9022)
 	game.dll 5a61db2f97eeeb102f0849f3a6a32839
 		push    dword ptr [edx+eax]
 		pop     esi
@@ -17,7 +17,7 @@
 		pop     dword ptr [ecx+edx]
 
 
-4.7.5?
+4.7.5.14 (47514.0924.1125.8752)
 	game.dll 83c3c6988dc1c795a0f189fe76b58d6f
 		mov     esi, [edx+edi]
 		xor     esi, 0ED13421h
@@ -32,6 +32,24 @@
 		XOR		EDI,0x17CAA52F
 		XOR		EDI,0x6CFB0A2F
 		MOV		DWORD PTR DS:[EBX+ECX],EDI
+		
+
+6.2.18 (6218.0411.1101.13795)
+	aion.bin 91b8b6f3d1b74d1d3444e7652375f927
+		mov     edx, [edi+eax]
+		add     edx, 2D13FB58h
+		xor     edx, 1B465937h
+		add     edx, 0C9AE6A5h
+		push    edx
+		pop     dword ptr [edi+eax]
+	
+	game.dll 7c374f71b85b1427c4b2061d78a5ccfa
+		push    dword ptr [ecx+edx]
+		pop     ebx
+		xor     ebx, 53E3DBF0h
+		xor     ebx, 33E9F989h
+		add     ebx, 3268577Fh
+		mov     [edx+ecx], ebx
 
 
 
