@@ -11,4 +11,9 @@ It's wrapps game.dll
 
 3. Place compiled wrapper and run
 
+
+Stupid patcher - for direct patching knowed game.dll
+
+ServerRequest - for get direct links from korean servers
+
 **License** MIT
