@@ -13,4 +13,6 @@ Download client
 
 5. Download needed files by using {BaseUrl} + filepaths from downloaded filelist.
 
+6. .zip files is lzma compressed and can by decompressed by 7z
+
 **License** MIT
