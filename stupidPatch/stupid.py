@@ -3,6 +3,7 @@
 import sys
 import os
 import hashlib
+import os.path
 
 dryrun = False
 
@@ -185,6 +186,10 @@ f = open(sys.argv[1], "r")
 
 for ln in f:
 	ln = ln.strip()
+	comm = ln.find("#")
+	if (comm >= 0):
+		ln = ln[:comm]
+	
 	a = ln.split(":")
 	if len(a) == 2:
 		a[0] = a[0].lower().strip()
@@ -195,12 +200,15 @@ for ln in f:
 				wfl = None
 			rdy = -2
 			pchn = 0
-			wfl = open(a[1], "rb+")
-			if readPE(wfl):
-				rdy = -1
-				print("Target: ", a[1])
+			if os.path.isfile(a[1]):
+				wfl = open(a[1], "rb+")
+				if readPE(wfl):
+					rdy = -1
+					print("Target: ", a[1])
+				else:
+					print("Error: ", a[1])
 			else:
-				print("Error: ", a[1])
+				print("Target: ", a[1], " - Can't open")
 		elif a[0] == "md5" and rdy == -1:
 			md5 = bytearray.fromhex(a[1])
 			if md5 == getMD5(wfl):
