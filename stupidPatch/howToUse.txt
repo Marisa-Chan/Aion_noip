@@ -1,0 +1,13 @@
+Python3
+
+Usage: stupid.py pathto/patches.txt [dry] [path/to/target] [path/to/target] ...
+
+
+dry - do not patch anything, only test for applicability.
+
+
+Variant 1: cd to needed directory(bin32) and do "python3 path/to/stupid.py path/to/patches.txt [dry]"
+
+Variant 2: in this directory do "python3 stupid.py patches.txt [dry] path/to/target1 path/to/target2 ..."
+
+**License** MIT

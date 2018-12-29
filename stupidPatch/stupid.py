@@ -7,11 +7,16 @@ import os.path
 
 dryrun = False
 
+
 class PESection:
 	VAddr = 0
 	VSize = 0
 	Addr = 0
 	Size = 0
+
+class FileHash:
+	filename = ""
+	hsh = ""
 
 class KeyOp:
 	k = 0
@@ -174,13 +179,26 @@ if len(sys.argv) < 2:
 	print("Filename!")
 	exit(-1)
 
-key = {}
+key = []
 wfl=None
 rdy = -2
 pchn = 0
+prefiles = []
 
-if (len(sys.argv) == 3 and sys.argv[2] == "dry"):
-	dryrun = True
+if (len(sys.argv) > 2):
+	i = 2
+	while i < len(sys.argv):
+		if (sys.argv[i] == "dry"):
+			dryrun = True
+		elif os.path.isfile(sys.argv[i]):
+			fh = FileHash()
+			t = open(sys.argv[i], "rb")
+			fh.hsh = getMD5(t)
+			fh.filename = sys.argv[i]
+			t.close()
+			prefiles.append(fh)
+		i += 1
+
 
 f = open(sys.argv[1], "r")
 
@@ -194,27 +212,54 @@ for ln in f:
 	if len(a) == 2:
 		a[0] = a[0].lower().strip()
 		a[1] = a[1].strip()
+		
 		if a[0] == "target":
-			if (wfl != None):
-				wfl.close()
-				wfl = None
-			rdy = -2
-			pchn = 0
-			if os.path.isfile(a[1]):
-				wfl = open(a[1], "rb+")
-				if readPE(wfl):
-					rdy = -1
-					print("Target: ", a[1])
+			print("")
+			if not prefiles:
+				if (wfl != None):
+					wfl.close()
+					wfl = None
+				rdy = -2
+				pchn = 0
+				if os.path.isfile(a[1]):
+					wfl = open(a[1], "rb+")
+					if readPE(wfl):
+						rdy = -1
+						print("Target: ", a[1])
+					else:
+						print("Error: ", a[1])
 				else:
-					print("Error: ", a[1])
+					print("Target: ", a[1], " - Can't open")
 			else:
-				print("Target: ", a[1], " - Can't open")
+				print("Target: ", a[1])
+				rdy = -1
 		elif a[0] == "md5" and rdy == -1:
 			md5 = bytearray.fromhex(a[1])
-			if md5 == getMD5(wfl):
-				rdy = 0
+			print("  MD5: ", md5.hex())
+			if not prefiles:
+				if md5 == getMD5(wfl):
+					rdy = 0
+				else:
+					print("  Can't apply - another md5")
 			else:
-				print("\tCan't apply - another md5")
+				for p in prefiles:
+					if p.hsh == md5:
+						if (wfl != None):
+							wfl.close()
+							wfl = None
+						pchn = 0
+						wfl = open(p.filename, "rb+")
+						if readPE(wfl):
+							print("  Choosed: ", p.filename)
+							rdy = 0
+						else:
+							print("  Can't read PE: ", p.filename)
+							wfl.close()
+							rdy = -2
+						break
+				if rdy != 0:
+					print("  Can't apply - another md5")
+						
 		elif a[0] == "key" and rdy == 0:
 			key = []
 			kk = a[1].split("|")
@@ -231,7 +276,7 @@ for ln in f:
 					op = 4
 				else:
 					op = 0
-					key = {}
+					key = []
 					print ("\tKey error:", a[1])
 					break
 				

@@ -1,3 +1,20 @@
+####### 4.5.14 (4514.0319.0616.8233)
+Target : game.dll
+md5:de47ecb2ff22c9a49796b0441516355c
+key: ^203232EF | -52C8B474 | +30515197
+patch:0020759F|83FF|EBCE
+patch:001D2D6D|50E8|EB12
+
+Target:aion.bin
+md5:258e63bb9b42ac042a79865115e95116
+key: +103C9A72 | -24AAA61A  | +3EB658F7
+#No frost
+patch:00003F33|7505|eb05
+patch:0000423D|750b|eb0b
+patch:0000428C|7505|eb05
+
+
+
 ####### 4.7.5.15 (47515.0924.0310.9022)
 Target : game.dll
 md5:5a61db2f97eeeb102f0849f3a6a32839
@@ -32,6 +49,22 @@ patch:0000450C|7505|eb05
 
 
 
+####### 5.3.17 (5317.1019.0216.11586)
+Target : game.dll
+md5:32266e046a2b6ff85401d5af1d068669
+key: ^2C8750FF | -16850541 | +4F602563
+patch:005048AA|83FF|EBD2
+patch:005CEBDE|837A|EB19
+
+Target:aion.bin
+md5:0083375901b95eea4dba2540fc9dcd67
+key: +BFEE0E | +5605C8B2  | -19459CB4
+#No frost
+patch:00003A79|750b|eb0b
+patch:00003AE8|7505|eb05
+patch:00004039|7505|eb05
+
+
 
 ####### 6.2.18 (6218.0411.1101.13795)
 Target: aion.bin
@@ -50,6 +83,23 @@ patch:00675AAE|837A|EB19
 
 
 
+####### 6.5.18 (6518.0808.1211.13927)
+Target: aion.bin
+md5:c4afce74824687b8e76bc8a43761b579
+key: ^39A8EE71 | +444BE1B  | -610E27AF
+#No frost
+patch:00003B4B|750b|eb0b
+patch:00003BBA|7505|eb05
+patch:0000410B|7505|eb05
+
+Target : game.dll
+md5:cf7c593014774573d4cdca22936ddf8c
+key: ^33190CCA| ^3FE7862A | -1EC2056A
+patch:005A5E0A|83FF|EBD2
+patch:0068202E|837A|EB19
+
+
+
 
 ####### 7.0.18.1126 (70.18.1126.13885)
 Target: aion.bin
@@ -65,7 +115,6 @@ patch:0000422B|7412|9090
 patch:00004D35|7415|9090
 patch:00007010|740F|9090
 patch:00008AA8|7507|eb07
-
 
 Target : game.dll
 md5:52A03B8C811917EBFCBDB7B088794671
@@ -90,7 +139,6 @@ patch:0000422B|7412|9090
 patch:00004D35|7415|9090
 patch:00007010|740F|9090
 patch:00008AA8|7507|eb07
-
 
 Target : game.dll
 md5:20637e64f2035cfbf9d7c7a22e8e61f6
