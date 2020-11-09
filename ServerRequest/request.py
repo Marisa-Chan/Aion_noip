@@ -6,7 +6,7 @@ import sys
 
 
 CompanyID = 0
-GameID = b'AION_KOR'
+GameID = b'AION_RC'
 
 
 RespNames = {
@@ -160,7 +160,7 @@ sock = socket.socket()
 #sock = socks.socksocket()
 #sock.set_proxy(socks.SOCKS5, "211.104.160.132", 1080)
 
-sock.connect( ("up4svr.plaync.com", 27500) ) #From Localization.dll
+sock.connect( ("rc.up4svr.plaync.com", 27500) ) #From Localization.dll
 
 PKTS = dict()
 
