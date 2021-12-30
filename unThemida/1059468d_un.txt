@@ -1,0 +1,343 @@
+VMR[3D] = ESP
+VMR[90] = EDI (0xF8FF0000)
+VMR[28] = ESI (0xF7FF0000)
+VMR[82] = EBP (0xF6FF0000)
+VMR[7A] = EBX (0xF4FF0000)
+VMR[11] = EDX (0xF3FF0000)
+VMR[52] = ECX (0xF2FF0000)
+VMR[41] = EAX (0xF1FF0000)
+VMR[75] = EFLAGS
+
+#0xAA
+
+VMR[3D] -= 4 (-4)
+[ VMR[3D] ] = VMR[7A]      EBX
+
+VMR[3D] -= 4 (-8)
+[ VMR[3D] ] = VMR[28]      ESI
+
+VMR[28] = VMR[3D]  (-8)
+
+[ VMR[3D] ] <=> VMR[28]   ([-8] = -8    VMR[28] = ESI)
+
+VMR[28] <=> VMR[11]   (VMR[28] = EDX   VMR[11] = ESI)
+
+VMR[3D] = [-8] (-8)
+#esp = VMR[3D] (-8)
+
+
+#0x10E
+
+[ VMR[3D] ] = VMR[41]   ([-8] = EAX)
+
+VMR[3D] -= 4   (-C)
+[ VMR[3D] ] = VMR[11]   ([-C] = ESI)
+
+VMR[11] = VMR[3D]  ( VMR[11] = -C )
+
+VMR[52] <=> VMR[11] (VMR[11] = ECX   VMR[52] = -C)
+
+[ VMR[3D] ] <=> VMR[52] ([-C] = -C   VMR[52] = ESI)
+
+VMR[0x3D] = [-C] (-C)
+#esp = VMR[3D] (-C)
+
+#0x16A
+
+[ VMR[3D] ] = VMR[82] ([-C] = EBP)
+
+VMR[00] = 10EFD721
+VMR[52] <=> VMR[41] ( VMR[41] = ESI  VMR[52] = EAX)
+VMR[52] = [ VMR[00] ] [10EFD721] (B89B674E) 
+
+
+VMR[3D] -= 4   (-10)
+[ VMR[3D] ] = FCB2A014   ([-10] = FCB2A014)
+
+VMR[3D] -= 4   (-14)
+[ VMR[3D] ] = VMR[28]   ([-14] = EDX)
+
+#0x1BC
+
+VMR[7A] <=> VMR[90]  (VMR[7A] = EDI  VMR[90] = EBX)
+
+VMR[28] = [ VMR[3D] ] ([-14]) (EDX)
+
+VMR[7A] <=> VMR[28] (VMR[7A] = EDX   VMR[28] = EDI)
+VMR[3D] += 04  (-10)
+
+#esp = VMR[3D] (-10)
+
+#0x1F6
+
+VMR[52] &= 0F
+
+VMR[82] = FCB2A014
+
+VMR[3D] += 4 (-C)
+
+VMR[28] <=> VMR[90]  (VMR[28] = EBX   VMR[90] = EDI )
+VMR[75] = CMP VMR[52](0E), 05
+
+VMR[90] = VMR[90] (90  EDI)
+VMR[28] = VMR[41] (28  ESI)
+VMR[41] = VMR[7A] (41  EDX)
+VMR[52] = VMR[11] (52  ECX)
+VMR[7A] = VMR[28] (7A  EBX)
+VMR[11] = VMR[52] (11  0E)
+
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff3f0000
+0xfcb2a014
+stack: (6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+
+EFLAGS TEST VMR[75]   (00)
+C0 P0 A0 Z0 S0 T0 I0 D0 O0
+JNB/JNC [CF == 0]  to +93(EIP:2C7) #TO 2C7
+
+#0x241
+
+VMR[3D] -= 4 (-10)
+[ VMR[3D] ] = VMR[28] ([-10] = ESI)
+
+VMR[28] = VMR[11] + 03  (0x11)
+
+VMR[11] = [ VMR[3D] ] (-10) (VMR[11] = ESI)
+
+VMR[3D] += 04 (-C)
+
+#esp = VMR[3D] (-C)
+
+VMR[90] = VMR[90] (90 - EDI)
+VMR[28] = VMR[11] (28 - ESI)
+VMR[41] = VMR[41] (41 - EDX)
+VMR[52] = VMR[52] (52 - ECX)
+VMR[7A] = VMR[7A] (7A - EBX)
+VMR[11] = VMR[28] (11 - 11)
+
+JMP to +23B(EIP:4E0)                      #TO 4E0
+--------------------------
+
+#LABEL  0x2C7
+
+VMR[11] -= 0B    (0E - 0B) (03?)
+VMR[75] = eflags
+
+EFLAGS TEST VMR[75]   (00)
+C0 P0 A0 Z0 S0 T0 I0 D0 O0
+JNB/JNC [CF == 0]  to +105(EIP:3F8)       #TO 3F8
+
+#0x300
+
+VMR[3D] -= 4 (-10)
+[ VMR[3D] ] = VMR[52] ([-10] = ECX)
+
+
+VMR[3D] -= 4 (-14)
+[ VMR[3D] ] = VMR[82] ([-14] = FCB2A014)
+
+VMR[82] = 43FE8EFE
+VMR[52] == C28C8F8B
+
+VMR[28] <=> VMR[11]   (VMR[28] = 03   VMR[11] = ESI)
+VMR[52] -= VMR[82]   (7E8E008D)
+
+#0x338
+
+VMR[41] <=> VMR[28]   (VMR[41] = 03   VMR[28] = EDX)
+VMR[52] -= 7E8A75D2   (38ABB)
+
+#pop
+VMR[82] = [VMR[3D]]  ([-14]) (FCB2A014)
+VMR[3D] += 4 (-10)
+
+VMR[41] += VMR[52]   (03 += 38ABB) (38ABE)
+
+VMR[52] = [VMR[3D]]  ([-10]) (ECX)
+VMR[3D] += 4 (-C)
+
+VMR[7A] <=> VMR[11]  (VMR[7A] = ESI  VMR[11] = EBX)
+VMR[3D] -= 4 (-10)
+
+#esp = VMR[3D]
+
+[ VMR[3D] ] = VMR[52] ([-10] = ECX)
+
+VMR[41] -= 52F0   (38ABE -= 52F0) (337CE)
+
+VMR[52] = VMR[28] (EDX)
+VMR[28] = [VMR[3D]] ([-10])  (ECX)
+VMR[3D] += 4  (-C)
+
+VMR[90] = VMR[90] (90 EDI)
+VMR[28] = VMR[7A] (28 ESI)
+VMR[41] = VMR[52] (41 EDX)
+VMR[52] = VMR[28] (52 ECX)
+VMR[7A] = VMR[11] (7A EBX)
+VMR[11] = VMR[41] (11 337CE)
+
+JMP to +10A(EIP:4E0)                     #TO 4E0
+--------------------------
+
+#LABEL  0x3F8
+
+VMR[52] <=> VMR[90]   (VMR[52] = EDI  VMR[90] = ECX)
+VMR[3D] -= 4  (-10)
+
+[ VMR[3D] ] = VMR[11] ([-10] = 03?)
+
+VMR[3D] -= 4  (-14)
+[ VMR[3D] ] = VMR[52] ([-14] = EDI)
+
+VMR[52] = VMR[3D] (-14)
+
+VMR[41] <=> VMR[7A]  ( VMR[41] = EBX   VMR[7A] = EDX )
+
+[ VMR[3D] ] <=> VMR[52]  ([-14] = -14   VMR[52] = EDI)
+
+VMR[90] <=> VMR[11]   (VMR[90] = 03?   VMR[11] = ECX)
+
+VMR[00] = VMR[3D] + 04 (-10)
+[VMR[00]] += 4  ([-10] += 4)
+
+VMR[28] <=> VMR[52]   (VMR[28] = EDI   VMR[52] = ESI)
+
+VMR[82] = FCB2A014
+VMR[3D] += 4 (-10)
+
+#push [VMR[3D]] (07)  [-14] = [-10]  ??07??
+VMR[3D] -= 4  (-14)
+
+VMR[90] = [ VMR[3D] ]  (VMR[90] = [-14] (07?))
+
+VMR[3D] += 04 (-10)
+
+#esp = VMR[3D]
+
+VMR[90] <=> VMR[7A]   (VMR[90] = EDX   VMR[7A] = 07??)
+VMR[3D] += 04   (-C)
+
+#esp = VMR[3D]
+
+VMR[90] = VMR[28] (90 EDI)
+VMR[28] = VMR[52] (28 ESI)
+VMR[41] = VMR[90] (41 EDX)
+VMR[52] = VMR[11] (52 ECX)
+VMR[7A] = VMR[41] (7A EBX)
+VMR[11] = VMR[7A] (11 07)
+
+
+#LABEL  0x4E0
+
+
+VMR[00] = FCB2A014 + 143D370D (10EFD721)
+[ VMR[00] ] = VMR[11] ( [10EFD721] = 07 )   #######!!!!!!!!!!!
+
+#push 152E
+VMR[3D] -= 4 (-10)
+[ VMR[3D] ] = VMR[11] ( [-10] = 07 )
+
+VMR[7A] = [ VMR[3D] ]  (VMR[7A] = [-10])
+
+VMR[41] <=> VMR[11]    (VMR[11] = EDX   VMR[41] = 07)
+VMR[3D] -= 04   (-14)
+
+#esp = VMR[3D]
+
+[ VMR[3D] ] = VMR[90] ([-14] = EDI)
+VMR[90] = VMR[3D] (-14)
+VMR[90] += 4 (-10)
+VMR[90] += 4 (-C)
+
+[ VMR[3D] ] <=> VMR[90] ([-14] = -C   VMR[90] = EDI)
+
+VMR[28] <=> VMR[11]     (VMR[28] = EDX   VMR[11] = ESI)
+VMR[3D] = [ VMR[3D] ]   ([-14] -> -C)  (-C)
+#esp = VMR[3D] 
+
+#0x580
+
+VMR[00] = 1103F789
+VMR[41] = [ VMR[00] ]   ([1103F789]) (11431008)
+
+VMR[3D] -= 4 (-10)
+[ VMR[3D] ] = VMR[41] ([-18] = 11431008)
+
+VMR[41] = 2B9A64BD
+VMR[7A] = 364716C7
+
+VMR[11] <=> VMR[41]  (VMR[11] = 2B9A64BD   VMR[41] = ESI)
+VMR[7A] -= A1F1DF1
+
+VMR[11] <=> VMR[28]   (VMR[11] = EDX   VMR[28] = 2B9A64BD)
+VMR[7A] -= VMR[28]   (2C27F8D6 -= 2B9A64BD) (8D9419)
+
+VMR[90] <=> VMR[52]   (VMR[90] = ECX   VMR[52] = EDI)
+VMR[7A] += A1F1DF1   (8D9419 += A1F1DF1) (AACB20A)
+
+VMR[7A] <=> VMR[41] (VMR[7A] = ESI   VMR[41] = AACB20A)
+
+VMR[28] = [ VMR[3D] ] ([-10] -> 11431008)
+
+VMR[3D] += 04  (-C)
+#esp = VMR[3D] (-C)
+
+VMR[75] = CMP [VMR[28]], VMR[41]   ([11431008], AACB20A)  (AACB20A)
+
+VMR[90] = VMR[52] (90 EDI)
+VMR[28] = VMR[7A] (28 ESI)
+VMR[41] = VMR[11] (41 EDX)
+VMR[52] = VMR[90] (52 ECX)
+VMR[7A] = VMR[41] (7A AACB20A)
+VMR[11] = VMR[28] (11 11431008)
+
+EFLAGS TEST VMR[75]   (44)
+C0 P1 A0 Z1 S0 T0 I0 D0 O0
+JE/JZ [ZF == 1]  to +25B(EIP:885)              #TO 885
+
+## 0x637
+
+
+#LABEL  885
+
+VMR[00] = 1109D8BB
+VMR[7A] = [ VMR[00] ]   ([1109D8BB]) (70ECA57F)
+VMR[00] = 11062511
+VMR[7A] ^= [VMR[00]] (70ECA57F ^= [11062511]) (70ECA57F ^= 1F6DFD0C) (6F815873)
+VMR[00] = 110BCE23
+VMR[7A] -= [VMR[00]] (6F815873 -= [110BCE23]) (6F815873 -= F3015873) (7C800000)
+
+VMR[90] <=> VMR[52]  (VMR[90] = ECX   VMR[52] = EDI)
+VMR[3D] -= 04 (-10)
+#esp = VMR[3D] (-10)
+
+[ VMR[3D] ] = VMR[52] ([-10] = EDI)
+
+
+
+
+############0xF4C
+
+
+VMR[52] = VMR[11] - 2
+VMR[52] &= 0F
+VMR[41] = b,[ VMR[3D] + VMR[52] + 50 ]
+b, [ VMR[3D] + 10 ] = VMR[41]
+
+VMR[52] = VMR[11] - 1
+VMR[52] &= 0F
+VMR[41] = b,[ VMR[3D] + VMR[52] + 50 ]
+
+VMR[41] <=> VMR[90]
+
+b, [ VMR[3D] + 10 ] = VMR[90]
+VMR[52] = VMR[11] 
+VMR[52] &= 0F
+VMR[90] = b,[ VMR[3D] + VMR[52] + 50 ]  #0x106A
