@@ -105,7 +105,7 @@ state.push(0xFF2F0000) #ecx
 state.push(0xFF3F0000) #edx
 state.push(0xFF4F0000) #ebx
 state.push(tmp) #esp
-state.push(0xFF6F0000) #ebp
+state.push(0xFCB2A014) #ebp
 state.push(0xFF7F0000) #esi
 state.push(0xFF8F0000) #edi
 

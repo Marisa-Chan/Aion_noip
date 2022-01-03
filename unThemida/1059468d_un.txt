@@ -325,6 +325,14 @@ VMR[3D] -= 04 (-10)
 
 ############0xF4C
 
+VMR[90] = VMR[90] (FF8F0000) EDI
+VMR[28] = VMR[28] (282A921A)
+VMR[41] = VMR[41] (FF3F0000) EDX
+VMR[52] = VMR[11] (FF2F0000) ECX
+VMR[7A] = VMR[52] (00)
+VMR[11] = VMR[7A] (02) (EAX)
+
+
 
 VMR[52] = VMR[11] - 2
 VMR[52] &= 0F
@@ -335,9 +343,185 @@ VMR[52] = VMR[11] - 1
 VMR[52] &= 0F
 VMR[41] = b,[ VMR[3D] + VMR[52] + 50 ]
 
-VMR[41] <=> VMR[90]
+VMR[41] <=> VMR[90]  (41 - EDI, 90 - EDX)
 
 b, [ VMR[3D] + 10 ] = VMR[90]
+
+
 VMR[52] = VMR[11] 
 VMR[52] &= 0F
 VMR[90] = b,[ VMR[3D] + VMR[52] + 50 ]  #0x106A
+
+
+VMR[90] <=> VMR[41]  (41 - EDX, 90 - EDI)
+b, [ VMR[3D] + 10 ] = VMR[41]
+
+VMR[52] = VMR[11] + 1
+VMR[52] &= 0F
+VMR[41] = b, [ VMR[3D] + VMR[52] + 50 ]
+b, [VMR[3D] + 10] = VMR[41] 
+
+#0x10EE
+
+VMR[52] = VMR[11] + 2
+VMR[52] &= 0F
+VMR[41] = b, [ VMR[3D] + VMR[52] + 50 ]
+b, [VMR[3D] + 10] = VMR[41]
+
+VMR[52] = VMR[11] + 3
+VMR[52] &= 0F
+VMR[41] = b, [ VMR[3D] + VMR[52] + 50 ]
+
+VMR[11] += 06
+VMR[52] = VMR[11] + 6 - 2 
+VMR[75] = CMP VMR[52], 30
+
+b, [VMR[3D] + 10] = VMR[41]
+
+JL 0xF4C
+
+push 10A43504
+
+CALL EDI
+
+###
+VMR[0x90] = EDI
+VMR[0x28] = ESI
+VMR[0x11] <=> VMR[0x90]    11 - EDI   90 - ???
+VMR[0x82] = EBP
+VMR[0x28] <=> VMR[0x11]    28 - EDI   11 - ESI
+VMR[0x7A] = EBX
+VMR[0x52] = EDX
+VMR[0x41] = ECX
+VMR[28] <=> VMR[52]        28 - EDX   52 - EDI
+VMR[90] = EAX
+
+90 EAX
+41 ECX
+28 EDX 
+7A EBX
+82 EBP
+11 ESI
+52 EDI
+
+##0x1351
+VMR[3D] += 0x08   ## SKIP BYTECODE PTR + INSTR INDEX
+VMR[28] = VMR[90] (MOV EDX EAX)
+
+VMR[7A] <=> VMR[90]
+7A EAX
+90 EBX
+
+VMR[7A] += -3  (ADD  EAX,-0x3)
+
+VMR[28] &= 1F ( AND EDX, 1F)
+
+VMR[41] =VMR[28] *4 + 10A51DE8 (LEA ECX, [EDX*4 + 10A51DE8]) #0x13A9
+
+VMR[7A] &= 1F  (AND EAX, 0x1F)
+
+VMR[7A] = [VMR[7A] * 4 + 10A51E5C] (MOV EAX, [EAX*4 + 0x10A51E5C]) # 0x13DA
+
+[VMR[41]] += VMR[7A]   (ADD dword ptr[ECX], EAX)
+
+VMR[7A] = [ VMR[41] ]  (MOV EAX, dword ptr[ECX])
+
+VMR[52] <=> VMR[7A]   (FF8F0000 <=> 00)
+
+52 EAX
+7A EDI
+
+VMR[52] >>= 01 (00 >>= 01) (00)  (SHR EAX, 1)
+
+
+#0x1464
+
+52 ESI
+82 EBP
+7A EBX
+41 EDI
+90 EDX
+28 ECX
+11 EAX
+#0x14BD
+
+VMR[28] = 1B   (MOV ECX, 0x1B)
+
+
+#0x153C
+90 EDI
+28 ESI
+82 EBP
+7A EBX
+11 EDX
+41 ECX
+
+VMR[0x11] <=> VMR[0x41]
+11 ECX
+41 EDX
+
+52 EAX
+
+#0x1593
+push 30
+
+VMR[52] <=> VMR[7A]
+52 EBX
+7A EAX
+
+VMR[28] += 24 (ADD ESI, 24)
+
+push 00
+
+push VMR[28] (push ESI)
+
+b, VMR[41] += 33 (ADD DL, 0x33)
+b, VMR[41] ^= VMR[52] (XOR DL, BL)
+
+b, [VMR[3D] + 0x1C] = VMR[41] (MOV byte ptr[ESP + 0x1C], DL)
+
+VMR[7A] <=> VMR[90] 
+7A EDI
+90 EAX
+
+VMR[7A] <=> VMR[28]
+7A ESI
+28 EDI
+
+b, VMR[41] = [VMR[3D] + 4D] (MOV DL, byte ptr[ESP + 0x4D])
+
+b, [VMR[3D] + 1D] = VMR[41] (MOV byte ptr[ESP + 0x1D], DL)
+
+memset
+
+#### 0x16BE
+90 EDI
+28 ESI
+82 EBP
+41 EBX
+
+VMR[0x41] <=> VMR[0x90]
+41 EDI
+90 EBX
+
+7A EDX
+11 ECX
+
+VMR[52] <=> VMR[11]
+52 ECX
+
+11 EAX
+
+VMR[3D] += 0C ( ADD ESP,C)
+
+VMR[7A] <=> VMR[28] 
+7A ESI
+28 EDX
+
+push 30
+push VMR[7A] (push ESI)
+VMR[11] = VMR[3D] + 18  (LEA EAX, [ESP + 18]
+push VMR[11]  (push EAX)
+push 0x10E77C78
+
+CALL FUN_100b06c0

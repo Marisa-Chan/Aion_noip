@@ -10,6 +10,7 @@ def FNC1(state, log):
 		log.append("\n#InterlockedIncrement({:02X})\n".format(state.pop()))
 
 		tmp = state.esp
+		log.append(hex(state.esp))
 		state.push(0xFF0F0000) #eflags
 		state.push(0xFF1F0000) #eax
 		state.push(0xFF2F0000) #ecx
@@ -21,6 +22,7 @@ def FNC1(state, log):
 		state.push(0xFF8F0000) #edi
 		
 		state.AddRoute(0x444, 0x14121d3 - 0x1410ed6)
+		log.append("#Jump to route {:02X}".format(0x14121d3 - 0x1410ed6))
 	elif (eip == 0x1457):
 		log.append("\n#CDQ\n")
 		
@@ -36,6 +38,7 @@ def FNC1(state, log):
 		state.push(0xFF8F0000) #edi
 		
 		state.AddRoute(0x444, 0x141233a - 0x1410ed6)	
+		log.append("#Jump to route {:02X}".format(0x141233a - 0x1410ed6))
 	elif (eip == 0x152B):
 		log.append("\n#IDIV ECX\n")
 		
@@ -51,10 +54,12 @@ def FNC1(state, log):
 		state.push(0xFF8F0000) #edi
 		
 		state.AddRoute(0x444, 0x141240e - 0x1410ed6)	
+		log.append("#Jump to route {:02X}".format(0x141240e - 0x1410ed6))
 	elif (eip == 0x16B4):
 		log.append("\n#memset\n")
 		
 		tmp = state.esp
+		log.append(hex(state.esp))
 		state.push(0xFF0F0000) #eflags
 		state.push(0xFF1F0000) #eax
 		state.push(0xFF2F0000) #ecx
@@ -66,8 +71,15 @@ def FNC1(state, log):
 		state.push(0xFF8F0000) #edi
 		
 		state.AddRoute(0x444, 0x1412594 - 0x1410ed6)
+		log.append("#Jump to route {:02X}".format(0x1412594 - 0x1410ed6))
 	elif (eip == 0x1809):
 		log.append("\n#FUN_100b06c0\n")
+		
+
+		i = state.esp
+		while i < state.esp + 0x10:
+			log.append(hex(state.rMem4(i) ))
+			i += 4
 		
 		tmp = state.esp
 		state.push(0xFF0F0000) #eflags
@@ -81,6 +93,7 @@ def FNC1(state, log):
 		state.push(0xFF8F0000) #edi
 		
 		state.AddRoute(0x444, 0x14126e9 - 0x1410ed6)
+		log.append("#Jump to route {:02X}".format(0x14126e9 - 0x1410ed6))
 	else:
 		log.append("\n\n#OnEnd {:02X}\n\n".format(eip))
 

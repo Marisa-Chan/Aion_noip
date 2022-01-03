@@ -1,0 +1,24 @@
+  uVar2 = (uint)*(ushort *)(VM->EIP + 2) ^ VM->R_39;
+  VM->R_39 = VM->R_39 + uVar2;
+  VM->R_69 = VM->R_69 + 0x7dae1225;
+  VM->R_9d = VM->R_9d ^ (ushort)uVar2;
+  uVar2 = *(uint *)(VM->EIP + 10);
+  VM->R_39 = VM->R_39 & uVar2;
+  VM->R_69 = VM->R_69 + 0xcc27096;
+  VM->R_8c = VM->R_8c - uVar2;
+  VM->R_a7 = VM->R_a7 | uVar2;
+  uVar2 = *(uint *)(&VM->field_0x0 + (ushort)(VM->R_9d + 0x2fae)) & VM->R_8c + 0xbe361304;
+  uVar1 = *(ushort *)(VM->EIP + 8);
+  VM->R_2c = VM->R_2c | VM->R_39;
+  *(uint *)(&VM->field_0x0 + uVar1) =
+       (uint)(in_NT & 1) * 0x4000 | (uint)(in_IF & 1) * 0x200 | (uint)(in_TF & 1) * 0x100 |
+       (uint)((int)uVar2 < 0) * 0x80 | (uint)(uVar2 == 0) * 0x40 | (uint)(in_AF & 1) * 0x10 |
+       (uint)((POPCOUNT(uVar2 & 0xff) & 1U) == 0) * 4 | (uint)(in_ID & 1) * 0x200000 |
+       (uint)(in_VIP & 1) * 0x100000 | (uint)(in_VIF & 1) * 0x80000 | (uint)(in_AC & 1) * 0x40000;
+  VM->R_39 = VM->R_39 & *(uint *)(VM->EIP + 4);
+  UNRECOVERED_JUMPTABLE =
+       *(code **)(VM->pASM + (((uint)*(ushort *)VM->EIP - VM->R_39) + 0xc7c6904c & 0xffff) * 4);
+  VM->EIP = VM->EIP + 0xe;
+                    /* WARNING: Could not recover jumptable at 0x11002444. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*UNRECOVERED_JUMPTABLE)();
