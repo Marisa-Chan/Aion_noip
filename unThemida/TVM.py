@@ -278,7 +278,7 @@ class VMState:
 	def VM_ADD_RM_R(self, log, r1, r2, efl = -1):
 		adr = self.reg4[r1]
 		v1 = self.rMem4(adr)
-		v2 = self.reg4[r1]
+		v2 = self.reg4[r2]
 		res = U32(v1 + v2)
 		log.append("[VMR[{0:02X}]] += VMR[{1:02X}] ([{2:02X}] += {3:02X}) ({4:02X} += {3:02X}) ({5:02X})".format(r1, r2, adr, v2, v1, res))
 		self.wMem4(adr, res)
@@ -417,6 +417,12 @@ class VMState:
 	def VM_ASGN_R_R(self, log, r1, r2):
 		v = self.reg4[r2]
 		log.append("VMR[{0:02X}] = VMR[{1:02X}] ({2:02X})".format(r1, r2, v))
+		self.reg4[r1] = v
+	
+	def VM_ASGN_R_RM(self, log, r1, r2):
+		adr = self.reg4[r2]
+		v = self.rMem4(adr)
+		log.append("VMR[{0:02X}] = [VMR[{1:02X}]] ([{2:02X}] --> {3:02X})".format(r1, r2, adr, v))
 		self.reg4[r1] = v
 	
 	def VM_ASGN_WR_WR(self, log, r1, r2):
@@ -2177,7 +2183,7 @@ def ASM_0x72(state, log):
 	
 	r1 = state.reg2[R_9d]
 	r2 = (state.reg2[R_8a] + 0xbec6) & 0xFFFF
-	log.append("VMR[{:02X}] ^= {:02X} ({:02X} ^= {:02X}) ({:02X})".format(r1, r2, state.reg4[r1], state.reg4[r2], state.reg4[r1] ^ state.reg4[r2]))
+	log.append("VMR[{:02X}] ^= VMR[{:02X}] ({:02X} ^= {:02X}) ({:02X})".format(r1, r2, state.reg4[r1], state.reg4[r2], state.reg4[r1] ^ state.reg4[r2]))
 	state.reg4[r1] ^= state.reg4[r2]
 	
 	r = state.read2(4)
@@ -4758,6 +4764,334 @@ def ASM_0x263(state, log):
 	state.next = t & 0xFFFF
 	log.append(";next = {:02X}".format(state.next))
 VMAsm[0x263] = ASM_0x263
+
+
+def ASM_0x65(state, log):
+	of = state.read2(4)
+	val = state.read4(6) + state.reg4[R_ImgBase] 
+	
+	adr = state.esp + of
+	state.wMem4(adr, val)
+	log.append("#[esp+{:02X}h] = {:02X}".format(of, val))
+	
+	val = state.read4(0) + state.reg4[R_ImgBase] 
+	state.wMem4(adr + 4, val)
+	log.append("#[esp+{:02X}h] = {:02X}".format(of + 4, val))
+	
+	log.append("#pop EDI {:02X}".format(state.pop()))
+	log.append("#pop ESI {:02X}".format(state.pop()))
+	log.append("#pop EBP {:02X}".format(state.pop()))
+	log.append("#pop EBX {:02X}".format(state.pop()))
+	log.append("#pop EDX {:02X}".format(state.pop()))
+	log.append("#pop ECX {:02X}".format(state.pop()))
+	log.append("#pop EAX {:02X}".format(state.pop()))
+	log.append("#pop EFLAGS {:02X}".format(state.pop()))
+	
+	log.append(";RET!  {:02X}".format(state.pop()))
+	
+	state.run = False
+	
+	if state.OnEnd:
+		state.OnEnd(state, log)
+VMAsm[0x65] = ASM_0x65
+
+
+def ASM_0x2E4(state, log):
+	of = state.read2(4)
+	val = state.read4(6) + state.reg4[R_ImgBase] 
+	
+	adr = state.esp + of
+	state.wMem4(adr, val)
+	log.append("#[esp+{:02X}h] = {:02X}".format(of, val))
+	
+	val = state.read4(0) + state.reg4[R_ImgBase] 
+	state.wMem4(adr + 4, val)
+	log.append("#[esp+{:02X}h] = {:02X}".format(of + 4, val))
+	
+	log.append("#pop EDI {:02X}".format(state.pop()))
+	log.append("#pop ESI {:02X}".format(state.pop()))
+	log.append("#pop EBP {:02X}".format(state.pop()))
+	log.append("#pop EBX {:02X}".format(state.pop()))
+	log.append("#pop EDX {:02X}".format(state.pop()))
+	log.append("#pop ECX {:02X}".format(state.pop()))
+	log.append("#pop EAX {:02X}".format(state.pop()))
+	log.append("#pop EFLAGS {:02X}".format(state.pop()))
+	
+	log.append(";RET!  {:02X}".format(state.pop()))
+	
+	state.run = False
+	
+	if state.OnEnd:
+		state.OnEnd(state, log)
+VMAsm[0x2E4] = ASM_0x2E4
+
+
+def ASM_0x4FA(state, log):
+	uVar1 = state.read2(0) ^ state.reg4[R_39]
+	state.reg4[R_39] -= uVar1
+	state.reg4[R_69] |= 0x6665b6a3
+	state.reg2[R_9d] -= uVar1 & 0xFFFF
+	
+	uVar1 = (state.read2(2)) ^ state.reg4[R_a7]
+	state.reg4[R_39] ^= uVar1
+	state.reg4[R_69] += -0x33aeeb3e
+	state.reg2[R_8a] += uVar1 & 0xFFFF
+	state.reg4[R_2c] &= 0x18d26f86
+	
+	r1 = state.reg2[R_9d]
+	r2 = (state.reg2[R_8a] + 0x4bb1) & 0xFFFF
+	state.VM_XOR_R_R(log, r1, r2)
+	
+	t = U32(((state.read2(4)) ^ state.reg4[R_39]) + 0x6962c6f3)
+	state.reg4[R_39] += t
+	state.chEIP(+6)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x4FA] = ASM_0x4FA
+
+
+def ASM_0x287(state, log):
+	uVar2 = U32((state.read2(8)) + state.reg4[R_a7])
+	state.reg4[R_39] &= uVar2
+	state.reg4[R_69] += 0x6172d855
+	state.reg2[R_8a] += uVar2 & 0xFFFF
+	state.reg4[R_69] &= 0x5044ad68
+	
+	uVar1 = (state.read2(10))
+	state.reg4[R_39] &= uVar1
+	state.reg4[R_69] |= 0x3bff38a3
+	state.reg2[R_9d] ^= uVar1 & 0xFFFF
+	state.reg4[R_39] += (state.read4(4))
+	
+	r1 = (state.reg2[R_9d] ^ 0x96b0) & 0xFFFF
+	r2 = (state.reg2[R_8a] + 0x643) & 0xFFFF
+	v1 = state.reg4[r1]
+	v2 = state.reg4[r2]
+	efl = state.read2(2)
+	res = U32(v1 & v2)
+	log.append("VMR[{:02X}] = EFLAGS AND TEST VMR[{:02X}]({:02X}), VMR[{:02X}]({:02X}) ({:02X})".format(efl, r1, v1, r2, v2, res))
+	
+	
+	t = state.read2(0) ^ state.reg4[R_39] ^ 0x6d9665c3
+	state.reg4[R_39] |= t
+	state.chEIP(+0xc)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x287] = ASM_0x287
+
+
+def ASM_0x30(state, log):
+	uVar1 = U32(((state.read2(4)) ^ state.reg4[R_39]) - state.reg4[R_2c])
+	state.reg4[R_39] &= uVar1
+	state.reg4[R_69] += 0x2dda05a1
+	state.reg2[R_9d] -= uVar1 & 0xFFFF
+	
+	uVar1 = state.read(6) ^ state.reg4[R_39]
+	state.reg4[R_69] += 0x53edd7ab
+	state.reg4[R_8c] += uVar1
+	state.reg4[R_a7] |= uVar1
+	state.reg4[R_a7] ^= state.reg4[R_69]
+	state.reg4[R_a7] += -0x699aff11
+	state.reg4[R_2c] ^= state.reg4[R_39]
+	
+	r = (state.reg2[R_9d] ^ 0xbcf6)
+	b = (state.reg1[R_8c] + 0x1f) & 0xFF
+	
+	state.VM_ASGN_BRM_B(log, r, b)	
+	
+	t = U32((state.read2(2)) + state.reg4[R_39])
+	state.reg4[R_39] += t
+	state.chEIP(+0xd)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x30] = ASM_0x30
+
+
+def ASM_0x2F(state, log):
+	state.reg1[0x30] = 0
+	
+	uvar1 = state.reg4[ state.read2(6) ]
+	eflags = EFLAGS(uvar1)
+	log.append("EFLAGS TEST VMR[{:02X}]   ({:02X})".format(state.read2(6), uvar1))
+	log.append(eflags)
+	tp = state.read(8)
+	op = JCC(tp)
+	
+	of = state.read2(4)
+	val = state.read4(0) + state.reg4[R_ImgBase] 
+	
+	log.append(op + " TO:")
+	log.append("\t#STACK set [esp + {:02X}] = {:02X}".format(of, val))
+	if (of < 0x24 and of >= 0):
+		state.wMem4(state.esp + of, val)
+	
+	log.append("\t#pop EDI {:02X}".format(state.pop()))
+	log.append("\t#pop ESI {:02X}".format(state.pop()))
+	log.append("\t#pop EBP {:02X}".format(state.pop()))
+	log.append("\t#pop EBX {:02X}".format(state.pop()))
+	log.append("\t#pop EDX {:02X}".format(state.pop()))
+	log.append("\t#pop ECX {:02X}".format(state.pop()))
+	log.append("\t#pop EAX {:02X}".format(state.pop()))
+	log.append("\t#pop EFLAGS {:02X}".format(state.pop()))
+	
+	log.append("\t;RET!  to {:02X}".format(state.pop()))
+	
+	if state.OnEnd:
+		state.OnEnd(state, log)
+	
+	log.append("On Not:")
+	
+	r = state.read2(9)
+	state.VM_ADD_R_V(log, r, 0x24)
+
+	t = U32(state.read2(11) - state.reg4[R_39] + 0x517fc623)
+	state.reg4[R_39] += t
+	
+	state.next = t & 0xFFFF
+	state.chEIP(+13)
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x2F] = ASM_0x2F
+
+
+def ASM_0x3BC(state, log):
+	of = state.read2(4)
+	
+	r = state.read2(6)
+	va = state.reg4[r]
+	val = state.rMem4(va)
+	
+	adr = state.esp + of
+	state.wMem4(adr, val)
+	log.append("#[esp+{:02X}h] = [VMR{:02X}] ([{:02X}]) ({:02X})".format(of, r, va, val))
+	
+	val = state.read4(0) + state.reg4[R_ImgBase] 
+	state.wMem4(adr + 4, val)
+	log.append("#[esp+{:02X}h] = {:02X}".format(of + 4, val))
+	
+	log.append("#pop EDI {:02X}".format(state.pop()))
+	log.append("#pop ESI {:02X}".format(state.pop()))
+	log.append("#pop EBP {:02X}".format(state.pop()))
+	log.append("#pop EBX {:02X}".format(state.pop()))
+	log.append("#pop EDX {:02X}".format(state.pop()))
+	log.append("#pop ECX {:02X}".format(state.pop()))
+	log.append("#pop EAX {:02X}".format(state.pop()))
+	log.append("#pop EFLAGS {:02X}".format(state.pop()))
+	
+	log.append(";RET!  {:02X}".format(state.pop()))
+	
+	state.run = False
+	
+	if state.OnEnd:
+		state.OnEnd(state, log)
+VMAsm[0x3BC] = ASM_0x3BC
+
+
+def ASM_0x1C5(state, log):
+	uVar1 = (state.read2(4)) ^ state.reg4[R_39]
+	state.reg4[R_39] += uVar1
+	state.reg4[R_69] &= 0x756acef6
+	state.reg2[R_9d] += uVar1 & 0xFFFF
+	state.reg4[R_2c] += -0x41256715
+	
+	uVar1 = U32(state.read2(0) + state.reg4[R_39])
+	state.reg4[R_39] &= uVar1
+	state.reg4[R_69] += -0x41256715
+	state.reg2[R_8a] -= uVar1 & 0xFFFF
+	state.reg4[R_2c] &= 0x5e2708a5
+	state.reg4[R_39] &= 0x5e2708a5
+	state.reg4[R_69] |= 0x305b1d4b
+	
+	r1 = state.reg2[R_9d]
+	r2 = (state.reg2[R_8a] ^ 0x9b0f) & 0xFFFF
+	state.VM_ASGN_BR_BR(log, r1, r2)
+	
+	t = U32((state.read2(2)) + state.reg4[R_39])
+	state.chEIP(+6)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x1C5] = ASM_0x1C5
+
+
+def ASM_0xB1(state, log):
+	state.reg4[R_39] |= state.read4(0)
+	state.reg4[R_39] &= (state.read4(10))
+	
+	uVar1 = U32(((state.read2(6)) + state.reg4[R_39]) - state.reg4[R_2c])
+	state.reg4[R_39] ^= uVar1
+	state.reg4[R_69] ^= 0x3333fe87
+	state.reg2[R_9d] += uVar1 & 0xFFFF
+	
+	uVar1 = (state.read2(4)) ^ state.reg4[R_a7]
+	state.reg4[R_39] -= uVar1
+	state.reg4[R_69] &= 0xd90a2c2
+	state.reg2[R_8a] ^= uVar1 & 0xFFFF
+	
+	r1 = state.reg2[R_9d]
+	r2 = (state.reg2[R_8a] ^ 0xecff) & 0xFFFF
+	state.VM_ASGN_R_RM(log, r1, r2)
+		 
+	t = U32(((state.read2(8)) - state.reg4[R_39]) + 0xe4d2698d)
+	state.reg4[R_39] += t
+	state.chEIP(+0xe)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0xB1] = ASM_0xB1
+
+def ASM_0x2FB(state, log):
+	of = state.read2(4)
+	val = state.read4(6) + state.reg4[R_ImgBase] 
+	
+	adr = state.esp + of
+	state.wMem4(adr, val)
+	log.append("#[esp+{:02X}h] = {:02X}".format(of, val))
+	
+	val = state.read4(0) + state.reg4[R_ImgBase] 
+	state.wMem4(adr + 4, val)
+	log.append("#[esp+{:02X}h] = {:02X}".format(of + 4, val))
+	
+	log.append("#pop EDI {:02X}".format(state.pop()))
+	log.append("#pop ESI {:02X}".format(state.pop()))
+	log.append("#pop EBP {:02X}".format(state.pop()))
+	log.append("#pop EBX {:02X}".format(state.pop()))
+	log.append("#pop EDX {:02X}".format(state.pop()))
+	log.append("#pop ECX {:02X}".format(state.pop()))
+	log.append("#pop EAX {:02X}".format(state.pop()))
+	log.append("#pop EFLAGS {:02X}".format(state.pop()))
+	
+	log.append(";RET!  {:02X}".format(state.pop()))
+	
+	state.run = False
+	
+	if state.OnEnd:
+		state.OnEnd(state, log)
+VMAsm[0x2FB] = ASM_0x2FB
+
+
+def ASM_0x1C4(state, log):
+	of = state.read2(4)
+	val = state.read4(0) + state.reg4[R_ImgBase] 
+	
+	adr = state.esp + of
+	state.wMem4(adr, val)
+	log.append("#[esp+{:02X}h] = {:02X}".format(of, val))
+
+	
+	log.append("#pop EDI {:02X}".format(state.pop()))
+	log.append("#pop ESI {:02X}".format(state.pop()))
+	log.append("#pop EBP {:02X}".format(state.pop()))
+	log.append("#pop EBX {:02X}".format(state.pop()))
+	log.append("#pop EDX {:02X}".format(state.pop()))
+	log.append("#pop ECX {:02X}".format(state.pop()))
+	log.append("#pop EAX {:02X}".format(state.pop()))
+	log.append("#pop EFLAGS {:02X}".format(state.pop()))
+	
+	log.append(";RET!  {:02X}".format(state.pop()))
+	
+	state.run = False
+	
+	if state.OnEnd:
+		state.OnEnd(state, log)
+VMAsm[0x1C4] = ASM_0x1C4
 
 def Parse(state):
 	ERR = list()

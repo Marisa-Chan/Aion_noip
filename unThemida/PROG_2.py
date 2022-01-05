@@ -22,9 +22,9 @@ def FNC1(state, log):
 		state.push(0xFF8F0000) #edi
 		
 		state.AddRoute(0x444, 0x1410392 - 0x140f570)
-		log.append("#Jump to route {:02X}".format(0x14121d3 - 0x1410ed6))
-	elif (eip == 0x1457):
-		log.append("\n#CDQ\n")
+		log.append("#Jump to route {:02X}".format(0x1410392 - 0x140f570))
+	elif (eip == 0x102C):
+		log.append("\n#FUN_10051aa0\n")
 		
 		tmp = state.esp
 		state.push(0xFF0F0000) #eflags
@@ -37,10 +37,10 @@ def FNC1(state, log):
 		state.push(0xFF7F0000) #esi
 		state.push(0xFF8F0000) #edi
 		
-		state.AddRoute(0x444, 0x141233a - 0x1410ed6)	
-		log.append("#Jump to route {:02X}".format(0x141233a - 0x1410ed6))
-	elif (eip == 0x152B):
-		log.append("\n#IDIV ECX\n")
+		state.AddRoute(0x444, 0x14105a6 - 0x140f570)	
+		log.append("#Jump to route {:02X}".format(0x14105a6 - 0x140f570))
+	elif (eip == 0x1139):
+		log.append("\n#FUN_10051e70\n")
 		
 		tmp = state.esp
 		state.push(0xFF0F0000) #eflags
@@ -53,9 +53,9 @@ def FNC1(state, log):
 		state.push(0xFF7F0000) #esi
 		state.push(0xFF8F0000) #edi
 		
-		state.AddRoute(0x444, 0x141240e - 0x1410ed6)	
-		log.append("#Jump to route {:02X}".format(0x141240e - 0x1410ed6))
-	elif (eip == 0x16B4):
+		state.AddRoute(0x444, 0x14106b3 - 0x140f570)	
+		log.append("#Jump to route {:02X}".format(0x14106b3 - 0x140f570))
+	elif (eip == 0x13C8):
 		log.append("\n#memset\n")
 		
 		tmp = state.esp
@@ -70,17 +70,11 @@ def FNC1(state, log):
 		state.push(0xFF7F0000) #esi
 		state.push(0xFF8F0000) #edi
 		
-		state.AddRoute(0x444, 0x1412594 - 0x1410ed6)
-		log.append("#Jump to route {:02X}".format(0x1412594 - 0x1410ed6))
-	elif (eip == 0x1809):
-		log.append("\n#FUN_100b06c0\n")
-		
+		state.AddRoute(0x444, 0x1410942 - 0x140f570)
+		log.append("#Jump to route {:02X}".format(0x1410942 - 0x140f570))
+	elif (eip == 0x14D5):
+		log.append("\n#memcpy\n")
 
-		i = state.esp
-		while i < state.esp + 0x10:
-			log.append(hex(state.rMem4(i) ))
-			i += 4
-		
 		tmp = state.esp
 		state.push(0xFF0F0000) #eflags
 		state.push(0xFF1F0000) #eax
@@ -92,8 +86,24 @@ def FNC1(state, log):
 		state.push(0xFF7F0000) #esi
 		state.push(0xFF8F0000) #edi
 		
-		state.AddRoute(0x444, 0x14126e9 - 0x1410ed6)
-		log.append("#Jump to route {:02X}".format(0x14126e9 - 0x1410ed6))
+		state.AddRoute(0x444, 0x1410a4f - 0x140f570)
+		log.append("#Jump to route {:02X}".format(0x1410a4f - 0x140f570))
+	elif (eip == 0x1712):
+		log.append("\n#CALL [10E70220]\n")
+
+		tmp = state.esp
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x1410c8a - 0x140f570)
+		log.append("#Jump to route {:02X}".format(0x1410c8a - 0x140f570))
 	else:
 		log.append("\n\n#OnEnd {:02X}\n\n".format(eip))
 
