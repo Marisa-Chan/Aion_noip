@@ -5,9 +5,9 @@ import TVM
 
 def FNC1(state, log):
 	eip = state.reg4[TVM.R_EIP]
-	if (eip == 0x12F5):
+	if (eip == 0xE18):
 		state.pop()
-		log.append("\n#InterlockedIncrement({:02X})\n".format(state.pop()))
+		log.append("\n#FUN_10059bb0({:02X})\n".format(state.pop()))
 
 		tmp = state.esp
 		log.append(hex(state.esp))
@@ -21,7 +21,7 @@ def FNC1(state, log):
 		state.push(0xFF7F0000) #esi
 		state.push(0xFF8F0000) #edi
 		
-		state.AddRoute(0x444, 0x14121d3 - 0x1410ed6)
+		state.AddRoute(0x444, 0x1410392 - 0x140f570)
 		log.append("#Jump to route {:02X}".format(0x14121d3 - 0x1410ed6))
 	elif (eip == 0x1457):
 		log.append("\n#CDQ\n")
@@ -150,6 +150,10 @@ state.wMem(0x110BCE23, b'\x73\x58\x01\xF3')
 state.wMem(0x7D0B736F, b'\xFF\xFF\xF7\xFF')
 state.wMem(0x7C80003C, b'\x0F\x00\x00\x00')
 state.wMem(0x7C800117, b'\x00\x3E\xB6\x00')
+
+state.wMem4(0x10EFC999, 0x463E253)
+state.wMem4(0x11043a62, 0x8F558016)
+state.wMem4(0x1143100c, 0xBA281857)
 
 ##7C800000 - kernel32
 

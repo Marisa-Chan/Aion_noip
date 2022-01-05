@@ -5,11 +5,12 @@ s/VM->R_2c/state.reg4[R_2c]/g
 s/VM->R_a7/state.reg4[R_a7]/g
 s/VM->R_9d/state.reg2[R_9d]/g
 s/VM->R_8a/state.reg2[R_8a]/g
+s/VM->EIP = VM->EIP + \([0-9a-fxA-FX]\+\)/state.chEIP(+\1)\n/g
 s/\*(u\?short \*)VM->EIP/state.read2(0)/g
 s/\*(u\?int \*)VM->EIP/state.read4(0)/g
-s/\*(u\?short \*)(VM->EIP + \([0-9a-fxA-Fx]\+\))/(state.read2(\1))/g
-s/\*(u\?int \*)(VM->EIP + \([0-9a-fxA-Fx]\+\))/(state.read4(\1))/g
-s/(VM->EIP + \([0-9a-fxA-Fx]\+\))/(state.read(\1))/g
+s/\*(u\?short \*)(VM->EIP + \([0-9a-fxA-FX]\+\))/(state.read2(\1))/g
+s/\*(u\?int \*)(VM->EIP + \([0-9a-fxA-FX]\+\))/(state.read4(\1))/g
+s/(VM->EIP + \([0-9a-fxA-FX]\+\))/(state.read(\1))/g
 s/;$//g
 s/^  /\t/g
 s|\([^ \t]\+\) = \1 \([+-^/\&|]\)|\1 \2=|g
