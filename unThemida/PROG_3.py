@@ -8,7 +8,93 @@ import TVM
 def FNC(state, log):
 	eip = state.reg4[TVM.R_EIP]
 	
-	log.append("\n\n#OnEnd {:02X}\n\n".format(eip))
+	if eip == 0x131A:
+		log.append("\n#InterlockedIncrement        CALL ESI\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x1413b38 - 0x1412816)
+		log.append("#Jump to route {:02X}".format(0x1413b38 - 0x1412816))
+	elif eip == 0x14CC:
+		log.append("\n#CDQ\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x1413cef - 0x1412816)
+		log.append("#Jump to route {:02X}".format(0x1413cef - 0x1412816))
+	elif eip == 0x1590:
+		log.append("\n#IDIV ECX\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x1413db3 - 0x1412816)
+		log.append("#Jump to route {:02X}".format(0x1413db3 - 0x1412816))
+	elif eip == 0x1733:
+		log.append("\n#memset\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x1413f53 - 0x1412816)
+		log.append("#Jump to route {:02X}".format(0x1413f53 - 0x1412816))
+	elif eip == 0x185C:
+		log.append("\n# FUN_100b06c0 \n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141407c - 0x1412816)
+		log.append("#Jump to route {:02X}".format(0x141407c - 0x1412816))
+	else:
+		log.append("\n\n#OnEnd {:02X}\n\n".format(eip))
 
 
 state = TVM.VMState()
