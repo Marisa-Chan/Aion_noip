@@ -7,8 +7,246 @@ import TVM
 
 def FNC(state, log):
 	eip = state.reg4[TVM.R_EIP]
-	
-	log.append("\n\n#OnEnd {:02X}\n\n".format(eip))
+	if eip == 0xC1A:
+		log.append("\n#CALL EAX     \n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141ed31 - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141ed31 - 0x141e10f))
+	elif eip == 0xD11:
+		log.append("\n#CALL dword ptr[0x1082A6BC]     \n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141ee28 - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141ee28 - 0x141e10f))
+	elif eip == 0xF3C:
+		log.append("\n#IMUL ECX,ECX,0x68\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141f058 - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141f058 - 0x141e10f))
+	elif eip == 0x1062:
+		log.append("\n#FUN_10594c20\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141f17b - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141f17b - 0x141e10f))
+	elif eip == 0x1155:
+		log.append("\n#IMUL EAX,EAX,0x68\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141f271 - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141f271 - 0x141e10f))
+	elif eip == 0x1267:
+		log.append("\n#FUN_10594bb0\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141f380 - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141f380 - 0x141e10f))
+	elif eip == 0x137E:
+		log.append("\n#IMUL ECX,ECX,0x68\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141f49a - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141f49a - 0x141e10f))
+	elif eip == 0x1494:
+		log.append("\n#FUN_10594e60\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141f5ad - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141f5ad - 0x141e10f))
+	elif eip == 0x16BF:
+		log.append("\n#IMUL EDX,EDX,0x68\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141f7db - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141f7db - 0x141e10f))
+	elif eip == 0x1848:
+		log.append("\n#CALL EAX\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141f95f - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141f95f - 0x141e10f))
+	elif eip == 0x1952:
+		log.append("\n#FUN_10594e60\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141fa6b - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141fa6b - 0x141e10f))
+	elif eip == 0x1AD5:
+		log.append("\n#CALL EAX\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141f95f - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141f95f - 0x141e10f))
+	elif eip == 0x1B97:
+		log.append("\n#IMUL ESI,ESI,0x68\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141fcb3 - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141fcb3 - 0x141e10f))
+	elif eip == 0x1C9F:
+		log.append("\n#FUN_10594bb0\n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141fdb8 - 0x141e10f)
+		log.append("#Jump to route {:02X}".format(0x141fdb8 - 0x141e10f))
+	else:
+		log.append("\n\n#OnEnd {:02X}\n\n".format(eip))
 
 
 state = TVM.VMState()

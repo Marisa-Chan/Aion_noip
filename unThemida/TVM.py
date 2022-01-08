@@ -1849,8 +1849,7 @@ def ASM_0xAF(state, log):
 	
 	r1 = state.reg2[ R_9d ]
 	val = U32(state.reg4[ R_8c ] + 0x574c2cc1)
-	log.append("VMR[{:02X}] = {:02X}   ({:02X} = {:02X})".format(r1, val, state.reg4[r1], val))
-	state.reg4[r1] = val
+	state.VM_ASGN_R_V(log, r1, val)
 	
 	t3 = U32(state.read2(8) - state.reg4[R_39]) ^ 0x2cd21358
 	state.reg4[R_39] -= t3
@@ -3493,6 +3492,7 @@ def ASM_0x493(state, log):
 	if state.OnEnd:
 		state.OnEnd(state, log)
 VMAsm[0x493] = ASM_0x493
+VMAsm[0x173] = ASM_0x493
 
 
 def ASM_0x203(state, log):
@@ -3626,6 +3626,7 @@ def ASM_0x43A(state, log):
 	if state.OnEnd:
 		state.OnEnd(state, log)
 VMAsm[0x43A] = ASM_0x43A
+VMAsm[0x241] = ASM_0x43A
 
 
 def ASM_0x3D(state, log):
@@ -5939,7 +5940,7 @@ def ASM_0xFF(state, log):
 	
 	adr = state.esp + of
 	state.wMem4(adr, val)
-	log.append("#[esp+{:02X}h] = [VMR{:02X}] ([{:02X}]) ({:02X})".format(of, r, va, val))
+	log.append("#[esp+{:02X}h] = [VMR[{:02X}]] ([{:02X}]) ({:02X})".format(of, r, va, val))
 	
 	val = state.read4(0) + state.reg4[R_ImgBase] 
 	state.wMem4(adr + 4, val)
@@ -6255,6 +6256,261 @@ def ASM_0x326(state, log):
 	state.next = t & 0xFFFF
 	log.append(";next = {:02X}".format(state.next))
 VMAsm[0x326] = ASM_0x326
+
+
+def ASM_0x394(state, log):
+	uVar7 = U32((state.read2(2)) - state.reg4[R_a7])
+	state.reg4[R_39] &= uVar7
+	state.reg4[R_69] &= 0x6d05a349
+	state.reg2[R_8a] -= uVar7 & 0xFFFF
+	
+	uVar7 = U32((state.read2(8)) + state.reg4[R_39])
+	state.reg4[R_39] &= uVar7
+	state.reg4[R_69] += 0x279bc4ee
+	state.reg2[R_9d] -= uVar7 & 0xFFFF
+	
+	r1 = (state.reg2[R_9d] + 0x70ee) & 0xFFFF
+	r2 = (state.reg2[R_8a] + 0x3177) & 0xFFFF
+	efl = (state.read2(10))
+	state.VM_SUB_RM_R(log, r1, r2, efl)
+	
+	state.reg4[R_2c] -= state.reg4[R_39]
+	state.reg4[R_2c] |= 0x3402b51
+	 
+	t = U32(((state.read2(4)) - state.reg4[R_39]) ^ 0x38244860)
+	state.reg4[R_39] |= t
+	state.chEIP(+0xc)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x394] = ASM_0x394
+
+
+def ASM_0x2C(state, log):
+	state.reg4[R_39] -= (state.read4(6))
+	
+	r1 = (state.read2(10))
+	r2 = (state.read2(2))
+	state.VM_XCHG_R_R(log, r1, r2)
+	
+	sVar3 = (state.read2(0xe))
+	state.reg4[R_69] ^= 0x40c8aac2
+	state.reg2[R_9d] -= (sVar3 - state.reg2[R_2c]) & 0xFFFF
+	
+	uVar7 = (state.read2(4)) ^ state.reg4[R_a7]
+	state.reg4[R_39] |= uVar7
+	state.reg4[R_69] += -0x4f28820a
+	state.reg2[R_8a] -= uVar7 & 0xFFFF
+	
+	r1 = (state.reg2[R_9d] - 0xa2c) & 0xFFFF
+	v1 = state.reg4[r1]
+	
+	r2 = (state.reg2[R_8a] + 0x7d5) & 0xFFFF
+	adr = state.reg4[r2]
+	v2 = state.rMem4(adr)
+	
+	efl = state.read2(0)
+
+	res = U32(v1 - v2)
+	log.append("VMR[{:02X}] = EFLAGS CMP TEST VMR[{:02X}]({:02X}), [VMR[{:02X}]]([{:02X}] {:02X}) ({:02X})".format(efl, r1, v1, r2, adr, v2, res))
+	
+	t = (state.read2(0xc))
+	state.reg4[R_39] ^= t
+	state.chEIP(+0x10)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x2C] = ASM_0x2C
+
+
+def ASM_0x3F1(state, log):
+	uVar2 = U32((state.read2(10)) + state.reg4[R_39])
+	state.reg4[R_39] &= uVar2
+	state.reg2[R_9d] ^= uVar2 & 0xFFFF
+	
+	r1 = (state.reg2[R_9d] + 0x1f4e) & 0xFFFF
+	state.VM_POP_RM(log, r1)
+	
+	r2 = state.read2(6)
+	if (r1 != r2):
+		state.VM_ADD_R_V(log, r2, 4)
+	
+	t = state.read2(0) ^ state.reg4[R_39] ^ 0x553a96bd
+	state.reg4[R_39] |= t
+	state.chEIP(+0xc)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x3F1] = ASM_0x3F1
+
+
+def ASM_0x36D(state, log):
+	uVar6 = U32((state.read2(0) - state.reg4[R_39]) ^ state.reg4[R_2c])
+	state.reg4[R_39] &= uVar6
+	state.reg4[R_69] += 0x49f8646c
+	state.reg2[R_9d] ^= uVar6 & 0xFFFF
+	
+	r = (state.reg2[R_9d] ^ 0x7dd1) & 0xFFFF
+	efl = state.read2(2)
+	state.VM_SUB_R_V(log, r, 1, efl)
+	
+	state.reg4[R_a7] ^= state.reg4[R_69]
+	state.reg4[R_a7] &= 0x6cc9e56c
+	
+	t = U32(((state.read2(4)) - state.reg4[R_39]) + 0xedfdd64e)
+	state.reg4[R_39] -= t
+	state.chEIP(+6)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x36D] = ASM_0x36D
+
+
+def ASM_0x3C7(state, log):
+	of = state.read2(4)
+	
+	r = state.read2(6)
+	val = state.reg4[r]
+	
+	adr = state.esp + of
+	state.wMem4(adr, val)
+	log.append("#[esp+{:02X}h] = VMR[{:02X}] ({:02X})".format(of, r, val))
+	
+	val = state.read4(0) + state.reg4[R_ImgBase] 
+	state.wMem4(adr + 4, val)
+	log.append("#[esp+{:02X}h] = {:02X}".format(of + 4, val))
+	
+	log.append("#pop EDI {:02X}".format(state.pop()))
+	log.append("#pop ESI {:02X}".format(state.pop()))
+	log.append("#pop EBP {:02X}".format(state.pop()))
+	log.append("#pop EBX {:02X}".format(state.pop()))
+	log.append("#pop EDX {:02X}".format(state.pop()))
+	log.append("#pop ECX {:02X}".format(state.pop()))
+	log.append("#pop EAX {:02X}".format(state.pop()))
+	log.append("#pop EFLAGS {:02X}".format(state.pop()))
+	
+	log.append(";RET!  {:02X}".format(state.pop()))
+	
+	state.run = False
+	
+	if state.OnEnd:
+		state.OnEnd(state, log)
+VMAsm[0x3C7] = ASM_0x3C7
+
+
+def ASM_0x45A(state, log):
+	state.reg1[0x30] = 0
+	
+	uvar1 = state.reg4[ state.read2(6) ]
+	eflags = EFLAGS(uvar1)
+	log.append("EFLAGS TEST VMR[{:02X}]   ({:02X})".format(state.read2(6), uvar1))
+	log.append(eflags)
+	tp = state.read(8)
+	op = JCC(tp)
+	
+	of = state.read2(4)
+	val = state.read4(0) + state.reg4[R_ImgBase] 
+	
+	log.append(op + " TO:")
+	log.append("\t#STACK set [esp + {:02X}] = {:02X}".format(of, val))
+	if (of < 0x24 and of >= 0):
+		state.wMem4(state.esp + of, val)
+	
+	log.append("\t#pop EDI {:02X}".format(state.pop()))
+	log.append("\t#pop ESI {:02X}".format(state.pop()))
+	log.append("\t#pop EBP {:02X}".format(state.pop()))
+	log.append("\t#pop EBX {:02X}".format(state.pop()))
+	log.append("\t#pop EDX {:02X}".format(state.pop()))
+	log.append("\t#pop ECX {:02X}".format(state.pop()))
+	log.append("\t#pop EAX {:02X}".format(state.pop()))
+	log.append("\t#pop EFLAGS {:02X}".format(state.pop()))
+	
+	log.append("\t;RET!  to {:02X}".format(state.pop()))
+	
+	if state.OnEnd:
+		state.OnEnd(state, log)
+	
+	log.append("On Not:")
+	
+	r = state.read2(9)
+	state.VM_ADD_R_V(log, r, 0x24)
+
+	t = U32(state.read2(11))
+	state.reg4[R_39] |= t
+	
+	state.next = t & 0xFFFF
+	state.chEIP(+13)
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x45A] = ASM_0x45A
+
+def ASM_0x302(state, log):
+	state.reg1[0x30] = 0
+	
+	uvar1 = state.reg4[ state.read2(6) ]
+	eflags = EFLAGS(uvar1)
+	log.append("EFLAGS TEST VMR[{:02X}]   ({:02X})".format(state.read2(6), uvar1))
+	log.append(eflags)
+	tp = state.read(8)
+	op = JCC(tp)
+	
+	of = state.read2(4)
+	val = state.read4(0) + state.reg4[R_ImgBase] 
+	
+	log.append(op + " TO:")
+	log.append("\t#STACK set [esp + {:02X}] = {:02X}".format(of, val))
+	if (of < 0x24 and of >= 0):
+		state.wMem4(state.esp + of, val)
+	
+	log.append("\t#pop EDI {:02X}".format(state.pop()))
+	log.append("\t#pop ESI {:02X}".format(state.pop()))
+	log.append("\t#pop EBP {:02X}".format(state.pop()))
+	log.append("\t#pop EBX {:02X}".format(state.pop()))
+	log.append("\t#pop EDX {:02X}".format(state.pop()))
+	log.append("\t#pop ECX {:02X}".format(state.pop()))
+	log.append("\t#pop EAX {:02X}".format(state.pop()))
+	log.append("\t#pop EFLAGS {:02X}".format(state.pop()))
+	
+	log.append("\t;RET!  to {:02X}".format(state.pop()))
+	
+	if state.OnEnd:
+		state.OnEnd(state, log)
+	
+	log.append("On Not:")
+	
+	r = state.read2(9)
+	state.VM_ADD_R_V(log, r, 0x24)
+
+	t = U32(state.read2(11) + state.reg4[R_39] + 0x48ababf)
+	
+	state.next = t & 0xFFFF
+	state.chEIP(+13)
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x302] = ASM_0x302
+
+
+def ASM_0xFB(state, log):
+	ImgBase = state.reg4[R_ImgBase]
+	
+	of = state.read2(0)
+	ad1 = state.read4(2) + ImgBase
+	
+	adr = state.esp + of
+	state.wMem4(adr, ad1)
+	log.append("#[esp+{:02X}h] = {:02X}".format(of, ad1))
+	
+	log.append("#pop EDI {:02X}".format(state.pop()))
+	log.append("#pop ESI {:02X}".format(state.pop()))
+	log.append("#pop EBP {:02X}".format(state.pop()))
+	log.append("#pop EBX {:02X}".format(state.pop()))
+	log.append("#pop EDX {:02X}".format(state.pop()))
+	log.append("#pop ECX {:02X}".format(state.pop()))
+	log.append("#pop EAX {:02X}".format(state.pop()))
+	log.append("#pop EFLAGS {:02X}".format(state.pop()))
+	
+	log.append(";RET!  {:02X}".format(state.pop()))
+	
+	state.run = False
+	
+	if state.OnEnd:
+		state.OnEnd(state, log)
+VMAsm[0xFB] = ASM_0xFB
+
 
 
 def Parse(state):
