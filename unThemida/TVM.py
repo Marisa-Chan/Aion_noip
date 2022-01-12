@@ -581,7 +581,7 @@ class VMState:
 	def VM_AND_R_V(self, log, r1, v2, efl = -1):
 		v1 = self.reg4[r1]
 		res = v1 & v2
-		log.append("VMR[{0:02X}] &= {1:02X} ({2:02X} &= {1:02X}) ({3:02X})".format(r1, v1, v2, res))
+		log.append("VMR[{0:02X}] &= {1:02X} ({2:02X} &= {1:02X}) ({3:02X})".format(r1, v2, v1, res))
 		self.reg4[r1] = res
 	
 		if (efl != -1):
@@ -3338,13 +3338,8 @@ def ASM_0x500(state, log):
 	
 	r = state.reg2[R_9d]
 	val = state.reg4[R_8c]
-	v = state.reg4[r]
-	res = v & val
-	log.append("VMR[{0:02X}] &= {1:02X}  ({2:02X} &= {1:02X}) ({3:02X})".format(r, val, v, res))
-	state.reg4[r] = res
-	
-	r = state.read2(8)
-	log.append("VMR[{:02X}] = eflags".format(r))
+	efl = state.read2(8)
+	state.VM_AND_R_V(log, r, val, efl)
 	
 	t = U32(state.read2(2) + 0x1c87f5f1)
 	state.reg4[R_39] -= t
@@ -6020,7 +6015,7 @@ def ASM_0x44B(state, log):
 	state.reg2[R_9d] += uVar3 & 0xFFFF
 
 	r = (state.reg2[R_9d] + 0x3dc9) & 0xFFFF
-	state.VM_ADD_R_V(log, r, 1)
+	state.VM_SUB_R_V(log, r, 1)
 		 
 	state.reg4[R_2c] ^= state.reg4[R_39]
 	state.reg4[R_39] |= (state.read4(8))
