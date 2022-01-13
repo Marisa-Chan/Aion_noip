@@ -7,7 +7,7 @@ import TVM
 
 def FNC(state, log):
 	eip = state.reg4[TVM.R_EIP]
-	if eip == 0xFBC:
+	if eip == 0x115D:
 		log.append("\n#memset     \n")
 
 		tmp = state.esp
@@ -22,9 +22,9 @@ def FNC(state, log):
 		state.push(0xFF7F0000) #esi
 		state.push(0xFF8F0000) #edi
 		
-		state.AddRoute(0x444, 0x141777a - 0x14167b4)
-		log.append("#Jump to route {:02X}".format(0x141777a - 0x14167b4))
-	elif eip == 0x10EF:
+		state.AddRoute(0x444, 0x141532c - 0x14141c5)
+		log.append("#Jump to route {:02X}".format(0x141532c - 0x14141c5))
+	elif eip == 0x1296:
 		log.append("\n#FUN_100b0780     \n")
 
 		tmp = state.esp
@@ -39,10 +39,10 @@ def FNC(state, log):
 		state.push(0xFF7F0000) #esi
 		state.push(0xFF8F0000) #edi
 		
-		state.AddRoute(0x444, 0x14178ad - 0x14167b4)
-		log.append("#Jump to route {:02X}".format(0x14178ad - 0x14167b4))
-	elif eip == 0x11FE:
-		log.append("\n#FUN_1005a280     \n")
+		state.AddRoute(0x444, 0x1415465 - 0x14141c5)
+		log.append("#Jump to route {:02X}".format(0x1415465 - 0x14141c5))
+	elif eip == 0x139B:
+		log.append("\n#FUN_1005a180     \n")
 
 		tmp = state.esp
 		log.append(hex(state.esp))
@@ -56,8 +56,42 @@ def FNC(state, log):
 		state.push(0xFF7F0000) #esi
 		state.push(0xFF8F0000) #edi
 		
-		state.AddRoute(0x444, 0x14179bc - 0x14167b4)
-		log.append("#Jump to route {:02X}".format(0x14179bc - 0x14167b4))
+		state.AddRoute(0x444, 0x141556a - 0x14141c5)
+		log.append("#Jump to route {:02X}".format(0x141556a - 0x14141c5))
+	elif eip == 0x14A4:
+		log.append("\n#memset     \n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x1415673 - 0x14141c5)
+		log.append("#Jump to route {:02X}".format(0x1415673 - 0x14141c5))
+	elif eip == 0x15FD:
+		log.append("\n#FUN_100b06c0     \n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x14157cc - 0x14141c5)
+		log.append("#Jump to route {:02X}".format(0x14157cc - 0x14141c5))
 	else:
 		log.append("\n\n#OnEnd {:02X}\n\n".format(eip))
 

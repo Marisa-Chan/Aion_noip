@@ -1,0 +1,6028 @@
+Route 00
+--OP 0x257  Addr: 0x1103dd58   	| 0x00/0xE7F
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+Empty access 0006F878 (4) (-10E94A24)
+Empty access 10F042D9 (4) (3D)
+--OP 0x444  Addr: 0x1103e50c   	| 0x04/0xE7F
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+Empty access 0006F878 (4) (-10E94A24)
+--OP 0x51  Addr: 0x1103d540   	| 0x08/0xE7F
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+Empty access 0006F878 (4) (-10E94A24)
+--OP 0x1CF  Addr: 0x1103db38   	| 0x0A/0xE7F
+Empty access 10F04316 (4) (7A)
+Empty access 10F042DD (4) (41)
+Empty access 10F042DD (4) (41)
+Empty access 10F04316 (4) (7A)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+Empty access 0006F878 (4) (-10E94A24)
+--OP 0x1CF  Addr: 0x1103db38   	| 0x14/0xE7F
+Empty access 10F042C4 (4) (28)
+Empty access 10F042C4 (4) (28)
+Empty access 10F042C4 (4) (28)
+Empty access 10F042C4 (4) (28)
+Empty access 0006F874 (4) (-10E94A28)
+Empty access 0006F878 (4) (-10E94A24)
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x1E/0xE7F
+Empty access 0006F878 (4) (-10E94A24)
+--OP 0x212  Addr: 0x1103dc44   	| 0x26/0xE7F
+--OP 0x2AC  Addr: 0x1103deac   	| 0x3A/0xE7F
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0x44/0xE7F
+--OP 0x1CF  Addr: 0x1103db38   	| 0x4A/0xE7F
+Empty access 10F042AD (4) (11)
+Empty access 10F042EE (4) (52)
+Empty access 10F042EE (4) (52)
+Empty access 10F042AD (4) (11)
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0x54/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x2D7  Addr: 0x1103df58   	| 0x5A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x46A  Addr: 0x1103e5a4   	| 0x62/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+--OP 0x19C  Addr: 0x1103da6c   	| 0x67/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x169  Addr: 0x1103d9a0   	| 0x6D/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x282  Addr: 0x1103de04   	| 0x79/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x84/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x1D3  Addr: 0x1103db48   	| 0x8A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x287  Addr: 0x1103de18   	| 0x94/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x417  Addr: 0x1103e458   	| 0xA0/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x33C  Addr: 0x1103e0ec   	| 0xAE/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x276  Addr: 0x1103ddd4   	| 0xB6/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x3B2  Addr: 0x1103e2c4   	| 0xC0/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x2D7  Addr: 0x1103df58   	| 0xCA/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x1CF  Addr: 0x1103db38   	| 0xD2/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xDC/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x2FC  Addr: 0x1103dfec   	| 0xE2/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x376  Addr: 0x1103e1d4   	| 0xEC/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x0E  Addr: 0x1103d434   	| 0xFC/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x42E  Addr: 0x1103e4b4   	| 0x10A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0x110/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+--OP 0x29C  Addr: 0x1103de6c   	| 0x116/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x37E  Addr: 0x1103e1f4   	| 0x11A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x1DD  Addr: 0x1103db70   	| 0x128/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x361  Addr: 0x1103e180   	| 0x12E/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x198  Addr: 0x1103da5c   	| 0x138/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x9B  Addr: 0x1103d668   	| 0x14A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x0E  Addr: 0x1103d434   	| 0x158/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x42E  Addr: 0x1103e4b4   	| 0x166/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x349  Addr: 0x1103e120   	| 0x16C/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x29C  Addr: 0x1103de6c   	| 0x176/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x1DD  Addr: 0x1103db70   	| 0x17A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x239  Addr: 0x1103dce0   	| 0x180/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x37E  Addr: 0x1103e1f4   	| 0x18C/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x2C8  Addr: 0x1103df1c   	| 0x19A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0xDC  Addr: 0x1103d76c   	| 0x19E/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x1A4/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x507  Addr: 0x1103e818   	| 0x1B4/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x19C  Addr: 0x1103da6c   	| 0x1BA/0xE7F
+--OP 0x2FC  Addr: 0x1103dfec   	| 0x1C0/0xE7F
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x1CA/0xE7F
+--OP 0x378  Addr: 0x1103e1dc   	| 0x1DA/0xE7F
+--OP 0x42E  Addr: 0x1103e4b4   	| 0x1E8/0xE7F
+--OP 0x212  Addr: 0x1103dc44   	| 0x1EE/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x29C  Addr: 0x1103de6c   	| 0x202/0xE7F
+--OP 0x1DD  Addr: 0x1103db70   	| 0x206/0xE7F
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x20C/0xE7F
+--OP 0x3C  Addr: 0x1103d4ec   	| 0x218/0xE7F
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0x22E/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x2ED  Addr: 0x1103dfb0   	| 0x234/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x270  Addr: 0x1103ddbc   	| 0x242/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x336  Addr: 0x1103e0d4   	| 0x25C/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x190  Addr: 0x1103da3c   	| 0x269/0xE7F
+--OP 0x37E  Addr: 0x1103e1f4   	| 0x275/0xE7F
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x283/0xE7F
+--OP 0x2C1  Addr: 0x1103df00   	| 0x28F/0xE7F
+--OP 0x28B  Addr: 0x1103de28   	| 0x2A1/0xE7F
+--OP 0x7C  Addr: 0x1103d5ec   	| 0x2AB/0xE7F
+--OP 0x212  Addr: 0x1103dc44   	| 0x2BB/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x270  Addr: 0x1103ddbc   	| 0x2CF/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x98  Addr: 0x1103d65c   	| 0x2E9/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Route 30B
+--OP 0x51  Addr: 0x1103d540   	| 0x30B/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x2ED  Addr: 0x1103dfb0   	| 0x30D/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x270  Addr: 0x1103ddbc   	| 0x31B/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x174  Addr: 0x1103d9cc   	| 0x335/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x342/0xE7F
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x348/0xE7F
+--OP 0x2C0  Addr: 0x1103defc   	| 0x354/0xE7F
+--OP 0x187  Addr: 0x1103da18   	| 0x35D/0xE7F
+--OP 0x3F8  Addr: 0x1103e3dc   	| 0x369/0xE7F
+--OP 0x1D3  Addr: 0x1103db48   	| 0x37B/0xE7F
+--OP 0x480  Addr: 0x1103e5fc   	| 0x385/0xE7F
+--OP 0x19C  Addr: 0x1103da6c   	| 0x389/0xE7F
+--OP 0x17E  Addr: 0x1103d9f4   	| 0x38F/0xE7F
+--OP 0x1A4  Addr: 0x1103da8c   	| 0x39B/0xE7F
+--OP 0xB5  Addr: 0x1103d6d0   	| 0x3AB/0xE7F
+--OP 0x49A  Addr: 0x1103e664   	| 0x3B6/0xE7F
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x3C0/0xE7F
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x3C6/0xE7F
+--OP 0x3C  Addr: 0x1103d4ec   	| 0x3D2/0xE7F
+--OP 0x1CF  Addr: 0x1103db38   	| 0x3E8/0xE7F
+--OP 0x420  Addr: 0x1103e47c   	| 0x3F2/0xE7F
+--OP 0x1AC  Addr: 0x1103daac   	| 0x3FC/0xE7F
+--OP 0x29B  Addr: 0x1103de68   	| 0x406/0xE7F
+--OP 0x212  Addr: 0x1103dc44   	| 0x412/0xE7F
+--OP 0x29B  Addr: 0x1103de68   	| 0x426/0xE7F
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x432/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x361  Addr: 0x1103e180   	| 0x43A/0xE7F
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x444/0xE7F
+--OP 0x17E  Addr: 0x1103d9f4   	| 0x44A/0xE7F
+--OP 0x198  Addr: 0x1103da5c   	| 0x456/0xE7F
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x468/0xE7F
+--OP 0x1E6  Addr: 0x1103db94   	| 0x470/0xE7F
+--OP 0x188  Addr: 0x1103da1c   	| 0x47E/0xE7F
+--OP 0x0E  Addr: 0x1103d434   	| 0x486/0xE7F
+--OP 0x212  Addr: 0x1103dc44   	| 0x494/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x270  Addr: 0x1103ddbc   	| 0x4A8/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x3F7  Addr: 0x1103e3d8   	| 0x4C2/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Route 5C4
+--OP 0x51  Addr: 0x1103d540   	| 0x5C4/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x198  Addr: 0x1103da5c   	| 0x5C6/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x376  Addr: 0x1103e1d4   	| 0x5D8/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x1DD  Addr: 0x1103db70   	| 0x5E8/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x190  Addr: 0x1103da3c   	| 0x5EE/0xE7F
+--OP 0x37E  Addr: 0x1103e1f4   	| 0x5FA/0xE7F
+--OP 0x4B  Addr: 0x1103d528   	| 0x608/0xE7F
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x616/0xE7F
+--OP 0x19C  Addr: 0x1103da6c   	| 0x61E/0xE7F
+--OP 0xDC  Addr: 0x1103d76c   	| 0x624/0xE7F
+--OP 0x376  Addr: 0x1103e1d4   	| 0x62A/0xE7F
+--OP 0x2C1  Addr: 0x1103df00   	| 0x63A/0xE7F
+--OP 0x42E  Addr: 0x1103e4b4   	| 0x64C/0xE7F
+--OP 0x1CF  Addr: 0x1103db38   	| 0x652/0xE7F
+--OP 0x29C  Addr: 0x1103de6c   	| 0x65C/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x2FC  Addr: 0x1103dfec   	| 0x660/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x376  Addr: 0x1103e1d4   	| 0x66A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x4C8  Addr: 0x1103e71c   	| 0x67A/0xE7F
+Empty access 11043A62 (4) (13F7C6)
+Empty access 11043A62 (4) (13F7C6)
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x3A6  Addr: 0x1103e294   	| 0x68A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x690/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x349  Addr: 0x1103e120   	| 0x6A0/0xE7F
+Empty access 10EFC999 (4) (-7903)
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x6AA/0xE7F
+--OP 0xAF  Addr: 0x1103d6b8   	| 0x6B0/0xE7F
+--OP 0x471  Addr: 0x1103e5c0   	| 0x6BC/0xE7F
+--OP 0x212  Addr: 0x1103dc44   	| 0x6C4/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x188  Addr: 0x1103da1c   	| 0x6D8/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x6E0/0xE7F
+--OP 0x17E  Addr: 0x1103d9f4   	| 0x6E6/0xE7F
+--OP 0x223  Addr: 0x1103dc88   	| 0x6F2/0xE7F
+--OP 0x2C0  Addr: 0x1103defc   	| 0x6FD/0xE7F
+--OP 0x2C0  Addr: 0x1103defc   	| 0x706/0xE7F
+--OP 0x376  Addr: 0x1103e1d4   	| 0x70F/0xE7F
+--OP 0x40C  Addr: 0x1103e42c   	| 0x71F/0xE7F
+--OP 0x263  Addr: 0x1103dd88   	| 0x72D/0xE7F
+--OP 0x29B  Addr: 0x1103de68   	| 0x739/0xE7F
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x745/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x190  Addr: 0x1103da3c   	| 0x74D/0xE7F
+--OP 0x1DD  Addr: 0x1103db70   	| 0x759/0xE7F
+--OP 0x1DD  Addr: 0x1103db70   	| 0x75F/0xE7F
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x765/0xE7F
+--OP 0xA3  Addr: 0x1103d688   	| 0x771/0xE7F
+--OP 0x376  Addr: 0x1103e1d4   	| 0x778/0xE7F
+--OP 0x266  Addr: 0x1103dd94   	| 0x788/0xE7F
+--OP 0x1E6  Addr: 0x1103db94   	| 0x792/0xE7F
+--OP 0x219  Addr: 0x1103dc60   	| 0x7A0/0xE7F
+--OP 0x212  Addr: 0x1103dc44   	| 0x7AC/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x213  Addr: 0x1103dc48   	| 0x7C0/0xE7F
+--OP 0x1DD  Addr: 0x1103db70   	| 0x7C8/0xE7F
+--OP 0xAF  Addr: 0x1103d6b8   	| 0x7CE/0xE7F
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x7DA/0xE7F
+--OP 0x4EA  Addr: 0x1103e7a4   	| 0x7EA/0xE7F
+--OP 0x378  Addr: 0x1103e1dc   	| 0x7F2/0xE7F
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x800/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x14  Addr: 0x1103d44c   	| 0x808/0xE7F
+Empty access 9751AA4D (4) (866167B1)
+--OP 0x2A2  Addr: 0x1103de84   	| 0x812/0xE7F
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0x81C/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x361  Addr: 0x1103e180   	| 0x822/0xE7F
+--OP 0x17E  Addr: 0x1103d9f4   	| 0x82C/0xE7F
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x838/0xE7F
+--OP 0x14C  Addr: 0x1103d92c   	| 0x848/0xE7F
+--OP 0x0E  Addr: 0x1103d434   	| 0x850/0xE7F
+--OP 0x1CF  Addr: 0x1103db38   	| 0x85E/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x868/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x41B  Addr: 0x1103e468   	| 0x874/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x270  Addr: 0x1103ddbc   	| 0x880/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0xCF  Addr: 0x1103d738   	| 0x89A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x19C  Addr: 0x1103da6c   	| 0x8A7/0xE7F
+--OP 0x17E  Addr: 0x1103d9f4   	| 0x8AD/0xE7F
+--OP 0x414  Addr: 0x1103e44c   	| 0x8B9/0xE7F
+--OP 0x266  Addr: 0x1103dd94   	| 0x8CB/0xE7F
+--OP 0x223  Addr: 0x1103dc88   	| 0x8D5/0xE7F
+--OP 0x1AC  Addr: 0x1103daac   	| 0x8E0/0xE7F
+--OP 0x53  Addr: 0x1103d548   	| 0x8EA/0xE7F
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x8F2/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x4EA  Addr: 0x1103e7a4   	| 0x8FA/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x902/0xE7F
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x908/0xE7F
+--OP 0x3E6  Addr: 0x1103e394   	| 0x914/0xE7F
+--OP 0x2AC  Addr: 0x1103deac   	| 0x920/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x454  Addr: 0x1103e54c   	| 0x92A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x936/0xE7F
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x93C/0xE7F
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x942/0xE7F
+--OP 0xAF  Addr: 0x1103d6b8   	| 0x94E/0xE7F
+--OP 0x454  Addr: 0x1103e54c   	| 0x95A/0xE7F
+--OP 0x1CF  Addr: 0x1103db38   	| 0x966/0xE7F
+--OP 0x2FC  Addr: 0x1103dfec   	| 0x970/0xE7F
+--OP 0x376  Addr: 0x1103e1d4   	| 0x97A/0xE7F
+--OP 0x235  Addr: 0x1103dcd0   	| 0x98A/0xE7F
+--OP 0x349  Addr: 0x1103e120   	| 0x992/0xE7F
+--OP 0x9B  Addr: 0x1103d668   	| 0x99C/0xE7F
+--OP 0x29C  Addr: 0x1103de6c   	| 0x9AA/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x378  Addr: 0x1103e1dc   	| 0x9AE/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x29C  Addr: 0x1103de6c   	| 0x9BC/0xE7F
+--OP 0x1DD  Addr: 0x1103db70   	| 0x9C0/0xE7F
+--OP 0x198  Addr: 0x1103da5c   	| 0x9C6/0xE7F
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x9D8/0xE7F
+--OP 0x9B  Addr: 0x1103d668   	| 0x9E8/0xE7F
+--OP 0x13F  Addr: 0x1103d8f8   	| 0x9F6/0xE7F
+--OP 0x32B  Addr: 0x1103e0a8   	| 0x9FC/0xE7F
+--OP 0x21E  Addr: 0x1103dc74   	| 0xA0C/0xE7F
+--OP 0x212  Addr: 0x1103dc44   	| 0xA18/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x29C  Addr: 0x1103de6c   	| 0xA2C/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x270  Addr: 0x1103ddbc   	| 0xA30/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x51  Addr: 0x1103d540   	| 0xA4A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x349  Addr: 0x1103e120   	| 0xA4C/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x239  Addr: 0x1103dce0   	| 0xA56/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x1DD  Addr: 0x1103db70   	| 0xA62/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x2FC  Addr: 0x1103dfec   	| 0xA68/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x2C1  Addr: 0x1103df00   	| 0xA72/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x9B  Addr: 0x1103d668   	| 0xA84/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x42E  Addr: 0x1103e4b4   	| 0xA92/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xA98/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x29C  Addr: 0x1103de6c   	| 0xA9E/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x14  Addr: 0x1103d44c   	| 0xAA2/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xAAC/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x361  Addr: 0x1103e180   	| 0xAB2/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x3A6  Addr: 0x1103e294   	| 0xABC/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x9B  Addr: 0x1103d668   	| 0xAC2/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x1AC  Addr: 0x1103daac   	| 0xAD0/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x42E  Addr: 0x1103e4b4   	| 0xADA/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x212  Addr: 0x1103dc44   	| 0xAE0/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x29C  Addr: 0x1103de6c   	| 0xAF4/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+--OP 0x14  Addr: 0x1103d44c   	| 0xAF8/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x33C  Addr: 0x1103e0ec   	| 0xB02/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+--OP 0x361  Addr: 0x1103e180   	| 0xB0A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x305  Addr: 0x1103e010   	| 0xB14/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x1E6  Addr: 0x1103db94   	| 0xB1E/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x1E6  Addr: 0x1103db94   	| 0xB2C/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x42E  Addr: 0x1103e4b4   	| 0xB3A/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xB40/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+--OP 0x29C  Addr: 0x1103de6c   	| 0xB46/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+Empty access 0006F8B8 (4) (-10E949E4)
+--OP 0x190  Addr: 0x1103da3c   	| 0xB4A/0xE7F
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+--OP 0x198  Addr: 0x1103da5c   	| 0xB56/0xE7F
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+--OP 0x213  Addr: 0x1103dc48   	| 0xB68/0xE7F
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x19C  Addr: 0x1103da6c   	| 0xB70/0xE7F
+Empty access 0006F8AC (4) (-10E949F0)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xB76/0xE7F
+--OP 0x361  Addr: 0x1103e180   	| 0xB7C/0xE7F
+--OP 0x276  Addr: 0x1103ddd4   	| 0xB86/0xE7F
+--OP 0x361  Addr: 0x1103e180   	| 0xB90/0xE7F
+--OP 0x361  Addr: 0x1103e180   	| 0xB9A/0xE7F
+--OP 0x361  Addr: 0x1103e180   	| 0xBA4/0xE7F
+Empty access 0006F878 (4) (-10E94A24)
+--OP 0x19C  Addr: 0x1103da6c   	| 0xBAE/0xE7F
+Empty access 0006F874 (4) (-10E94A28)
+Empty access 0006F878 (4) (-10E94A24)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xBB4/0xE7F
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+Empty access 0006F878 (4) (-10E94A24)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xBBA/0xE7F
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+Empty access 0006F878 (4) (-10E94A24)
+--OP 0x361  Addr: 0x1103e180   	| 0xBC0/0xE7F
+Empty access 0006F868 (4) (-10E94A34)
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x270  Addr: 0x1103ddbc   	| 0xBCA/0xE7F
+Empty access 0006F868 (4) (-10E94A34)
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x4F2  Addr: 0x1103e7c4   	| 0xBE4/0xE7F
+Empty access 0006F868 (4) (-10E94A34)
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x372  Addr: 0x1103e1c4   	| 0xBE6/0xE7F
+Empty access 0006F868 (4) (-10E94A34)
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+Route 4E4
+--OP 0x51  Addr: 0x1103d540   	| 0x4E4/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x239  Addr: 0x1103dce0   	| 0x4E6/0xE7F
+--OP 0x37E  Addr: 0x1103e1f4   	| 0x4F2/0xE7F
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x500/0xE7F
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x506/0xE7F
+--OP 0xDC  Addr: 0x1103d76c   	| 0x512/0xE7F
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x518/0xE7F
+--OP 0x235  Addr: 0x1103dcd0   	| 0x528/0xE7F
+--OP 0x507  Addr: 0x1103e818   	| 0x530/0xE7F
+--OP 0x19C  Addr: 0x1103da6c   	| 0x536/0xE7F
+--OP 0x305  Addr: 0x1103e010   	| 0x53C/0xE7F
+--OP 0x9B  Addr: 0x1103d668   	| 0x546/0xE7F
+--OP 0x9B  Addr: 0x1103d668   	| 0x554/0xE7F
+--OP 0x42E  Addr: 0x1103e4b4   	| 0x562/0xE7F
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0x568/0xE7F
+--OP 0x29C  Addr: 0x1103de6c   	| 0x56E/0xE7F
+--OP 0x14  Addr: 0x1103d44c   	| 0x572/0xE7F
+--OP 0x507  Addr: 0x1103e818   	| 0x57C/0xE7F
+--OP 0x1E6  Addr: 0x1103db94   	| 0x582/0xE7F
+--OP 0x29C  Addr: 0x1103de6c   	| 0x590/0xE7F
+--OP 0x2C1  Addr: 0x1103df00   	| 0x594/0xE7F
+--OP 0x29C  Addr: 0x1103de6c   	| 0x5A6/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+--OP 0x270  Addr: 0x1103ddbc   	| 0x5AA/0xE7F
+Empty access 0006F8A8 (4) (-10E949F4)
+Already parsed, BREAK!
+Route 5C4
+Already parsed, BREAK!
+Route A4A
+Already parsed, BREAK!
+Route BF0
+--OP 0x444  Addr: 0x1103e50c   	| 0xBF0/0xE7F
+Empty access 0006F868 (4) (-10E94A34)
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x51  Addr: 0x1103d540   	| 0xBF4/0xE7F
+Empty access 0006F868 (4) (-10E94A34)
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x2AC  Addr: 0x1103deac   	| 0xBF6/0xE7F
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xC00/0xE7F
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x212  Addr: 0x1103dc44   	| 0xC06/0xE7F
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x1CF  Addr: 0x1103db38   	| 0xC1A/0xE7F
+--OP 0x212  Addr: 0x1103dc44   	| 0xC24/0xE7F
+--OP 0x33C  Addr: 0x1103e0ec   	| 0xC38/0xE7F
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xC40/0xE7F
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xC46/0xE7F
+--OP 0x2D7  Addr: 0x1103df58   	| 0xC4C/0xE7F
+--OP 0x46A  Addr: 0x1103e5a4   	| 0xC54/0xE7F
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x305  Addr: 0x1103e010   	| 0xC59/0xE7F
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x376  Addr: 0x1103e1d4   	| 0xC63/0xE7F
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x349  Addr: 0x1103e120   	| 0xC73/0xE7F
+Empty access FF6F0008 (4) (EE7EBD6C)
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x1AC  Addr: 0x1103daac   	| 0xC7D/0xE7F
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x29C  Addr: 0x1103de6c   	| 0xC87/0xE7F
+Empty access 0006F8AC (4) (-10E949F0)
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+Empty access 0006F8B8 (4) (-10E949E4)
+Empty access 0006F8BC (4) (-10E949E0)
+--OP 0x239  Addr: 0x1103dce0   	| 0xC8B/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+Empty access 0006F8B8 (4) (-10E949E4)
+--OP 0x198  Addr: 0x1103da5c   	| 0xC97/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+Empty access 0006F8B8 (4) (-10E949E4)
+--OP 0x361  Addr: 0x1103e180   	| 0xCA9/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+--OP 0x2C1  Addr: 0x1103df00   	| 0xCB3/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xCC5/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0xAF  Addr: 0x1103d6b8   	| 0xCCB/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x429  Addr: 0x1103e4a0   	| 0xCD7/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x19C  Addr: 0x1103da6c   	| 0xCDB/0xE7F
+--OP 0x19C  Addr: 0x1103da6c   	| 0xCE1/0xE7F
+--OP 0x19C  Addr: 0x1103da6c   	| 0xCE7/0xE7F
+--OP 0x276  Addr: 0x1103ddd4   	| 0xCED/0xE7F
+--OP 0x361  Addr: 0x1103e180   	| 0xCF7/0xE7F
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xD01/0xE7F
+--OP 0x361  Addr: 0x1103e180   	| 0xD07/0xE7F
+--OP 0x19C  Addr: 0x1103da6c   	| 0xD11/0xE7F
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xD17/0xE7F
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xD1D/0xE7F
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x19C  Addr: 0x1103da6c   	| 0xD23/0xE7F
+Empty access 0006F868 (4) (-10E94A34)
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x270  Addr: 0x1103ddbc   	| 0xD29/0xE7F
+Empty access 0006F868 (4) (-10E94A34)
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x4F2  Addr: 0x1103e7c4   	| 0xD43/0xE7F
+Empty access 0006F868 (4) (-10E94A34)
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x2E4  Addr: 0x1103df8c   	| 0xD45/0xE7F
+Empty access 0006F868 (4) (-10E94A34)
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+Route D4F
+--OP 0x444  Addr: 0x1103e50c   	| 0xD4F/0xE7F
+Empty access 0006F868 (4) (-10E94A34)
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x51  Addr: 0x1103d540   	| 0xD53/0xE7F
+Empty access 0006F868 (4) (-10E94A34)
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xD55/0xE7F
+Empty access 0006F86C (4) (-10E94A30)
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xD5B/0xE7F
+Empty access 0006F870 (4) (-10E94A2C)
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x212  Addr: 0x1103dc44   	| 0xD61/0xE7F
+Empty access 0006F874 (4) (-10E94A28)
+--OP 0x2AC  Addr: 0x1103deac   	| 0xD75/0xE7F
+--OP 0x2AC  Addr: 0x1103deac   	| 0xD7F/0xE7F
+--OP 0x212  Addr: 0x1103dc44   	| 0xD89/0xE7F
+--OP 0x212  Addr: 0x1103dc44   	| 0xD9D/0xE7F
+--OP 0x33C  Addr: 0x1103e0ec   	| 0xDB1/0xE7F
+--OP 0x446  Addr: 0x1103e514   	| 0xDB9/0xE7F
+--OP 0x46A  Addr: 0x1103e5a4   	| 0xDBF/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x3A6  Addr: 0x1103e294   	| 0xDC4/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0xDCA/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x39E  Addr: 0x1103e274   	| 0xDDA/0xE7F
+Empty access FF6EFFDD (1) (EE7EBD41)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x2FC  Addr: 0x1103dfec   	| 0xDE0/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0xDEA/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x39E  Addr: 0x1103e274   	| 0xDFA/0xE7F
+Empty access FF6EFFAD (1) (EE7EBD11)
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x1AC  Addr: 0x1103daac   	| 0xE00/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+--OP 0x29C  Addr: 0x1103de6c   	| 0xE0A/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+Empty access 0006F8B8 (4) (-10E949E4)
+Empty access 0006F8BC (4) (-10E949E0)
+Empty access 0006F8C0 (4) (-10E949DC)
+--OP 0x454  Addr: 0x1103e54c   	| 0xE0E/0xE7F
+Empty access 0006F8B0 (4) (-10E949EC)
+Empty access 0006F8B4 (4) (-10E949E8)
+Empty access 0006F8B8 (4) (-10E949E4)
+Empty access 0006F8BC (4) (-10E949E0)
+Empty access 0006F8C0 (4) (-10E949DC)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xE1A/0xE7F
+Empty access 0006F8B4 (4) (-10E949E8)
+Empty access 0006F8B8 (4) (-10E949E4)
+Empty access 0006F8BC (4) (-10E949E0)
+--OP 0x276  Addr: 0x1103ddd4   	| 0xE20/0xE7F
+Empty access 0006F8B4 (4) (-10E949E8)
+Empty access 0006F8B8 (4) (-10E949E4)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xE2A/0xE7F
+Empty access 0006F8B4 (4) (-10E949E8)
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xE30/0xE7F
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xE36/0xE7F
+--OP 0x19C  Addr: 0x1103da6c   	| 0xE3C/0xE7F
+--OP 0x361  Addr: 0x1103e180   	| 0xE42/0xE7F
+--OP 0x19C  Addr: 0x1103da6c   	| 0xE4C/0xE7F
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xE52/0xE7F
+--OP 0x270  Addr: 0x1103ddbc   	| 0xE58/0xE7F
+--OP 0x4F2  Addr: 0x1103e7c4   	| 0xE72/0xE7F
+--OP 0x38E  Addr: 0x1103e234   	| 0xE74/0xE7F
+Empty access 0006F8B4 (4) (-10E949E8)
+Empty access 0006F8B8 (4) (-10E949E4)
+Empty access 0006F8BC (4) (-10E949E0)
+Empty access 0006F8C0 (4) (-10E949DC)
+
+
+#################################################
+
+
+--OP 0x257  Addr: 0x1103dd58   	| 0x00/0xE7F    00004404
+NOP 
+;next = 444
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F87C VMESP 0)
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f8a0
+
+--OP 0x444  Addr: 0x1103e50c   	| 0x04/0xE7F    3d005100
+VMR[0x3D] = 6F87C  <-- real ESP
+;next = 51
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F87C VMESP 6F87C)
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f8a0
+
+--OP 0x51  Addr: 0x1103d540   	| 0x08/0xE7F    cf013d00
+INIT REGZ 
+;next = 1CF
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F87C VMESP 6F87C)
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f8a0
+
+--OP 0x1CF  Addr: 0x1103db38   	| 0x0A/0xE7F    3d00cf01
+VMR[7A] <=> VMR[41] (00 <=> 00)   (VMR[7A] = 00  VMR[41] = 00)
+VMR[90] = POP( FF8F0000 )
+VMR[3D] += 04 (6F87C += 04) (6F880)
+;next = 1CF
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0xff8f0000
+stack: (6F880 VMESP 6F880)
+0xff7f0000
+0xff6f0000
+0x6f8a0
+0xff4f0000
+
+--OP 0x1CF  Addr: 0x1103db38   	| 0x14/0xE7F    3d003c03
+VMR[28] <=> VMR[28] (00 <=> 00)   (VMR[28] = 00  VMR[28] = 00)
+VMR[28] = POP( FF7F0000 )
+VMR[3D] += 04 (6F880 += 04) (6F884)
+;next = 33C
+stack (esp -0x10):
+0x0
+0x0
+0xff8f0000
+0xff7f0000
+stack: (6F884 VMESP 6F884)
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x1E/0xE7F    55ff2800
+VMR[82] = POP( FF6F0000 )
+VMR[3D] += 04 (6F884 += 04) (6F888)
+;next = 212
+stack (esp -0x10):
+0x0
+0xff8f0000
+0xff7f0000
+0xff6f0000
+stack: (6F888 VMESP 6F888)
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+
+--OP 0x212  Addr: 0x1103dc44   	| 0x26/0xE7F    3d0038fd
+VMR[41] = POP( 6F8A0 )
+VMR[3D] += 04 (6F888 += 04) (6F88C)
+;next = 2AC
+stack (esp -0x10):
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f8a0
+stack: (6F88C VMESP 6F88C)
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+
+--OP 0x2AC  Addr: 0x1103deac   	| 0x3A/0xE7F    28004100
+VMR[28] <=> VMR[41] (FF7F0000 <=> 6F8A0)   (VMR[28] = 6F8A0  VMR[41] = FF7F0000)
+VMR[28] = POP( FF4F0000 )
+VMR[3D] += 04 (6F88C += 04) (6F890)
+;next = 4F5
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f8a0
+0xff4f0000
+stack: (6F890 VMESP 6F890)
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0x44/0xE7F    8553423e
+VMR[7A] = POP( FF3F0000 )
+VMR[3D] += 04 (6F890 += 04) (6F894)
+;next = 1CF
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0x257
+
+--OP 0x1CF  Addr: 0x1103db38   	| 0x4A/0xE7F    3d00f504
+VMR[11] <=> VMR[52] (00 <=> 00)   (VMR[11] = 00  VMR[52] = 00)
+VMR[11] = POP( FF2F0000 )
+VMR[3D] += 04 (6F894 += 04) (6F898)
+;next = 4F5
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xff1f0000
+0xff0f0000
+0x257
+0x12345678
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0x54/0xE7F    71097aa3
+VMR[52] = POP( FF1F0000 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 2D7
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+stack: (6F89C VMESP 6F89C)
+0xff0f0000
+0x257
+0x12345678
+0x0
+
+--OP 0x2D7  Addr: 0x1103df58   	| 0x5A/0xE7F    39287500
+VMR[75] = POP( FF0F0000 )
+VMR[3D] += 04 (6F89C += 04) (6F8A0)
+;next = 46A
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0x257
+0x12345678
+0x0
+0x0
+
+--OP 0x46A  Addr: 0x1103e5a4   	| 0x62/0xE7F    ce58083d
+VMR[3D] += 08 (6F8A0 += 08) (6F8A8)
+#esp += 0x08
+;next = 19C
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x257
+0x12345678
+stack: (6F8A8 VMESP 6F8A8)
+0x0
+0x0
+0x0
+0x0
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0x67/0xE7F    7314940a
+#push VMR[82] (FF6F0000)
+VMR[3D] -= 4
+;next = 169
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0x257
+stack: (6F8A4 VMESP 6F8A4)
+0xff6f0000
+0x0
+0x0
+0x0
+
+--OP 0x169  Addr: 0x1103d9a0   	| 0x6D/0xE7F    90007500
+VMR[90] <=> VMR[52] (FF8F0000 <=> FF1F0000)   (VMR[90] = FF1F0000  VMR[52] = FF8F0000)
+VMR[75] =  TEST  VMR[28] & VMR[52] (FF4F0000 & FF8F0000) (FF0F0000)
+;next = 282
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0x257
+stack: (6F8A4 VMESP 6F8A4)
+0xff6f0000
+0x0
+0x0
+0x0
+
+--OP 0x282  Addr: 0x1103de04   	| 0x79/0xE7F    75009f7a
+VMR[7A] <=> VMR[41] (FF3F0000 <=> FF7F0000)   (VMR[7A] = FF7F0000  VMR[41] = FF3F0000)
+VMR[82] >>= 05 (FF6F0000 >>= 05) (7FB7800)
+VMR[75] = eflags
+;next = 1A0
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0x257
+stack: (6F8A4 VMESP 6F8A4)
+0xff6f0000
+0x0
+0x0
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x84/0xE7F    8ad23942
+#push VMR[82] (7FB7800)
+VMR[3D] -= 4
+;next = 1D3
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0x7fb7800
+0xff6f0000
+0x0
+0x0
+
+--OP 0x1D3  Addr: 0x1103db48   	| 0x8A/0xE7F    6e9d2656
+VMR[82] &= 26  (7FB7800 &= 26) (00)
+VMR[75] = eflags
+;next = 287
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0x7fb7800
+0xff6f0000
+0x0
+0x0
+
+--OP 0x287  Addr: 0x1103de18   	| 0x94/0xE7F    d91c7500
+VMR[75] = EFLAGS AND TEST VMR[7A](FF7F0000), VMR[41](FF3F0000) (FF3F0000)
+;next = 417
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0x7fb7800
+0xff6f0000
+0x0
+0x0
+
+--OP 0x417  Addr: 0x1103e458   	| 0xA0/0xE7F    f074b63b
+VMR[75] = EFLAGS AND TEST VMR[11](FF2F0000), 5276A917 (52260000)
+;next = 33C
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0x7fb7800
+0xff6f0000
+0x0
+0x0
+
+--OP 0x33C  Addr: 0x1103e0ec   	| 0xAE/0xE7F    bf9d1100
+VMR[82] = POP( 7FB7800 )
+VMR[3D] += 04 (6F8A0 += 04) (6F8A4)
+;next = 276
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0x7fb7800
+stack: (6F8A4 VMESP 6F8A4)
+0xff6f0000
+0x0
+0x0
+0x0
+
+--OP 0x276  Addr: 0x1103ddd4   	| 0xB6/0xE7F    edde7500
+#push VMR[75] (FF0F0000)
+VMR[3D] -= 4 (=6F8A0)
+;next = 3B2
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0xff0f0000
+0xff6f0000
+0x0
+0x0
+
+--OP 0x3B2  Addr: 0x1103e2c4   	| 0xC0/0xE7F    7ccaa468
+VMR[82] |= VMR[90] (7FB7800 |= FF1F0000) (FFFF7800)
+;next = 2D7
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0xff0f0000
+0xff6f0000
+0x0
+0x0
+
+--OP 0x2D7  Addr: 0x1103df58   	| 0xCA/0xE7F    0b017500
+VMR[75] = POP( FF0F0000 )
+VMR[3D] += 04 (6F8A0 += 04) (6F8A4)
+;next = 1CF
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0xff0f0000
+stack: (6F8A4 VMESP 6F8A4)
+0xff6f0000
+0x0
+0x0
+0x0
+
+--OP 0x1CF  Addr: 0x1103db38   	| 0xD2/0xE7F    3d00a001
+VMR[41] <=> VMR[28] (FF3F0000 <=> FF4F0000)   (VMR[41] = FF4F0000  VMR[28] = FF3F0000)
+VMR[82] = POP( FF6F0000 )
+VMR[3D] += 04 (6F8A4 += 04) (6F8A8)
+;next = 1A0
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0xff0f0000
+0xff6f0000
+stack: (6F8A8 VMESP 6F8A8)
+0x0
+0x0
+0x0
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xDC/0xE7F    d6006243
+#push VMR[41] (FF4F0000)
+VMR[3D] -= 4
+;next = 2FC
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0xff0f0000
+stack: (6F8A4 VMESP 6F8A4)
+0xff4f0000
+0x0
+0x0
+0x0
+
+--OP 0x2FC  Addr: 0x1103dfec   	| 0xE2/0xE7F    75003cf8
+VMR[41] = VMR[3D] (6F8A4)
+;next = 376
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0xff0f0000
+stack: (6F8A4 VMESP 6F8A4)
+0xff4f0000
+0x0
+0x0
+0x0
+
+--OP 0x376  Addr: 0x1103e1d4   	| 0xEC/0xE7F    7c0d9179
+VMR[41] += 04 (6F8A4 += 04) (6F8A8)
+;next = 0E
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0xff0f0000
+stack: (6F8A4 VMESP 6F8A4)
+0xff4f0000
+0x0
+0x0
+0x0
+
+--OP 0x0E  Addr: 0x1103d434   	| 0xFC/0xE7F    2800885a
+VMR[28] <=> VMR[11] (FF3F0000 <=> FF2F0000)   (VMR[28] = FF2F0000  VMR[11] = FF3F0000)
+VMR[41] -= 04
+VMR[75] = eflags
+;next = 42E
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0xff0f0000
+stack: (6F8A4 VMESP 6F8A4)
+0xff4f0000
+0x0
+0x0
+0x0
+
+--OP 0x42E  Addr: 0x1103e4b4   	| 0x10A/0xE7F    bbad0593
+[VMR[3D]] <=> VMR[41] ([6F8A4](FF4F0000) <=> 6F8A4)  ([6F8A4] = 6F8A4  VMR[41] = FF4F0000)
+;next = 4F5
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0xff0f0000
+stack: (6F8A4 VMESP 6F8A4)
+0x6f8a4
+0x0
+0x0
+0x0
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0x110/0xE7F    6d1b694e
+VMR[3D] = POP( 6F8A4 )
+;next = 29C
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0xff0f0000
+0x6f8a4
+stack: (6F8A8 VMESP 6F8A4)
+0x0
+0x0
+0x0
+0x0
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0x116/0xE7F    3d00cf0a
+#esp = VMR[3D] (6F8A4)
+;next = 37E
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0xff0f0000
+stack: (6F8A4 VMESP 6F8A4)
+0x6f8a4
+0x0
+0x0
+0x0
+
+--OP 0x37E  Addr: 0x1103e1f4   	| 0x11A/0xE7F    734fcf0a
+[ VMR[3D] ] = VMR[7A]
+[ 6F8A4 ] = FF7F0000
+;next = 1DD
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0xff0f0000
+stack: (6F8A4 VMESP 6F8A4)
+0xff7f0000
+0x0
+0x0
+0x0
+
+--OP 0x1DD  Addr: 0x1103db70   	| 0x128/0xE7F    87aaf3ee
+[ VMR[3D] ] = VMR[41]
+[ 6F8A4 ] = FF4F0000
+;next = 361
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0xff0f0000
+stack: (6F8A4 VMESP 6F8A4)
+0xff4f0000
+0x0
+0x0
+0x0
+
+--OP 0x361  Addr: 0x1103e180   	| 0x12E/0xE7F    27f07500
+#push VMR[90] (FF1F0000)
+VMR[3D] -= 4   (6F8A0)
+;next = 198
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0xff1f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x198  Addr: 0x1103da5c   	| 0x138/0xE7F    5200d1ec
+VMR[52] <=> VMR[28] (FF8F0000 <=> FF2F0000)   (VMR[52] = FF2F0000  VMR[28] = FF8F0000)
+VMR[90] = VMR[3D] (6F8A0)
+;next = 9B
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0xff1f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x9B  Addr: 0x1103d668   	| 0x14A/0xE7F    75b8ef54
+VMR[7A] <=> VMR[28] (FF7F0000 <=> FF8F0000)   (VMR[7A] = FF8F0000  VMR[28] = FF7F0000)
+VMR[90] += 04 (6F8A0 += 04) (6F8A4)
+VMR[75] = eflags
+;next = 0E
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0xff1f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x0E  Addr: 0x1103d434   	| 0x158/0xE7F    5200aa99
+VMR[52] <=> VMR[7A] (FF2F0000 <=> FF8F0000)   (VMR[52] = FF8F0000  VMR[7A] = FF2F0000)
+VMR[90] -= 04
+VMR[75] = eflags
+;next = 42E
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0xff1f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x42E  Addr: 0x1103e4b4   	| 0x166/0xE7F    6eb70034
+[VMR[3D]] <=> VMR[90] ([6F8A0](FF1F0000) <=> 6F8A0)  ([6F8A0] = 6F8A0  VMR[90] = FF1F0000)
+;next = 349
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0x6f8a0
+0xff4f0000
+0x0
+0x0
+
+--OP 0x349  Addr: 0x1103e120   	| 0x16C/0xE7F    09885956
+VMR[3D] = [ VMR[3D] ]   ([6F8A0]) (6F8A0)
+;next = 29C
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0x6f8a0
+0xff4f0000
+0x0
+0x0
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0x176/0xE7F    3d000c61
+#esp = VMR[3D] (6F8A0)
+;next = 1DD
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0x6f8a0
+0xff4f0000
+0x0
+0x0
+
+--OP 0x1DD  Addr: 0x1103db70   	| 0x17A/0xE7F    f36fcbed
+[ VMR[3D] ] = VMR[90]
+[ 6F8A0 ] = FF1F0000
+;next = 239
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F8A0 VMESP 6F8A0)
+0xff1f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x239  Addr: 0x1103dce0   	| 0x180/0xE7F    fcd13d00
+#push 71AE
+VMR[3D] -= 4 (6F89C)
+;next = 37E
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+stack: (6F89C VMESP 6F89C)
+0x71ae
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x37E  Addr: 0x1103e1f4   	| 0x18C/0xE7F    b1a6f304
+[ VMR[3D] ] = VMR[82]
+[ 6F89C ] = FF6F0000
+;next = 2C8
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x2C8  Addr: 0x1103df1c   	| 0x19A/0xE7F    82005993
+VMR[82] = VMR[31] (FCB2A014)
+;next = DC
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0xDC  Addr: 0x1103d76c   	| 0x19E/0xE7F    9d140aff
+VMR[00] = VMR[82] (FCB2A014)
+;next = 3B4
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x1A4/0xE7F    1b342b03
+VMR[00] += 143D370D (FCB2A014 += 143D370D) (10EFD721)
+;next = 507
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x507  Addr: 0x1103e818   	| 0x1B4/0xE7F    0bd238f2
+VMR[90] = [ VMR[00] ]
+VMR[90] = [ 10EFD721 ] ( B89B674E )
+;next = 19C
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0x1BA/0xE7F    e6170f3a
+#push VMR[82] (FCB2A014)
+VMR[3D] -= 4
+;next = 2FC
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x2FC  Addr: 0x1103dfec   	| 0x1C0/0xE7F    75001990
+VMR[82] = VMR[3D] (6F898)
+;next = 3B4
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x1CA/0xE7F    6500b94c
+VMR[82] += 04 (6F898 += 04) (6F89C)
+;next = 378
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x378  Addr: 0x1103e1dc   	| 0x1DA/0xE7F    ed751755
+VMR[82] -= 04 (6F89C -= 04) (6F898)
+VMR[75] = eflags
+;next = 42E
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x42E  Addr: 0x1103e4b4   	| 0x1E8/0xE7F    ebc3600b
+[VMR[3D]] <=> VMR[82] ([6F898](FCB2A014) <=> 6F898)  ([6F898] = 6F898  VMR[82] = FCB2A014)
+;next = 212
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0x6f898
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x212  Addr: 0x1103dc44   	| 0x1EE/0xE7F    3d00c1ed
+VMR[3D] = POP( 6F898 )
+;next = 29C
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0x6f898
+stack: (6F89C VMESP 6F898)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0x202/0xE7F    3d003bde
+#esp = VMR[3D] (6F898)
+;next = 1DD
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0x6f898
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x1DD  Addr: 0x1103db70   	| 0x206/0xE7F    619d3def
+[ VMR[3D] ] = VMR[28]
+[ 6F898 ] = FF7F0000
+;next = 3AB
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x20C/0xE7F    415f2e76
+VMR[28] = 0F
+;next = 3C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x3C  Addr: 0x1103d4ec   	| 0x218/0xE7F    56152800
+VMR[28] <=> VMR[90] (0F <=> B89B674E)   (VMR[28] = B89B674E  VMR[90] = 0F)
+VMR[90] <=> VMR[41] (0F <=> FF4F0000)   (VMR[90] = FF4F0000  VMR[41] = 0F)
+VMR[28] &= VMR[41] (B89B674E &= 0F) (0E)
+VMR[75] = eflags
+;next = 4F5
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0x22E/0xE7F    95cdeeae
+VMR[41] = POP( FF7F0000 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 2ED
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x2ED  Addr: 0x1103dfb0   	| 0x234/0xE7F    11004100
+VMR[41] <=> VMR[11] (FF7F0000 <=> FF3F0000)   (VMR[41] = FF3F0000  VMR[11] = FF7F0000)
+VMR[75] = CMP VMR[28](0E), 04
+;next = 270
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x270  Addr: 0x1103ddbc   	| 0x242/0xE7F    7a005200
+VMR[90] = VMR[52] (FF8F0000)
+VMR[28] = VMR[11] (FF7F0000)
+VMR[41] = VMR[41] (FF3F0000)
+VMR[52] = VMR[7A] (FF2F0000)
+VMR[7A] = VMR[90] (FF4F0000)
+VMR[11] = VMR[28] (0E)
+;next = 336
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x336  Addr: 0x1103e0d4   	| 0x25C/0xE7F    51000000
+EFLAGS TEST VMR[75]   (04)
+C0 P1 A0 Z0 S0 T0 I0 D0 O0
+JNB/JNC [CF == 0]  to +AF(EIP:30B)  with next 51
+;next = 190
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x190  Addr: 0x1103da3c   	| 0x269/0xE7F    4587946f
+VMR[90] <=> VMR[11] (FF8F0000 <=> 0E)   (VMR[90] = 0E  VMR[11] = FF8F0000)
+#push 32B9
+VMR[3D] -= 4 (6F898)
+;next = 37E
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0x32b9
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x37E  Addr: 0x1103e1f4   	| 0x275/0xE7F    f86cc7c4
+[ VMR[3D] ] = VMR[82]
+[ 6F898 ] = FCB2A014
+;next = 3AB
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x283/0xE7F    51fa8976
+VMR[82] = 02
+;next = 2C1
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x2C1  Addr: 0x1103df00   	| 0x28F/0xE7F    7a00554f
+VMR[7A] <=> VMR[7A] (FF4F0000 <=> FF4F0000)   (VMR[7A] = FF4F0000  VMR[7A] = FF4F0000)
+VMR[90] += 70B07158 (0E += 70B07158) (70B07166)
+VMR[75] = eflags
+;next = 28B
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x28B  Addr: 0x1103de28   	| 0x2A1/0xE7F    e9938b55
+VMR[28] <=> VMR[41] (FF7F0000 <=> FF3F0000)   (VMR[28] = FF3F0000  VMR[41] = FF7F0000)
+VMR[90] += VMR[82] (70B07166 += 02) (70B07168)
+;next = 7C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x7C  Addr: 0x1103d5ec   	| 0x2AB/0xE7F    14e11100
+VMR[90] -= 70B07158   (70B07168 -= 70B07158) (10)
+VMR[75] = eflags
+;next = 212
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x212  Addr: 0x1103dc44   	| 0x2BB/0xE7F    3d003466
+VMR[82] = POP( FCB2A014 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 270
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xfcb2a014
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x270  Addr: 0x1103ddbc   	| 0x2CF/0xE7F    7a005200
+VMR[90] = VMR[11] (FF8F0000)
+VMR[28] = VMR[41] (FF7F0000)
+VMR[41] = VMR[28] (FF3F0000)
+VMR[52] = VMR[52] (FF2F0000)
+VMR[7A] = VMR[7A] (FF4F0000)
+VMR[11] = VMR[90] (10)
+;next = 98
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xfcb2a014
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x98  Addr: 0x1103d65c   	| 0x2E9/0xE7F    51000000
+JMP to +2DB(EIP:5C4)  with next 51
+;next = 51
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xfcb2a014
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x51  Addr: 0x1103d540   	| 0x30B/0xE7F    ed029000
+INIT REGZ 
+;next = 2ED
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x2ED  Addr: 0x1103dfb0   	| 0x30D/0xE7F    90009000
+VMR[90] <=> VMR[90] (FF8F0000 <=> FF8F0000)   (VMR[90] = FF8F0000  VMR[90] = FF8F0000)
+VMR[75] = CMP VMR[11](0E), 0A
+;next = 270
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x270  Addr: 0x1103ddbc   	| 0x31B/0xE7F    7a005200
+VMR[90] = VMR[90] (FF8F0000)
+VMR[28] = VMR[28] (FF7F0000)
+VMR[41] = VMR[41] (FF3F0000)
+VMR[52] = VMR[52] (FF2F0000)
+VMR[7A] = VMR[7A] (FF4F0000)
+VMR[11] = VMR[11] (0E)
+;next = 174
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x174  Addr: 0x1103d9cc   	| 0x335/0xE7F    51000000
+EFLAGS TEST VMR[75]   (04)
+C0 P1 A0 Z0 S0 T0 I0 D0 O0
+JNB/JNC [CF == 0]  to +1AF(EIP:4E4)  with next 51
+;next = 1A0
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x342/0xE7F    617b1144
+#push VMR[28] (FF7F0000)
+VMR[3D] -= 4
+;next = 3AB
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x348/0xE7F    15ddf871
+VMR[28] = 58D36BF0
+;next = 2C0
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x2C0  Addr: 0x1103defc   	| 0x354/0xE7F    87015200
+VMR[28] >>= 05 (58D36BF0 >>= 05) (2C69B5F)
+;next = 187
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x187  Addr: 0x1103da18   	| 0x35D/0xE7F    c28fca0b
+VMR[28] = -VMR[28] (2C69B5F --NEG--> FD3964A1)
+VMR[75] = eflags
+;next = 3F8
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x3F8  Addr: 0x1103e3dc   	| 0x369/0xE7F    939bbe3c
+VMR[90] <=> VMR[90] (FF8F0000 <=> FF8F0000)   (VMR[90] = FF8F0000  VMR[90] = FF8F0000)
+VMR[28] -= CBF661D   (F079FE84)
+VMR[75] = eflags
+;next = 1D3
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x1D3  Addr: 0x1103db48   	| 0x37B/0xE7F    60775983
+VMR[28] &= 1318134C  (F079FE84 &= 1318134C) (10181204)
+VMR[75] = eflags
+;next = 480
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x480  Addr: 0x1103e5fc   	| 0x385/0xE7F    9e6b9603
+VMR[28] ~= VMR[28] (10181204) (EFE7EDFB)
+;next = 19C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0x389/0xE7F    64140e8e
+#push VMR[41] (FF3F0000)
+VMR[3D] -= 4
+;next = 17E
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0xff7f0000
+0xff6f0000
+0xff1f0000
+
+--OP 0x17E  Addr: 0x1103d9f4   	| 0x38F/0xE7F    e9a43623
+VMR[41] = 59514479
+;next = 1A4
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0xff7f0000
+0xff6f0000
+0xff1f0000
+
+--OP 0x1A4  Addr: 0x1103da8c   	| 0x39B/0xE7F    17922af3
+VMR[90] <=> VMR[52] (FF8F0000 <=> FF2F0000)   (VMR[90] = FF2F0000  VMR[52] = FF8F0000)
+VMR[41] ^= 22DD5652 (59514479 ^= 22DD5652) (7B8C122B)
+;next = B5
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0xff7f0000
+0xff6f0000
+0xff1f0000
+
+--OP 0xB5  Addr: 0x1103d6d0   	| 0x3AB/0xE7F    ae110075
+VMR[11] <=> VMR[41] (0E <=> 7B8C122B)   (VMR[11] = 7B8C122B  VMR[41] = 0E)
+VMR[11] >>= 03 (7B8C122B >>= 03) (F718245)
+VMR[75] = eflags
+;next = 49A
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0xff7f0000
+0xff6f0000
+0xff1f0000
+
+--OP 0x49A  Addr: 0x1103e664   	| 0x3B6/0xE7F    11007500
+VMR[11] = -VMR[11] (F718245 --NEG--> F08E7DBB)
+VMR[75] = eflags
+;next = 1A0
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0xff7f0000
+0xff6f0000
+0xff1f0000
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x3C0/0xE7F    37011144
+#push VMR[7A] (FF4F0000)
+VMR[3D] -= 4
+;next = 3AB
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f8a0
+0xff4f0000
+stack: (6F890 VMESP 6F890)
+0xff4f0000
+0xff3f0000
+0xff7f0000
+0xff6f0000
+
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x3C6/0xE7F    fc2ced25
+VMR[7A] = 444F1E29
+;next = 3C
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f8a0
+0xff4f0000
+stack: (6F890 VMESP 6F890)
+0xff4f0000
+0xff3f0000
+0xff7f0000
+0xff6f0000
+
+--OP 0x3C  Addr: 0x1103d4ec   	| 0x3D2/0xE7F    39927a00
+VMR[7A] <=> VMR[52] (444F1E29 <=> FF8F0000)   (VMR[7A] = FF8F0000  VMR[52] = 444F1E29)
+VMR[41] <=> VMR[11] (0E <=> F08E7DBB)   (VMR[41] = F08E7DBB  VMR[11] = 0E)
+VMR[41] &= VMR[52] (F08E7DBB &= 444F1E29) (400E1C29)
+VMR[75] = eflags
+;next = 1CF
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f8a0
+0xff4f0000
+stack: (6F890 VMESP 6F890)
+0xff4f0000
+0xff3f0000
+0xff7f0000
+0xff6f0000
+
+--OP 0x1CF  Addr: 0x1103db38   	| 0x3E8/0xE7F    3d002004
+VMR[52] <=> VMR[28] (444F1E29 <=> EFE7EDFB)   (VMR[52] = EFE7EDFB  VMR[28] = 444F1E29)
+VMR[28] = POP( FF4F0000 )
+VMR[3D] += 04 (6F890 += 04) (6F894)
+;next = 420
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff4f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0xff7f0000
+0xff6f0000
+0xff1f0000
+
+--OP 0x420  Addr: 0x1103e47c   	| 0x3F2/0xE7F    ba597500
+VMR[41] |= 7FC56E4D (400E1C29 |= 7FC56E4D) (7FCF7E6D)
+VMR[75] = eflags
+;next = 1AC
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff4f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0xff7f0000
+0xff6f0000
+0xff1f0000
+
+--OP 0x1AC  Addr: 0x1103daac   	| 0x3FC/0xE7F    67b55b6e
+VMR[41] += 904DCC72 (7FCF7E6D += 904DCC72) (101D4ADF)
+VMR[75] = eflags
+;next = 29B
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff4f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0xff7f0000
+0xff6f0000
+0xff1f0000
+
+--OP 0x29B  Addr: 0x1103de68   	| 0x406/0xE7F    6d2307af
+VMR[52] += VMR[41] (EFE7EDFB += 101D4ADF) (538DA)
+VMR[75] = eflags
+;next = 212
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff4f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0xff7f0000
+0xff6f0000
+0xff1f0000
+
+--OP 0x212  Addr: 0x1103dc44   	| 0x412/0xE7F    3d00a9ea
+VMR[41] = POP( FF3F0000 )
+VMR[3D] += 04 (6F894 += 04) (6F898)
+;next = 29B
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff4f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x29B  Addr: 0x1103de68   	| 0x426/0xE7F    7e0141ce
+VMR[11] += VMR[52] (0E += 538DA) (538E8)
+VMR[75] = eflags
+;next = 33C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff4f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x432/0xE7F    7f0a5200
+VMR[52] = POP( FF7F0000 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 361
+stack (esp -0x10):
+0xff4f0000
+0xff4f0000
+0xff3f0000
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x361  Addr: 0x1103e180   	| 0x43A/0xE7F    a1757500
+#push VMR[90] (FF2F0000)
+VMR[3D] -= 4   (6F898)
+;next = 1A0
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff4f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0xff2f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x444/0xE7F    365de441
+#push VMR[52] (FF7F0000)
+VMR[3D] -= 4
+;next = 17E
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff4f0000
+stack: (6F894 VMESP 6F894)
+0xff7f0000
+0xff2f0000
+0xff6f0000
+0xff1f0000
+
+--OP 0x17E  Addr: 0x1103d9f4   	| 0x44A/0xE7F    b3802df6
+VMR[52] = 8460D
+;next = 198
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff4f0000
+stack: (6F894 VMESP 6F894)
+0xff7f0000
+0xff2f0000
+0xff6f0000
+0xff1f0000
+
+--OP 0x198  Addr: 0x1103da5c   	| 0x456/0xE7F    4100c490
+VMR[41] <=> VMR[52] (FF3F0000 <=> 8460D)   (VMR[41] = 8460D  VMR[52] = FF3F0000)
+VMR[90] = VMR[41] (8460D)
+;next = 33C
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff4f0000
+stack: (6F894 VMESP 6F894)
+0xff7f0000
+0xff2f0000
+0xff6f0000
+0xff1f0000
+
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x468/0xE7F    6f749000
+VMR[41] = POP( FF7F0000 )
+VMR[3D] += 04 (6F894 += 04) (6F898)
+;next = 1E6
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff4f0000
+0xff7f0000
+stack: (6F898 VMESP 6F898)
+0xff2f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x1E6  Addr: 0x1103db94   	| 0x470/0xE7F    750033f2
+VMR[11] += 35D92066 (538E8 += 35D92066) (35DE594E)
+VMR[75] = eflags
+;next = 188
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff4f0000
+0xff7f0000
+stack: (6F898 VMESP 6F898)
+0xff2f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x188  Addr: 0x1103da1c   	| 0x47E/0xE7F    82ab8bfc
+VMR[11] -= VMR[90] (35DE594E -= 8460D) (35D61341)
+VMR[75] = eflags
+;next = 0E
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff4f0000
+0xff7f0000
+stack: (6F898 VMESP 6F898)
+0xff2f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x0E  Addr: 0x1103d434   	| 0x486/0xE7F    90002ad8
+VMR[90] <=> VMR[41] (8460D <=> FF7F0000)   (VMR[90] = FF7F0000  VMR[41] = 8460D)
+VMR[11] -= 35D92066
+VMR[75] = eflags
+;next = 212
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff4f0000
+0xff7f0000
+stack: (6F898 VMESP 6F898)
+0xff2f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x212  Addr: 0x1103dc44   	| 0x494/0xE7F    3d002254
+VMR[41] = POP( FF2F0000 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 270
+stack (esp -0x10):
+0xff4f0000
+0xff4f0000
+0xff7f0000
+0xff2f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x270  Addr: 0x1103ddbc   	| 0x4A8/0xE7F    7a005200
+VMR[90] = VMR[7A] (FF8F0000)
+VMR[28] = VMR[90] (FF7F0000)
+VMR[41] = VMR[52] (FF3F0000)
+VMR[52] = VMR[41] (FF2F0000)
+VMR[7A] = VMR[28] (FF4F0000)
+VMR[11] = VMR[11] (FFFCF2DB)
+;next = 3F7
+stack (esp -0x10):
+0xff4f0000
+0xff4f0000
+0xff7f0000
+0xff2f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x3F7  Addr: 0x1103e3d8   	| 0x4C2/0xE7F    51000000
+JMP to +102(EIP:5C4)  with next 51
+;next = 51
+stack (esp -0x10):
+0xff4f0000
+0xff4f0000
+0xff7f0000
+0xff2f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x51  Addr: 0x1103d540   	| 0x4E4/0xE7F    3902e8f9
+INIT REGZ 
+;next = 239
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x239  Addr: 0x1103dce0   	| 0x4E6/0xE7F    e8f93d00
+#push 569B
+VMR[3D] -= 4 (6F898)
+;next = 37E
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0x569b
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x37E  Addr: 0x1103e1f4   	| 0x4F2/0xE7F    eac4b5b4
+[ VMR[3D] ] = VMR[11]
+[ 6F898 ] = 0E
+;next = 1A0
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0xe
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x500/0xE7F    3bec1144
+#push VMR[7A] (FF4F0000)
+VMR[3D] -= 4
+;next = 3AB
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff4f0000
+0xe
+0xff6f0000
+0xff1f0000
+
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x506/0xE7F    371f4f58
+VMR[7A] = 04
+;next = DC
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff4f0000
+0xe
+0xff6f0000
+0xff1f0000
+
+--OP 0xDC  Addr: 0x1103d76c   	| 0x512/0xE7F    874cc8ef
+VMR[00] = VMR[3D] (6F894)
+;next = 3B4
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff4f0000
+0xe
+0xff6f0000
+0xff1f0000
+
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x518/0xE7F    b4af5d3a
+VMR[00] += 04 (6F894 += 04) (6F898)
+;next = 235
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff4f0000
+0xe
+0xff6f0000
+0xff1f0000
+
+--OP 0x235  Addr: 0x1103dcd0   	| 0x528/0xE7F    7500f1f9
+[VMR[00]] += VMR[7A] ([6F898] += 04) (0E += 04) (12)
+VMR[75] = eflags
+;next = 507
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff4f0000
+0x12
+0xff6f0000
+0xff1f0000
+
+--OP 0x507  Addr: 0x1103e818   	| 0x530/0xE7F    2677a4b5
+VMR[7A] = [ VMR[3D] ]
+VMR[7A] = [ 6F894 ] ( FF4F0000 )
+;next = 19C
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff4f0000
+0x12
+0xff6f0000
+0xff1f0000
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0x536/0xE7F    1f16364b
+#push VMR[11] (0E)
+VMR[3D] -= 4
+;next = 305
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f8a0
+0xff4f0000
+stack: (6F890 VMESP 6F890)
+0xe
+0xff4f0000
+0x12
+0xff6f0000
+
+--OP 0x305  Addr: 0x1103e010   	| 0x53C/0xE7F    46896c99
+VMR[11] = VMR[3D] (6F890)
+;next = 9B
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f8a0
+0xff4f0000
+stack: (6F890 VMESP 6F890)
+0xe
+0xff4f0000
+0x12
+0xff6f0000
+
+--OP 0x9B  Addr: 0x1103d668   	| 0x546/0xE7F    4f2455c1
+VMR[28] <=> VMR[52] (FF7F0000 <=> FF2F0000)   (VMR[28] = FF2F0000  VMR[52] = FF7F0000)
+VMR[11] += 04 (6F890 += 04) (6F894)
+VMR[75] = eflags
+;next = 9B
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f8a0
+0xff4f0000
+stack: (6F890 VMESP 6F890)
+0xe
+0xff4f0000
+0x12
+0xff6f0000
+
+--OP 0x9B  Addr: 0x1103d668   	| 0x554/0xE7F    0000de60
+VMR[90] <=> VMR[90] (FF8F0000 <=> FF8F0000)   (VMR[90] = FF8F0000  VMR[90] = FF8F0000)
+VMR[11] += 04 (6F894 += 04) (6F898)
+VMR[75] = eflags
+;next = 42E
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f8a0
+0xff4f0000
+stack: (6F890 VMESP 6F890)
+0xe
+0xff4f0000
+0x12
+0xff6f0000
+
+--OP 0x42E  Addr: 0x1103e4b4   	| 0x562/0xE7F    a4ca934b
+[VMR[3D]] <=> VMR[11] ([6F890](0E) <=> 6F898)  ([6F890] = 6F898  VMR[11] = 0E)
+;next = 4F5
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f8a0
+0xff4f0000
+stack: (6F890 VMESP 6F890)
+0x6f898
+0xff4f0000
+0x12
+0xff6f0000
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0x568/0xE7F    1f8d024f
+VMR[3D] = POP( 6F898 )
+;next = 29C
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0x6f898
+stack: (6F894 VMESP 6F898)
+0xff4f0000
+0x12
+0xff6f0000
+0xff1f0000
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0x56E/0xE7F    3d00bc01
+#esp = VMR[3D] (6F898)
+;next = 14
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0x6f898
+0xff4f0000
+stack: (6F898 VMESP 6F898)
+0x12
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x14  Addr: 0x1103d44c   	| 0x572/0xE7F    49d53d00
+#push [ VMR[3D] ] (12)
+VMR[3D] -= 4 (6F894)
+;next = 507
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0x6f898
+stack: (6F894 VMESP 6F894)
+0x12
+0x12
+0xff6f0000
+0xff1f0000
+
+--OP 0x507  Addr: 0x1103e818   	| 0x57C/0xE7F    0477a824
+VMR[11] = [ VMR[3D] ]
+VMR[11] = [ 6F894 ] ( 12 )
+;next = 1E6
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0x6f898
+stack: (6F894 VMESP 6F894)
+0x12
+0x12
+0xff6f0000
+0xff1f0000
+
+--OP 0x1E6  Addr: 0x1103db94   	| 0x582/0xE7F    7500be94
+VMR[3D] += 04 (6F894 += 04) (6F898)
+VMR[75] = eflags
+;next = 29C
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0x6f898
+stack: (6F894 VMESP 6F898)
+0x12
+0x12
+0xff6f0000
+0xff1f0000
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0x590/0xE7F    3d00e22b
+#esp = VMR[3D] (6F898)
+;next = 2C1
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0x6f898
+0x12
+stack: (6F898 VMESP 6F898)
+0x12
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x2C1  Addr: 0x1103df00   	| 0x594/0xE7F    52000d96
+VMR[52] <=> VMR[52] (FF7F0000 <=> FF7F0000)   (VMR[52] = FF7F0000  VMR[52] = FF7F0000)
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+VMR[75] = eflags
+;next = 29C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0x6f898
+0x12
+stack: (6F898 VMESP 6F89C)
+0x12
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0x5A6/0xE7F    3d004328
+#esp = VMR[3D] (6F89C)
+;next = 270
+stack (esp -0x10):
+0xff4f0000
+0x6f898
+0x12
+0x12
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x270  Addr: 0x1103ddbc   	| 0x5AA/0xE7F    7a005200
+VMR[90] = VMR[90] (FF8F0000)
+VMR[28] = VMR[52] (FF7F0000)
+VMR[41] = VMR[41] (FF3F0000)
+VMR[52] = VMR[28] (FF2F0000)
+VMR[7A] = VMR[7A] (FF4F0000)
+VMR[11] = VMR[11] (12)
+;next = 51
+stack (esp -0x10):
+0xff4f0000
+0x6f898
+0x12
+0x12
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x51  Addr: 0x1103d540   	| 0x5C4/0xE7F    98017a00
+INIT REGZ 
+;next = 198
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xfcb2a014
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x198  Addr: 0x1103da5c   	| 0x5C6/0xE7F    7a00e038
+VMR[7A] <=> VMR[41] (FF4F0000 <=> FF3F0000)   (VMR[7A] = FF3F0000  VMR[41] = FF4F0000)
+VMR[00] = VMR[82] (FCB2A014)
+;next = 376
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xfcb2a014
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x376  Addr: 0x1103e1d4   	| 0x5D8/0xE7F    d7d276fb
+VMR[00] += 143D370D (FCB2A014 += 143D370D) (10EFD721)
+;next = 1DD
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xfcb2a014
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x1DD  Addr: 0x1103db70   	| 0x5E8/0xE7F    8a2322ed
+[ VMR[00] ] = VMR[11]
+[ 10EFD721 ] = 10
+;next = 190
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xfcb2a014
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x190  Addr: 0x1103da3c   	| 0x5EE/0xE7F    cb9e57aa
+VMR[52] <=> VMR[11] (FF2F0000 <=> 10)   (VMR[52] = 10  VMR[11] = FF2F0000)
+#push 195B
+VMR[3D] -= 4 (6F898)
+;next = 37E
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0x195b
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x37E  Addr: 0x1103e1f4   	| 0x5FA/0xE7F    ab0b319a
+[ VMR[3D] ] = VMR[52]
+[ 6F898 ] = 10
+;next = 4B
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F898 VMESP 6F898)
+0x10
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x4B  Addr: 0x1103d528   	| 0x608/0xE7F    3d006652
+#push [VMR[3D]] ([6F898]) (10)
+VMR[3D] -= 4   (6F894)
+;next = 33C
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0x10
+0x10
+0xff6f0000
+0xff1f0000
+
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x616/0xE7F    224d5200
+VMR[41] = POP( 10 )
+VMR[3D] += 04 (6F894 += 04) (6F898)
+;next = 19C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x10
+stack: (6F898 VMESP 6F898)
+0x10
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0x61E/0xE7F    c6157916
+#push VMR[41] (10)
+VMR[3D] -= 4
+;next = DC
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0x10
+0x10
+0xff6f0000
+0xff1f0000
+
+--OP 0xDC  Addr: 0x1103d76c   	| 0x624/0xE7F    b5e50afe
+VMR[41] = VMR[3D] (6F894)
+;next = 376
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0x10
+0x10
+0xff6f0000
+0xff1f0000
+
+--OP 0x376  Addr: 0x1103e1d4   	| 0x62A/0xE7F    af641433
+VMR[41] += 04 (6F894 += 04) (6F898)
+;next = 2C1
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0x10
+0x10
+0xff6f0000
+0xff1f0000
+
+--OP 0x2C1  Addr: 0x1103df00   	| 0x63A/0xE7F    7a00bc3d
+VMR[7A] <=> VMR[41] (FF3F0000 <=> 6F898)   (VMR[7A] = 6F898  VMR[41] = FF3F0000)
+VMR[7A] += 04 (6F898 += 04) (6F89C)
+VMR[75] = eflags
+;next = 42E
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0x10
+0x10
+0xff6f0000
+0xff1f0000
+
+--OP 0x42E  Addr: 0x1103e4b4   	| 0x64C/0xE7F    541932b0
+[VMR[3D]] <=> VMR[7A] ([6F894](10) <=> 6F89C)  ([6F894] = 6F89C  VMR[7A] = 10)
+;next = 1CF
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0x6f89c
+0x10
+0xff6f0000
+0xff1f0000
+
+--OP 0x1CF  Addr: 0x1103db38   	| 0x652/0xE7F    3d009c02
+VMR[11] <=> VMR[11] (FF2F0000 <=> FF2F0000)   (VMR[11] = FF2F0000  VMR[11] = FF2F0000)
+VMR[3D] = POP( 6F89C )
+;next = 29C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F89C)
+0x10
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0x65C/0xE7F    3d00ba5f
+#esp = VMR[3D] (6F89C)
+;next = 2FC
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0x10
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x2FC  Addr: 0x1103dfec   	| 0x660/0xE7F    7500d462
+VMR[00] = VMR[82] (FCB2A014)
+;next = 376
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0x10
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x376  Addr: 0x1103e1d4   	| 0x66A/0xE7F    4bfc9d73
+VMR[00] += 14519A4E (FCB2A014 += 14519A4E) (11043A62)
+;next = 4C8
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0x10
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x4C8  Addr: 0x1103e71c   	| 0x67A/0xE7F    410002f3
+VMR[41] <=> VMR[41] (FF3F0000 <=> FF3F0000)   (VMR[41] = FF3F0000  VMR[41] = FF3F0000)
+VMR[52] = [ VMR[00] ]
+VMR[52] = [11043A62] (00)
+;next = 3A6
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0x10
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x3A6  Addr: 0x1103e294   	| 0x68A/0xE7F    95f2bb33
+VMR[00] = VMR[82] (FCB2A014)
+;next = 3B4
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0x10
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x690/0xE7F    95611140
+VMR[00] += 143D2985 (FCB2A014 += 143D2985) (10EFC999)
+;next = 349
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0x10
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x349  Addr: 0x1103e120   	| 0x6A0/0xE7F    358bc1ca
+VMR[7A] = [ VMR[00] ]   ([10EFC999]) (00)
+;next = 1A0
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0x10
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x6AA/0xE7F    60f71541
+#push VMR[28] (FF7F0000)
+VMR[3D] -= 4
+;next = AF
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0xAF  Addr: 0x1103d6b8   	| 0x6B0/0xE7F    ebfd7a00
+VMR[28] = 56C41C05
+;next = 471
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x471  Addr: 0x1103e5c0   	| 0x6BC/0xE7F    f22e326a
+VMR[52] -= 28 (00 -= 56C41C05) (A93BE3FB)
+VMR[75] = eflags
+;next = 212
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x212  Addr: 0x1103dc44   	| 0x6C4/0xE7F    3d0017f3
+VMR[28] = POP( FF7F0000 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 188
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x188  Addr: 0x1103da1c   	| 0x6D8/0xE7F    7f93a77c
+VMR[52] -= VMR[7A] (A93BE3FB -= 00) (A93BE3FB)
+VMR[75] = eflags
+;next = 1A0
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x6E0/0xE7F    10cce441
+#push VMR[7A] (00)
+VMR[3D] -= 4
+;next = 17E
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x0
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x17E  Addr: 0x1103d9f4   	| 0x6E6/0xE7F    c50a0314
+VMR[7A] = 5F4C55D6
+;next = 223
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x0
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x223  Addr: 0x1103dc88   	| 0x6F2/0xE7F    52009000
+VMR[90] <=> VMR[52] (FF8F0000 <=> A93BE3FB)   (VMR[90] = A93BE3FB  VMR[52] = FF8F0000)
+VMR[7A] <<= 08 (5F4C55D6 <<= 08) (4C55D600)
+;next = 2C0
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x0
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x2C0  Addr: 0x1103defc   	| 0x6FD/0xE7F    c0022800
+VMR[7A] >>= 03 (4C55D600 >>= 03) (98ABAC0)
+;next = 2C0
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x0
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x2C0  Addr: 0x1103defc   	| 0x706/0xE7F    76032800
+VMR[7A] >>= 05 (98ABAC0 >>= 05) (4C55D6)
+;next = 376
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x0
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x376  Addr: 0x1103e1d4   	| 0x70F/0xE7F    434f6f45
+VMR[7A] += 21E43522 (4C55D6 += 21E43522) (22308AF8)
+;next = 40C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x0
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x40C  Addr: 0x1103e42c   	| 0x71F/0xE7F    9f7a7a00
+VMR[41] <=> VMR[7A] (FF3F0000 <=> 22308AF8)   (VMR[41] = 22308AF8  VMR[7A] = FF3F0000)
+VMR[41] |= 364C1BEC (22308AF8 |= 364C1BEC) (367C9BFC)
+;next = 263
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x0
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x263  Addr: 0x1103dd88   	| 0x72D/0xE7F    dc39d50d
+VMR[41] -= DFB87FF7 (367C9BFC -= DFB87FF7) (56C41C05)
+;next = 29B
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x0
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x29B  Addr: 0x1103de68   	| 0x739/0xE7F    6f1fa51a
+VMR[90] += VMR[41] (A93BE3FB += 56C41C05) (00)
+VMR[75] = eflags
+;next = 33C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x0
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x745/0xE7F    ed0a4100
+VMR[41] = POP( 00 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 190
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0x0
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x190  Addr: 0x1103da3c   	| 0x74D/0xE7F    419b17fa
+VMR[28] <=> VMR[28] (FF7F0000 <=> FF7F0000)   (VMR[28] = FF7F0000  VMR[28] = FF7F0000)
+#push 3494
+VMR[3D] -= 4 (6F898)
+;next = 1DD
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x3494
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x1DD  Addr: 0x1103db70   	| 0x759/0xE7F    55866fed
+[ VMR[3D] ] = VMR[41]
+[ 6F898 ] = 00
+;next = 1DD
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x0
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x1DD  Addr: 0x1103db70   	| 0x75F/0xE7F    c0013def
+[ VMR[3D] ] = VMR[82]
+[ 6F898 ] = FCB2A014
+;next = 3AB
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x765/0xE7F    99fe8542
+VMR[82] = 6988460A
+;next = A3
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0xA3  Addr: 0x1103d688   	| 0x771/0xE7F    d74bd075
+VMR[82] <<= 03 (6988460A <<= 03) (4C423050)
+VMR[75] = eflags
+;next = 376
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x376  Addr: 0x1103e1d4   	| 0x778/0xE7F    5cc8f09d
+VMR[82] += 2A4468E (4C423050 += 2A4468E) (4EE676DE)
+;next = 266
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x266  Addr: 0x1103dd94   	| 0x788/0xE7F    eb707a00
+VMR[7A] <=> VMR[28] (FF3F0000 <=> FF7F0000)   (VMR[7A] = FF7F0000  VMR[28] = FF3F0000)
+VMR[82] += 01 (4EE676DE += 01) (4EE676DF)
+VMR[75] = eflags
+;next = 1E6
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x1E6  Addr: 0x1103db94   	| 0x792/0xE7F    7500f11c
+VMR[82] += FEA00537 (4EE676DF += FEA00537) (4D867C16)
+VMR[75] = eflags
+;next = 219
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x219  Addr: 0x1103dc60   	| 0x7A0/0xE7F    d398a5b0
+VMR[90] ^= VMR[82] (00 ^= 4D867C16) (4D867C16)
+VMR[75] = eflags
+;next = 212
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x212  Addr: 0x1103dc44   	| 0x7AC/0xE7F    3d00c617
+VMR[82] = POP( FCB2A014 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 213
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xfcb2a014
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x213  Addr: 0x1103dc48   	| 0x7C0/0xE7F    fa7c3f20
+#push 2ACD
+VMR[3D] -= 4
+;next = 1DD
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x2acd
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x1DD  Addr: 0x1103db70   	| 0x7C8/0xE7F    794c41ec
+[ VMR[3D] ] = VMR[82]
+[ 6F898 ] = FCB2A014
+;next = AF
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0xAF  Addr: 0x1103d6b8   	| 0x7CE/0xE7F    f4452800
+VMR[82] = 49CB2E37
+;next = 3B4
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x7DA/0xE7F    f06a2c5e
+VMR[90] += 5A1C4A67 (4D867C16 += 5A1C4A67) (A7A2C67D)
+;next = 4EA
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x4EA  Addr: 0x1103e7a4   	| 0x7EA/0xE7F    2cd57500
+VMR[90] += VMR[82] (A7A2C67D += 49CB2E37) (F16DF4B4)
+VMR[75] = eflags
+;next = 378
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x378  Addr: 0x1103e1dc   	| 0x7F2/0xE7F    d1ed6556
+VMR[90] -= 5A1C4A67 (F16DF4B4 -= 5A1C4A67) (9751AA4D)
+VMR[75] = eflags
+;next = 33C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x800/0xE7F    a6dd4100
+VMR[82] = POP( FCB2A014 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 14
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xfcb2a014
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x14  Addr: 0x1103d44c   	| 0x808/0xE7F    e1843d00
+#push [ VMR[90] ] (00)
+VMR[3D] -= 4 (6F898)
+;next = 2A2
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x0
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x2A2  Addr: 0x1103de84   	| 0x812/0xE7F    7500b55a
+[VMR[3D]] -= 7CA27C06  ([6F898] -= 7CA27C06)  (00 -= 7CA27C06) (835D83FA)
+VMR[75] = eflags
+;next = 4F5
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x835d83fa
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0x81C/0xE7F    040fba14
+VMR[90] = POP( 835D83FA )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 361
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0x835d83fa
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x361  Addr: 0x1103e180   	| 0x822/0xE7F    38e67500
+#push VMR[7A] (FF7F0000)
+VMR[3D] -= 4   (6F898)
+;next = 17E
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x17E  Addr: 0x1103d9f4   	| 0x82C/0xE7F    fe492cdc
+VMR[7A] = 7CA27C06
+;next = 3B4
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x838/0xE7F    f1c2c152
+VMR[90] += 70710EFE (835D83FA += 70710EFE) (F3CE92F8)
+;next = 14C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x14C  Addr: 0x1103d92c   	| 0x848/0xE7F    21eff7f2
+VMR[90] += VMR[7A] (F3CE92F8 += 7CA27C06) (70710EFE)
+;next = 0E
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x0E  Addr: 0x1103d434   	| 0x850/0xE7F    9000dd1d
+VMR[90] <=> VMR[7A] (70710EFE <=> 7CA27C06)   (VMR[90] = 7CA27C06  VMR[7A] = 70710EFE)
+VMR[7A] -= 70710EFE
+VMR[75] = eflags
+;next = 1CF
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff7f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x1CF  Addr: 0x1103db38   	| 0x85E/0xE7F    3d00ab03
+VMR[28] <=> VMR[52] (FF3F0000 <=> FF8F0000)   (VMR[28] = FF8F0000  VMR[52] = FF3F0000)
+VMR[90] = POP( FF7F0000 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 3AB
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x868/0xE7F    17197720
+VMR[41] = BA281857
+;next = 41B
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x41B  Addr: 0x1103e468   	| 0x874/0xE7F    d5a42d74
+VMR[75] = EFLAGS CMP TEST VMR[7A](00), VMR[41](BA281857) (45D7E7A9)
+;next = 270
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x270  Addr: 0x1103ddbc   	| 0x880/0xE7F    7a005200
+VMR[90] = VMR[28] (FF8F0000)
+VMR[28] = VMR[90] (FF7F0000)
+VMR[41] = VMR[52] (FF3F0000)
+VMR[52] = VMR[11] (FF2F0000)
+VMR[7A] = VMR[41] (BA281857)
+VMR[11] = VMR[7A] (00)
+;next = CF
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0xCF  Addr: 0x1103d738   	| 0x89A/0xE7F    51000000
+EFLAGS TEST VMR[75]   (04)
+C0 P1 A0 Z0 S0 T0 I0 D0 O0
+JE/JZ [ZF == 1]  to +1B0(EIP:A4A)  with next 51
+;next = 19C
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xff7f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0x8A7/0xE7F    64149152
+#push VMR[90] (FF8F0000)
+VMR[3D] -= 4
+;next = 17E
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff8f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x17E  Addr: 0x1103d9f4   	| 0x8AD/0xE7F    bb80118c
+VMR[90] = 13EB3427
+;next = 414
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff8f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x414  Addr: 0x1103e44c   	| 0x8B9/0xE7F    50327500
+VMR[90] ^= 4BC17A7D (13EB3427 ^= 4BC17A7D) (582A4E5A)
+VMR[75] = eflags
+;next = 266
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff8f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x266  Addr: 0x1103dd94   	| 0x8CB/0xE7F    fe114100
+VMR[41] <=> VMR[11] (FF3F0000 <=> 00)   (VMR[41] = 00  VMR[11] = FF3F0000)
+VMR[90] += 01 (582A4E5A += 01) (582A4E5B)
+VMR[75] = eflags
+;next = 223
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff8f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x223  Addr: 0x1103dc88   	| 0x8D5/0xE7F    11009000
+VMR[90] <=> VMR[11] (582A4E5B <=> FF3F0000)   (VMR[90] = FF3F0000  VMR[11] = 582A4E5B)
+VMR[11] <<= 08 (582A4E5B <<= 08) (2A4E5B00)
+;next = 1AC
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff8f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x1AC  Addr: 0x1103daac   	| 0x8E0/0xE7F    b873f83e
+VMR[11] += FE01D5B8 (2A4E5B00 += FE01D5B8) (285030B8)
+VMR[75] = eflags
+;next = 53
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff8f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x53  Addr: 0x1103d548   	| 0x8EA/0xE7F    3f8be8f8
+VMR[28] -= VMR[11] (FF7F0000 -= 285030B8) (D72ECF48)
+VMR[75] = eflags
+;next = 33C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xff8f0000
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x33C  Addr: 0x1103e0ec   	| 0x8F2/0xE7F    f9f49000
+VMR[11] = POP( FF8F0000 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 4EA
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xff8f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x4EA  Addr: 0x1103e7a4   	| 0x8FA/0xE7F    ce7e7500
+VMR[28] += VMR[41] (D72ECF48 += 00) (D72ECF48)
+VMR[75] = eflags
+;next = 1A0
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xff8f0000
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x902/0xE7F    3b4b1144
+#push VMR[82] (FCB2A014)
+VMR[3D] -= 4
+;next = 3AB
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x908/0xE7F    35a8083a
+VMR[82] = 285030B8
+;next = 3E6
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x3E6  Addr: 0x1103e394   	| 0x914/0xE7F    75009000
+VMR[28] += VMR[82] (D72ECF48 += 285030B8) (FF7F0000)
+VMR[75] = eflags
+;next = 2AC
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0xfcb2a014
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x2AC  Addr: 0x1103deac   	| 0x920/0xE7F    28001100
+VMR[28] <=> VMR[11] (FF7F0000 <=> FF8F0000)   (VMR[28] = FF8F0000  VMR[11] = FF7F0000)
+VMR[82] = POP( FCB2A014 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 454
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xfcb2a014
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x454  Addr: 0x1103e54c   	| 0x92A/0xE7F    52004100
+VMR[41] <=> VMR[52] (00 <=> FF2F0000)   (VMR[41] = FF2F0000  VMR[52] = 00)
+VMR[11] ^= VMR[7A] (FF7F0000 ^= BA281857) (45571857)
+VMR[75] = eflags
+;next = 1A0
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0x6f89c
+0xfcb2a014
+stack: (6F89C VMESP 6F89C)
+0xff6f0000
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x936/0xE7F    e5100642
+#push VMR[11] (45571857)
+VMR[3D] -= 4
+;next = 1A0
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0x6f89c
+stack: (6F898 VMESP 6F898)
+0x45571857
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0x93C/0xE7F    66101144
+#push VMR[90] (FF3F0000)
+VMR[3D] -= 4
+;next = 3AB
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0x45571857
+0xff6f0000
+0xff1f0000
+
+--OP 0x3AB  Addr: 0x1103e2a8   	| 0x942/0xE7F    00300914
+VMR[90] = 40C72240
+;next = AF
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0x45571857
+0xff6f0000
+0xff1f0000
+
+--OP 0xAF  Addr: 0x1103d6b8   	| 0x94E/0xE7F    9fbe5200
+VMR[11] = 40C72248
+;next = 454
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0x45571857
+0xff6f0000
+0xff1f0000
+
+--OP 0x454  Addr: 0x1103e54c   	| 0x95A/0xE7F    11001100
+VMR[11] <=> VMR[11] (40C72248 <=> 40C72248)   (VMR[11] = 40C72248  VMR[11] = 40C72248)
+VMR[11] ^= VMR[90] (40C72248 ^= 40C72240) (08)
+VMR[75] = eflags
+;next = 1CF
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0xff3f0000
+0x45571857
+0xff6f0000
+0xff1f0000
+
+--OP 0x1CF  Addr: 0x1103db38   	| 0x966/0xE7F    3d00fc02
+VMR[90] <=> VMR[41] (40C72240 <=> FF2F0000)   (VMR[90] = FF2F0000  VMR[41] = 40C72240)
+VMR[41] = POP( FF3F0000 )
+VMR[3D] += 04 (6F894 += 04) (6F898)
+;next = 2FC
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0x45571857
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x2FC  Addr: 0x1103dfec   	| 0x970/0xE7F    75008afe
+VMR[00] = VMR[3D] (6F898)
+;next = 376
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0x45571857
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x376  Addr: 0x1103e1d4   	| 0x97A/0xE7F    68a99d59
+VMR[00] += 04 (6F898 += 04) (6F89C)
+;next = 235
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0x45571857
+0xff6f0000
+0xff1f0000
+0xff4f0000
+
+--OP 0x235  Addr: 0x1103dcd0   	| 0x98A/0xE7F    7500246b
+[VMR[00]] += VMR[11] ([6F89C] += 08) (FF6F0000 += 08) (FF6F0008)
+VMR[75] = eflags
+;next = 349
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0x45571857
+0xff6f0008
+0xff1f0000
+0xff4f0000
+
+--OP 0x349  Addr: 0x1103e120   	| 0x992/0xE7F    0e8a5ced
+VMR[11] = [ VMR[3D] ]   ([6F898]) (45571857)
+;next = 9B
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0x45571857
+0xff6f0008
+0xff1f0000
+0xff4f0000
+
+--OP 0x9B  Addr: 0x1103d668   	| 0x99C/0xE7F    cffbe699
+VMR[11] <=> VMR[52] (45571857 <=> 00)   (VMR[11] = 00  VMR[52] = 45571857)
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+VMR[75] = eflags
+;next = 29C
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F89C)
+0x45571857
+0xff6f0008
+0xff1f0000
+0xff4f0000
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0x9AA/0xE7F    3d00f8eb
+#esp = VMR[3D] (6F89C)
+;next = 378
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff3f0000
+0x45571857
+stack: (6F89C VMESP 6F89C)
+0xff6f0008
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x378  Addr: 0x1103e1dc   	| 0x9AE/0xE7F    04ad501f
+VMR[3D] -= 04 (6F89C -= 04) (6F898)
+VMR[75] = eflags
+;next = 29C
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff3f0000
+0x45571857
+stack: (6F89C VMESP 6F898)
+0xff6f0008
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0x9BC/0xE7F    3d0083de
+#esp = VMR[3D] (6F898)
+;next = 1DD
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0x45571857
+0xff6f0008
+0xff1f0000
+0xff4f0000
+
+--OP 0x1DD  Addr: 0x1103db70   	| 0x9C0/0xE7F    0d532aed
+[ VMR[3D] ] = VMR[7A]
+[ 6F898 ] = BA281857
+;next = 198
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0xba281857
+0xff6f0008
+0xff1f0000
+0xff4f0000
+
+--OP 0x198  Addr: 0x1103da5c   	| 0x9C6/0xE7F    90008866
+VMR[90] <=> VMR[90] (FF2F0000 <=> FF2F0000)   (VMR[90] = FF2F0000  VMR[90] = FF2F0000)
+VMR[7A] = VMR[3D] (6F898)
+;next = 3B4
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0xba281857
+0xff6f0008
+0xff1f0000
+0xff4f0000
+
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0x9D8/0xE7F    54cee209
+VMR[7A] += 04 (6F898 += 04) (6F89C)
+;next = 9B
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0xba281857
+0xff6f0008
+0xff1f0000
+0xff4f0000
+
+--OP 0x9B  Addr: 0x1103d668   	| 0x9E8/0xE7F    4e970979
+VMR[52] <=> VMR[41] (45571857 <=> FF3F0000)   (VMR[52] = FF3F0000  VMR[41] = 45571857)
+VMR[7A] += 04 (6F89C += 04) (6F8A0)
+VMR[75] = eflags
+;next = 13F
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0xba281857
+0xff6f0008
+0xff1f0000
+0xff4f0000
+
+--OP 0x13F  Addr: 0x1103d8f8   	| 0x9F6/0xE7F    2b0318f4
+VMR[7A] ^= [VMR[3D]] (6F8A0 ^= [6F898](BA281857)) (BA2EE0F7)
+;next = 32B
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0xba281857
+0xff6f0008
+0xff1f0000
+0xff4f0000
+
+--OP 0x32B  Addr: 0x1103e0a8   	| 0x9FC/0xE7F    9000185d
+VMR[52] <=> VMR[90] (FF3F0000 <=> FF2F0000)   (VMR[52] = FF2F0000  VMR[90] = FF3F0000)
+[VMR[3D]] ^= VMR[7A] ([6F898](BA281857) ^= BA2EE0F7) (6F8A0)
+;next = 21E
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0x6f8a0
+0xff6f0008
+0xff1f0000
+0xff4f0000
+
+--OP 0x21E  Addr: 0x1103dc74   	| 0xA0C/0xE7F    02637a00
+VMR[7A] ^= [VMR[3D]] (BA2EE0F7 ^= [6F898]) (BA2EE0F7 ^= 6F8A0) (BA281857)
+VMR[75] = eflags
+;next = 212
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0x6f8a0
+0xff6f0008
+0xff1f0000
+0xff4f0000
+
+--OP 0x212  Addr: 0x1103dc44   	| 0xA18/0xE7F    3d007686
+VMR[3D] = POP( 6F8A0 )
+;next = 29C
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff3f0000
+0x6f8a0
+stack: (6F89C VMESP 6F8A0)
+0xff6f0008
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0xA2C/0xE7F    3d00b135
+#esp = VMR[3D] (6F8A0)
+;next = 270
+stack (esp -0x10):
+0xff3f0000
+0xff3f0000
+0x6f8a0
+0xff6f0008
+stack: (6F8A0 VMESP 6F8A0)
+0xff1f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x270  Addr: 0x1103ddbc   	| 0xA30/0xE7F    7a005200
+VMR[90] = VMR[28] (FF8F0000)
+VMR[28] = VMR[41] (45571857)
+VMR[41] = VMR[90] (FF3F0000)
+VMR[52] = VMR[52] (FF2F0000)
+VMR[7A] = VMR[7A] (BA281857)
+VMR[11] = VMR[11] (00)
+;next = 51
+stack (esp -0x10):
+0xff3f0000
+0xff3f0000
+0x6f8a0
+0xff6f0008
+stack: (6F8A0 VMESP 6F8A0)
+0xff1f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x51  Addr: 0x1103d540   	| 0xA4A/0xE7F    4903ac88
+INIT REGZ 
+;next = 349
+stack (esp -0x10):
+0xff3f0000
+0xff3f0000
+0x6f8a0
+0xff6f0008
+stack: (6F8A0 VMESP 6F8A0)
+0xff1f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x349  Addr: 0x1103e120   	| 0xA4C/0xE7F    ac8850f5
+VMR[82] = [ VMR[3D] ]   ([6F8A0]) (FF1F0000)
+;next = 239
+stack (esp -0x10):
+0xff3f0000
+0xff3f0000
+0x6f8a0
+0xff6f0008
+stack: (6F8A0 VMESP 6F8A0)
+0xff1f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x239  Addr: 0x1103dce0   	| 0xA56/0xE7F    3bd33d00
+#push 6FD3
+VMR[3D] -= 4 (6F89C)
+;next = 1DD
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff3f0000
+0x6f8a0
+stack: (6F89C VMESP 6F89C)
+0x6fd3
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x1DD  Addr: 0x1103db70   	| 0xA62/0xE7F    c8798eee
+[ VMR[3D] ] = VMR[7A]
+[ 6F89C ] = BA281857
+;next = 2FC
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff3f0000
+0x6f8a0
+stack: (6F89C VMESP 6F89C)
+0xba281857
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x2FC  Addr: 0x1103dfec   	| 0xA68/0xE7F    7500636f
+VMR[7A] = VMR[3D] (6F89C)
+;next = 2C1
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff3f0000
+0x6f8a0
+stack: (6F89C VMESP 6F89C)
+0xba281857
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x2C1  Addr: 0x1103df00   	| 0xA72/0xE7F    28001610
+VMR[28] <=> VMR[28] (45571857 <=> 45571857)   (VMR[28] = 45571857  VMR[28] = 45571857)
+VMR[7A] += 04 (6F89C += 04) (6F8A0)
+VMR[75] = eflags
+;next = 9B
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff3f0000
+0x6f8a0
+stack: (6F89C VMESP 6F89C)
+0xba281857
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x9B  Addr: 0x1103d668   	| 0xA84/0xE7F    b1f90521
+VMR[7A] <=> VMR[90] (6F8A0 <=> FF8F0000)   (VMR[7A] = FF8F0000  VMR[90] = 6F8A0)
+VMR[90] += 04 (6F8A0 += 04) (6F8A4)
+VMR[75] = eflags
+;next = 42E
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff3f0000
+0x6f8a0
+stack: (6F89C VMESP 6F89C)
+0xba281857
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x42E  Addr: 0x1103e4b4   	| 0xA92/0xE7F    707ce90a
+[VMR[3D]] <=> VMR[90] ([6F89C](BA281857) <=> 6F8A4)  ([6F89C] = 6F8A4  VMR[90] = BA281857)
+;next = 4F5
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff3f0000
+0x6f8a0
+stack: (6F89C VMESP 6F89C)
+0x6f8a4
+0xff1f0000
+0xff4f0000
+0x0
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xA98/0xE7F    338d5280
+VMR[3D] = POP( 6F8A4 )
+;next = 29C
+stack (esp -0x10):
+0xff3f0000
+0xff3f0000
+0x6f8a0
+0x6f8a4
+stack: (6F8A0 VMESP 6F8A4)
+0xff1f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0xA9E/0xE7F    3d008cd1
+#esp = VMR[3D] (6F8A4)
+;next = 14
+stack (esp -0x10):
+0xff3f0000
+0x6f8a0
+0x6f8a4
+0xff1f0000
+stack: (6F8A4 VMESP 6F8A4)
+0xff4f0000
+0x0
+0x0
+0x0
+
+--OP 0x14  Addr: 0x1103d44c   	| 0xAA2/0xE7F    cbf53d00
+#push [ VMR[3D] ] (FF4F0000)
+VMR[3D] -= 4 (6F8A0)
+;next = 4F5
+stack (esp -0x10):
+0xff3f0000
+0xff3f0000
+0x6f8a0
+0x6f8a4
+stack: (6F8A0 VMESP 6F8A0)
+0xff4f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xAAC/0xE7F    47962503
+VMR[11] = POP( FF4F0000 )
+VMR[3D] += 04 (6F8A0 += 04) (6F8A4)
+;next = 361
+stack (esp -0x10):
+0xff3f0000
+0x6f8a0
+0x6f8a4
+0xff4f0000
+stack: (6F8A4 VMESP 6F8A4)
+0xff4f0000
+0x0
+0x0
+0x0
+
+--OP 0x361  Addr: 0x1103e180   	| 0xAB2/0xE7F    a7e67500
+#push VMR[7A] (FF8F0000)
+VMR[3D] -= 4   (6F8A0)
+;next = 3A6
+stack (esp -0x10):
+0xff3f0000
+0xff3f0000
+0x6f8a0
+0x6f8a4
+stack: (6F8A0 VMESP 6F8A0)
+0xff8f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x3A6  Addr: 0x1103e294   	| 0xABC/0xE7F    e8d33aae
+VMR[7A] = VMR[3D] (6F8A0)
+;next = 9B
+stack (esp -0x10):
+0xff3f0000
+0xff3f0000
+0x6f8a0
+0x6f8a4
+stack: (6F8A0 VMESP 6F8A0)
+0xff8f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x9B  Addr: 0x1103d668   	| 0xAC2/0xE7F    55f19cc0
+VMR[7A] <=> VMR[7A] (6F8A0 <=> 6F8A0)   (VMR[7A] = 6F8A0  VMR[7A] = 6F8A0)
+VMR[7A] += 04 (6F8A0 += 04) (6F8A4)
+VMR[75] = eflags
+;next = 1AC
+stack (esp -0x10):
+0xff3f0000
+0xff3f0000
+0x6f8a0
+0x6f8a4
+stack: (6F8A0 VMESP 6F8A0)
+0xff8f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x1AC  Addr: 0x1103daac   	| 0xAD0/0xE7F    669fc867
+VMR[7A] += 04 (6F8A4 += 04) (6F8A8)
+VMR[75] = eflags
+;next = 42E
+stack (esp -0x10):
+0xff3f0000
+0xff3f0000
+0x6f8a0
+0x6f8a4
+stack: (6F8A0 VMESP 6F8A0)
+0xff8f0000
+0xff4f0000
+0x0
+0x0
+
+--OP 0x42E  Addr: 0x1103e4b4   	| 0xADA/0xE7F    49ad9204
+[VMR[3D]] <=> VMR[7A] ([6F8A0](FF8F0000) <=> 6F8A8)  ([6F8A0] = 6F8A8  VMR[7A] = FF8F0000)
+;next = 212
+stack (esp -0x10):
+0xff3f0000
+0xff3f0000
+0x6f8a0
+0x6f8a4
+stack: (6F8A0 VMESP 6F8A0)
+0x6f8a8
+0xff4f0000
+0x0
+0x0
+
+--OP 0x212  Addr: 0x1103dc44   	| 0xAE0/0xE7F    3d003852
+VMR[3D] = POP( 6F8A8 )
+;next = 29C
+stack (esp -0x10):
+0xff3f0000
+0x6f8a0
+0x6f8a4
+0x6f8a8
+stack: (6F8A4 VMESP 6F8A8)
+0xff4f0000
+0x0
+0x0
+0x0
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0xAF4/0xE7F    3d009387
+#esp = VMR[3D] (6F8A8)
+;next = 14
+stack (esp -0x10):
+0x6f8a0
+0x6f8a4
+0x6f8a8
+0xff4f0000
+stack: (6F8A8 VMESP 6F8A8)
+0x0
+0x0
+0x0
+0x0
+
+--OP 0x14  Addr: 0x1103d44c   	| 0xAF8/0xE7F    b29c3d00
+#push [ VMR[3D] ] (00)
+VMR[3D] -= 4 (6F8A4)
+;next = 33C
+stack (esp -0x10):
+0xff3f0000
+0x6f8a0
+0x6f8a4
+0x6f8a8
+stack: (6F8A4 VMESP 6F8A4)
+0x0
+0x0
+0x0
+0x0
+
+--OP 0x33C  Addr: 0x1103e0ec   	| 0xB02/0xE7F    bbb24100
+VMR[90] = POP( 00 )
+VMR[3D] += 04 (6F8A4 += 04) (6F8A8)
+;next = 361
+stack (esp -0x10):
+0x6f8a0
+0x6f8a4
+0x6f8a8
+0x0
+stack: (6F8A8 VMESP 6F8A8)
+0x0
+0x0
+0x0
+0x0
+
+--OP 0x361  Addr: 0x1103e180   	| 0xB0A/0xE7F    e0757500
+#push VMR[11] (FF4F0000)
+VMR[3D] -= 4   (6F8A4)
+;next = 305
+stack (esp -0x10):
+0xff3f0000
+0x6f8a0
+0x6f8a4
+0x6f8a8
+stack: (6F8A4 VMESP 6F8A4)
+0xff4f0000
+0x0
+0x0
+0x0
+
+--OP 0x305  Addr: 0x1103e010   	| 0xB14/0xE7F    74bdc89a
+VMR[11] = VMR[3D] (6F8A4)
+;next = 1E6
+stack (esp -0x10):
+0xff3f0000
+0x6f8a0
+0x6f8a4
+0x6f8a8
+stack: (6F8A4 VMESP 6F8A4)
+0xff4f0000
+0x0
+0x0
+0x0
+
+--OP 0x1E6  Addr: 0x1103db94   	| 0xB1E/0xE7F    7500cf50
+VMR[11] += 04 (6F8A4 += 04) (6F8A8)
+VMR[75] = eflags
+;next = 1E6
+stack (esp -0x10):
+0xff3f0000
+0x6f8a0
+0x6f8a4
+0x6f8a8
+stack: (6F8A4 VMESP 6F8A4)
+0xff4f0000
+0x0
+0x0
+0x0
+
+--OP 0x1E6  Addr: 0x1103db94   	| 0xB2C/0xE7F    7500f1f4
+VMR[11] += 04 (6F8A8 += 04) (6F8AC)
+VMR[75] = eflags
+;next = 42E
+stack (esp -0x10):
+0xff3f0000
+0x6f8a0
+0x6f8a4
+0x6f8a8
+stack: (6F8A4 VMESP 6F8A4)
+0xff4f0000
+0x0
+0x0
+0x0
+
+--OP 0x42E  Addr: 0x1103e4b4   	| 0xB3A/0xE7F    3b60d1c7
+[VMR[3D]] <=> VMR[11] ([6F8A4](FF4F0000) <=> 6F8AC)  ([6F8A4] = 6F8AC  VMR[11] = FF4F0000)
+;next = 4F5
+stack (esp -0x10):
+0xff3f0000
+0x6f8a0
+0x6f8a4
+0x6f8a8
+stack: (6F8A4 VMESP 6F8A4)
+0x6f8ac
+0x0
+0x0
+0x0
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xB40/0xE7F    96846bb9
+VMR[3D] = POP( 6F8AC )
+;next = 29C
+stack (esp -0x10):
+0x6f8a0
+0x6f8a4
+0x6f8a8
+0x6f8ac
+stack: (6F8A8 VMESP 6F8AC)
+0x0
+0x0
+0x0
+0x0
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0xB46/0xE7F    3d00df9d
+#esp = VMR[3D] (6F8AC)
+;next = 190
+stack (esp -0x10):
+0x6f8a4
+0x6f8a8
+0x6f8ac
+0x0
+stack: (6F8AC VMESP 6F8AC)
+0x0
+0x0
+0x0
+0x0
+
+--OP 0x190  Addr: 0x1103da3c   	| 0xB4A/0xE7F    86d5136e
+VMR[7A] <=> VMR[90] (FF8F0000 <=> 00)   (VMR[7A] = 00  VMR[90] = FF8F0000)
+#push 30
+VMR[3D] -= 4 (6F8A8)
+;next = 198
+stack (esp -0x10):
+0x6f8a0
+0x6f8a4
+0x6f8a8
+0x6f8ac
+stack: (6F8A8 VMESP 6F8A8)
+0x30
+0x0
+0x0
+0x0
+
+--OP 0x198  Addr: 0x1103da5c   	| 0xB56/0xE7F    7a007c88
+VMR[7A] <=> VMR[28] (00 <=> 45571857)   (VMR[7A] = 45571857  VMR[28] = 00)
+VMR[11] = VMR[7A] (45571857)
+;next = 213
+stack (esp -0x10):
+0x6f8a0
+0x6f8a4
+0x6f8a8
+0x6f8ac
+stack: (6F8A8 VMESP 6F8A8)
+0x30
+0x0
+0x0
+0x0
+
+--OP 0x213  Addr: 0x1103dc48   	| 0xB68/0xE7F    57144f90
+#push 00
+VMR[3D] -= 4
+;next = 19C
+stack (esp -0x10):
+0xff3f0000
+0x6f8a0
+0x6f8a4
+0x6f8a8
+stack: (6F8A4 VMESP 6F8A4)
+0x0
+0x30
+0x0
+0x0
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0xB70/0xE7F    ba1406cc
+#push VMR[11] (45571857)
+VMR[3D] -= 4
+;next = 1A0
+stack (esp -0x10):
+0xff3f0000
+0xff3f0000
+0x6f8a0
+0x6f8a4
+stack: (6F8A0 VMESP 6F8A0)
+0x45571857
+0x0
+0x30
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xB76/0xE7F    7638c743
+#push VMR[11] (45571857)
+VMR[3D] -= 4
+;next = 361
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff3f0000
+0x6f8a0
+stack: (6F89C VMESP 6F89C)
+0x45571857
+0x45571857
+0x0
+0x30
+
+--OP 0x361  Addr: 0x1103e180   	| 0xB7C/0xE7F    3f387500
+#push VMR[11] (45571857)
+VMR[3D] -= 4   (6F898)
+;next = 276
+stack (esp -0x10):
+0x6f8a0
+0xff4f0000
+0xff3f0000
+0xff3f0000
+stack: (6F898 VMESP 6F898)
+0x45571857
+0x45571857
+0x45571857
+0x0
+
+--OP 0x276  Addr: 0x1103ddd4   	| 0xB86/0xE7F    9cde7500
+#push VMR[75] (04)
+VMR[3D] -= 4 (=6F894)
+;next = 361
+stack (esp -0x10):
+0xff6f0000
+0x6f8a0
+0xff4f0000
+0xff3f0000
+stack: (6F894 VMESP 6F894)
+0x4
+0x45571857
+0x45571857
+0x45571857
+
+--OP 0x361  Addr: 0x1103e180   	| 0xB90/0xE7F    00007500
+#push VMR[11] (45571857)
+VMR[3D] -= 4   (6F890)
+;next = 361
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f8a0
+0xff4f0000
+stack: (6F890 VMESP 6F890)
+0x45571857
+0x4
+0x45571857
+0x45571857
+
+--OP 0x361  Addr: 0x1103e180   	| 0xB9A/0xE7F    41007500
+#push VMR[52] (FF2F0000)
+VMR[3D] -= 4   (6F88C)
+;next = 361
+stack (esp -0x10):
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f8a0
+stack: (6F88C VMESP 6F88C)
+0xff2f0000
+0x45571857
+0x4
+0x45571857
+
+--OP 0x361  Addr: 0x1103e180   	| 0xBA4/0xE7F    31007500
+#push VMR[41] (FF3F0000)
+VMR[3D] -= 4   (6F888)
+;next = 19C
+stack (esp -0x10):
+0x0
+0xff8f0000
+0xff7f0000
+0xff6f0000
+stack: (6F888 VMESP 6F888)
+0xff3f0000
+0xff2f0000
+0x45571857
+0x4
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0xBAE/0xE7F    ba145337
+#push VMR[28] (00)
+VMR[3D] -= 4
+;next = 1A0
+stack (esp -0x10):
+0x0
+0x0
+0xff8f0000
+0xff7f0000
+stack: (6F884 VMESP 6F884)
+0x0
+0xff3f0000
+0xff2f0000
+0x45571857
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xBB4/0xE7F    21690642
+#push VMR[82] (FF1F0000)
+VMR[3D] -= 4
+;next = 1A0
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0xff8f0000
+stack: (6F880 VMESP 6F880)
+0xff1f0000
+0x0
+0xff3f0000
+0xff2f0000
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xBBA/0xE7F    0168c743
+#push VMR[7A] (45571857)
+VMR[3D] -= 4
+;next = 361
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F87C VMESP 6F87C)
+0x45571857
+0xff1f0000
+0x0
+0xff3f0000
+
+--OP 0x361  Addr: 0x1103e180   	| 0xBC0/0xE7F    d7387500
+#push VMR[90] (FF8F0000)
+VMR[3D] -= 4   (6F878)
+;next = 270
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F878 VMESP 6F878)
+0xff8f0000
+0x45571857
+0xff1f0000
+0x0
+
+--OP 0x270  Addr: 0x1103ddbc   	| 0xBCA/0xE7F    7a005200
+VMR[90] = VMR[90] (FF8F0000)
+VMR[28] = VMR[7A] (45571857)
+VMR[41] = VMR[41] (FF3F0000)
+VMR[52] = VMR[52] (FF2F0000)
+VMR[7A] = VMR[28] (00)
+VMR[11] = VMR[11] (45571857)
+;next = 4F2
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F878 VMESP 6F878)
+0xff8f0000
+0x45571857
+0xff1f0000
+0x0
+
+--OP 0x4F2  Addr: 0x1103e7c4   	| 0xBE4/0xE7F    884e8267
+;next = 372
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F878 VMESP 6F878)
+0xff8f0000
+0x45571857
+0xff1f0000
+0x0
+
+--OP 0x372  Addr: 0x1103e1c4   	| 0xBE6/0xE7F    82674101
+#[esp+20h] = 1068CE80
+#[esp+24h] = 11416782
+#pop EDI FF8F0000
+#pop ESI 45571857
+#pop EBP FF1F0000
+#pop EBX 00
+#pop EDX FF3F0000
+#pop ECX FF2F0000
+#pop EAX 45571857
+#pop EFLAGS 04
+;RET!  1068CE80
+
+#memset     
+
+0x6f89c
+#Jump to route BF0
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F878 VMESP 6F878)
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f89c
+
+--OP 0x444  Addr: 0x1103e50c   	| 0xBF0/0xE7F    3d005100
+VMR[0x3D] = 6F878  <-- real ESP
+;next = 51
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F878 VMESP 6F878)
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f89c
+
+--OP 0x51  Addr: 0x1103d540   	| 0xBF4/0xE7F    ac024100
+INIT REGZ 
+;next = 2AC
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F878 VMESP 6F878)
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f89c
+
+--OP 0x2AC  Addr: 0x1103deac   	| 0xBF6/0xE7F    41007a00
+VMR[41] <=> VMR[7A] (FF3F0000 <=> 00)   (VMR[41] = 00  VMR[7A] = FF3F0000)
+VMR[90] = POP( FF8F0000 )
+VMR[3D] += 04 (6F878 += 04) (6F87C)
+;next = 4F5
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0xff8f0000
+stack: (6F87C VMESP 6F87C)
+0xff7f0000
+0xff6f0000
+0x6f89c
+0xff4f0000
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xC00/0xE7F    33b4aad7
+VMR[28] = POP( FF7F0000 )
+VMR[3D] += 04 (6F87C += 04) (6F880)
+;next = 212
+stack (esp -0x10):
+0x0
+0x0
+0xff8f0000
+0xff7f0000
+stack: (6F880 VMESP 6F880)
+0xff6f0000
+0x6f89c
+0xff4f0000
+0xff3f0000
+
+--OP 0x212  Addr: 0x1103dc44   	| 0xC06/0xE7F    3d001c16
+VMR[82] = POP( FF6F0000 )
+VMR[3D] += 04 (6F880 += 04) (6F884)
+;next = 1CF
+stack (esp -0x10):
+0x0
+0xff8f0000
+0xff7f0000
+0xff6f0000
+stack: (6F884 VMESP 6F884)
+0x6f89c
+0xff4f0000
+0xff3f0000
+0xff2f0000
+
+--OP 0x1CF  Addr: 0x1103db38   	| 0xC1A/0xE7F    3d001202
+VMR[41] <=> VMR[41] (00 <=> 00)   (VMR[41] = 00  VMR[41] = 00)
+VMR[41] = POP( 6F89C )
+VMR[3D] += 04 (6F884 += 04) (6F888)
+;next = 212
+stack (esp -0x10):
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f89c
+stack: (6F888 VMESP 6F888)
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+
+--OP 0x212  Addr: 0x1103dc44   	| 0xC24/0xE7F    3d00c317
+VMR[41] = POP( FF4F0000 )
+VMR[3D] += 04 (6F888 += 04) (6F88C)
+;next = 33C
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f89c
+0xff4f0000
+stack: (6F88C VMESP 6F88C)
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+
+--OP 0x33C  Addr: 0x1103e0ec   	| 0xC38/0xE7F    654d1100
+VMR[7A] = POP( FF3F0000 )
+VMR[3D] += 04 (6F88C += 04) (6F890)
+;next = 4F5
+stack (esp -0x10):
+0xff6f0000
+0x6f89c
+0xff4f0000
+0xff3f0000
+stack: (6F890 VMESP 6F890)
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0x11416782
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xC40/0xE7F    e88d2c71
+VMR[52] = POP( FF2F0000 )
+VMR[3D] += 04 (6F890 += 04) (6F894)
+;next = 4F5
+stack (esp -0x10):
+0x6f89c
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F894 VMESP 6F894)
+0xff1f0000
+0xff0f0000
+0x11416782
+0x45571857
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xC46/0xE7F    148c5a6b
+VMR[11] = POP( FF1F0000 )
+VMR[3D] += 04 (6F894 += 04) (6F898)
+;next = 2D7
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+stack: (6F898 VMESP 6F898)
+0xff0f0000
+0x11416782
+0x45571857
+0x0
+
+--OP 0x2D7  Addr: 0x1103df58   	| 0xC4C/0xE7F    19e07500
+VMR[75] = POP( FF0F0000 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 46A
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F89C VMESP 6F89C)
+0x11416782
+0x45571857
+0x0
+0x30
+
+--OP 0x46A  Addr: 0x1103e5a4   	| 0xC54/0xE7F    7992083d
+VMR[3D] += 08 (6F89C += 08) (6F8A4)
+#esp += 0x08
+;next = 305
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416782
+0x45571857
+stack: (6F8A4 VMESP 6F8A4)
+0x0
+0x30
+0x0
+0x0
+
+--OP 0x305  Addr: 0x1103e010   	| 0xC59/0xE7F    05c58a45
+VMR[00] = VMR[82] (FF6F0000)
+;next = 376
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416782
+0x45571857
+stack: (6F8A4 VMESP 6F8A4)
+0x0
+0x30
+0x0
+0x0
+
+--OP 0x376  Addr: 0x1103e1d4   	| 0xC63/0xE7F    defa994d
+VMR[00] += 08 (FF6F0000 += 08) (FF6F0008)
+;next = 349
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416782
+0x45571857
+stack: (6F8A4 VMESP 6F8A4)
+0x0
+0x30
+0x0
+0x0
+
+--OP 0x349  Addr: 0x1103e120   	| 0xC73/0xE7F    398b4f23
+VMR[7A] = [ VMR[00] ]   ([FF6F0008]) (00)
+;next = 1AC
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416782
+0x45571857
+stack: (6F8A4 VMESP 6F8A4)
+0x0
+0x30
+0x0
+0x0
+
+--OP 0x1AC  Addr: 0x1103daac   	| 0xC7D/0xE7F    7c3530f5
+VMR[3D] += 0C (6F8A4 += 0C) (6F8B0)
+VMR[75] = eflags
+;next = 29C
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416782
+0x45571857
+stack: (6F8A4 VMESP 6F8B0)
+0x0
+0x30
+0x0
+0x0
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0xC87/0xE7F    3d006753
+#esp = VMR[3D] (6F8B0)
+;next = 239
+stack (esp -0x10):
+0x45571857
+0x0
+0x30
+0x0
+stack: (6F8B0 VMESP 6F8B0)
+0x0
+0x0
+0x0
+0x0
+
+--OP 0x239  Addr: 0x1103dce0   	| 0xC8B/0xE7F    5ed33d00
+#push 30
+VMR[3D] -= 4 (6F8AC)
+;next = 198
+stack (esp -0x10):
+0x11416782
+0x45571857
+0x0
+0x30
+stack: (6F8AC VMESP 6F8AC)
+0x30
+0x0
+0x0
+0x0
+
+--OP 0x198  Addr: 0x1103da5c   	| 0xC97/0xE7F    90006ab1
+VMR[90] <=> VMR[52] (FF8F0000 <=> FF2F0000)   (VMR[90] = FF2F0000  VMR[52] = FF8F0000)
+VMR[90] = VMR[28] (FF7F0000)
+;next = 361
+stack (esp -0x10):
+0x11416782
+0x45571857
+0x0
+0x30
+stack: (6F8AC VMESP 6F8AC)
+0x30
+0x0
+0x0
+0x0
+
+--OP 0x361  Addr: 0x1103e180   	| 0xCA9/0xE7F    dd017500
+#push VMR[90] (FF7F0000)
+VMR[3D] -= 4   (6F8A8)
+;next = 2C1
+stack (esp -0x10):
+0xff0f0000
+0x11416782
+0x45571857
+0x0
+stack: (6F8A8 VMESP 6F8A8)
+0xff7f0000
+0x30
+0x0
+0x0
+
+--OP 0x2C1  Addr: 0x1103df00   	| 0xCB3/0xE7F    1100271f
+VMR[11] <=> VMR[90] (FF1F0000 <=> FF7F0000)   (VMR[11] = FF7F0000  VMR[90] = FF1F0000)
+VMR[7A] += 24 (00 += 24) (24)
+VMR[75] = eflags
+;next = 1A0
+stack (esp -0x10):
+0xff0f0000
+0x11416782
+0x45571857
+0x0
+stack: (6F8A8 VMESP 6F8A8)
+0xff7f0000
+0x30
+0x0
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xCC5/0xE7F    05b91541
+#push VMR[7A] (24)
+VMR[3D] -= 4
+;next = AF
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416782
+0x45571857
+stack: (6F8A4 VMESP 6F8A4)
+0x24
+0xff7f0000
+0x30
+0x0
+
+--OP 0xAF  Addr: 0x1103d6b8   	| 0xCCB/0xE7F    86ff2800
+VMR[04] = E77C78
+;next = 429
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416782
+0x45571857
+stack: (6F8A4 VMESP 6F8A4)
+0x24
+0xff7f0000
+0x30
+0x0
+
+--OP 0x429  Addr: 0x1103e4a0   	| 0xCD7/0xE7F    2d040cad
+VMR[04] += IMGBASE 10000000 (E77C78 += 10000000) (10E77C78)
+;next = 19C
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416782
+0x45571857
+stack: (6F8A4 VMESP 6F8A4)
+0x24
+0xff7f0000
+0x30
+0x0
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0xCDB/0xE7F    86141d98
+#push VMR[04] (10E77C78)
+VMR[3D] -= 4
+;next = 19C
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0x11416782
+stack: (6F8A0 VMESP 6F8A0)
+0x10e77c78
+0x24
+0xff7f0000
+0x30
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0xCE1/0xE7F    86140505
+#push VMR[90] (FF1F0000)
+VMR[3D] -= 4
+;next = 19C
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F89C VMESP 6F89C)
+0xff1f0000
+0x10e77c78
+0x24
+0xff7f0000
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0xCE7/0xE7F    6c17dbfb
+#push VMR[90] (FF1F0000)
+VMR[3D] -= 4
+;next = 276
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+stack: (6F898 VMESP 6F898)
+0xff1f0000
+0xff1f0000
+0x10e77c78
+0x24
+
+--OP 0x276  Addr: 0x1103ddd4   	| 0xCED/0xE7F    9cde7500
+#push VMR[75] (FF0F0000)
+VMR[3D] -= 4 (=6F894)
+;next = 361
+stack (esp -0x10):
+0x6f89c
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F894 VMESP 6F894)
+0xff0f0000
+0xff1f0000
+0xff1f0000
+0x10e77c78
+
+--OP 0x361  Addr: 0x1103e180   	| 0xCF7/0xE7F    ff5c7500
+#push VMR[90] (FF1F0000)
+VMR[3D] -= 4   (6F890)
+;next = 1A0
+stack (esp -0x10):
+0xff6f0000
+0x6f89c
+0xff4f0000
+0xff3f0000
+stack: (6F890 VMESP 6F890)
+0xff1f0000
+0xff0f0000
+0xff1f0000
+0xff1f0000
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xD01/0xE7F    a977c743
+#push VMR[11] (FF7F0000)
+VMR[3D] -= 4
+;next = 361
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f89c
+0xff4f0000
+stack: (6F88C VMESP 6F88C)
+0xff7f0000
+0xff1f0000
+0xff0f0000
+0xff1f0000
+
+--OP 0x361  Addr: 0x1103e180   	| 0xD07/0xE7F    86387500
+#push VMR[7A] (24)
+VMR[3D] -= 4   (6F888)
+;next = 19C
+stack (esp -0x10):
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f89c
+stack: (6F888 VMESP 6F888)
+0x24
+0xff7f0000
+0xff1f0000
+0xff0f0000
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0xD11/0xE7F    ba142c0c
+#push VMR[41] (FF4F0000)
+VMR[3D] -= 4
+;next = 1A0
+stack (esp -0x10):
+0x0
+0xff8f0000
+0xff7f0000
+0xff6f0000
+stack: (6F884 VMESP 6F884)
+0xff4f0000
+0x24
+0xff7f0000
+0xff1f0000
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xD17/0xE7F    bc340642
+#push VMR[82] (FF6F0000)
+VMR[3D] -= 4
+;next = 1A0
+stack (esp -0x10):
+0x0
+0x0
+0xff8f0000
+0xff7f0000
+stack: (6F880 VMESP 6F880)
+0xff6f0000
+0xff4f0000
+0x24
+0xff7f0000
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xD1D/0xE7F    15f40242
+#push VMR[28] (FF7F0000)
+VMR[3D] -= 4
+;next = 19C
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0xff8f0000
+stack: (6F87C VMESP 6F87C)
+0xff7f0000
+0xff6f0000
+0xff4f0000
+0x24
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0xD23/0xE7F    6a171690
+#push VMR[52] (FF8F0000)
+VMR[3D] -= 4
+;next = 270
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F878 VMESP 6F878)
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0xff4f0000
+
+--OP 0x270  Addr: 0x1103ddbc   	| 0xD29/0xE7F    7a005200
+VMR[90] = VMR[52] (FF8F0000)
+VMR[28] = VMR[28] (FF7F0000)
+VMR[41] = VMR[7A] (24)
+VMR[52] = VMR[11] (FF7F0000)
+VMR[7A] = VMR[41] (FF4F0000)
+VMR[11] = VMR[90] (FF1F0000)
+;next = 4F2
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F878 VMESP 6F878)
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0xff4f0000
+
+--OP 0x4F2  Addr: 0x1103e7c4   	| 0xD43/0xE7F    4d0f9167
+;next = 2E4
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F878 VMESP 6F878)
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0xff4f0000
+
+--OP 0x2E4  Addr: 0x1103df8c   	| 0xD45/0xE7F    91674101
+#[esp+20h] = 100B0780
+#[esp+24h] = 11416791
+#pop EDI FF8F0000
+#pop ESI FF7F0000
+#pop EBP FF6F0000
+#pop EBX FF4F0000
+#pop EDX 24
+#pop ECX FF7F0000
+#pop EAX FF1F0000
+#pop EFLAGS FF0F0000
+;RET!  100B0780
+
+#FUN_100b0780     
+
+0x6f89c
+#Jump to route D4F
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F878 VMESP 6F878)
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f89c
+
+--OP 0x444  Addr: 0x1103e50c   	| 0xD4F/0xE7F    3d005100
+VMR[0x3D] = 6F878  <-- real ESP
+;next = 51
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F878 VMESP 6F878)
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f89c
+
+--OP 0x51  Addr: 0x1103d540   	| 0xD53/0xE7F    f5046f6d
+INIT REGZ 
+;next = 4F5
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0x0
+stack: (6F878 VMESP 6F878)
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f89c
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xD55/0xE7F    6f6d4626
+VMR[90] = POP( FF8F0000 )
+VMR[3D] += 04 (6F878 += 04) (6F87C)
+;next = 4F5
+stack (esp -0x10):
+0x0
+0x0
+0x0
+0xff8f0000
+stack: (6F87C VMESP 6F87C)
+0xff7f0000
+0xff6f0000
+0x6f89c
+0xff4f0000
+
+--OP 0x4F5  Addr: 0x1103e7d0   	| 0xD5B/0xE7F    e800d026
+VMR[28] = POP( FF7F0000 )
+VMR[3D] += 04 (6F87C += 04) (6F880)
+;next = 212
+stack (esp -0x10):
+0x0
+0x0
+0xff8f0000
+0xff7f0000
+stack: (6F880 VMESP 6F880)
+0xff6f0000
+0x6f89c
+0xff4f0000
+0xff3f0000
+
+--OP 0x212  Addr: 0x1103dc44   	| 0xD61/0xE7F    3d00fe2a
+VMR[82] = POP( FF6F0000 )
+VMR[3D] += 04 (6F880 += 04) (6F884)
+;next = 2AC
+stack (esp -0x10):
+0x0
+0xff8f0000
+0xff7f0000
+0xff6f0000
+stack: (6F884 VMESP 6F884)
+0x6f89c
+0xff4f0000
+0xff3f0000
+0xff2f0000
+
+--OP 0x2AC  Addr: 0x1103deac   	| 0xD75/0xE7F    90001100
+VMR[90] <=> VMR[11] (FF8F0000 <=> FF1F0000)   (VMR[90] = FF1F0000  VMR[11] = FF8F0000)
+VMR[7A] = POP( 6F89C )
+VMR[3D] += 04 (6F884 += 04) (6F888)
+;next = 2AC
+stack (esp -0x10):
+0xff8f0000
+0xff7f0000
+0xff6f0000
+0x6f89c
+stack: (6F888 VMESP 6F888)
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+
+--OP 0x2AC  Addr: 0x1103deac   	| 0xD7F/0xE7F    41001100
+VMR[41] <=> VMR[11] (24 <=> FF8F0000)   (VMR[41] = FF8F0000  VMR[11] = 24)
+VMR[7A] = POP( FF4F0000 )
+VMR[3D] += 04 (6F888 += 04) (6F88C)
+;next = 212
+stack (esp -0x10):
+0xff7f0000
+0xff6f0000
+0x6f89c
+0xff4f0000
+stack: (6F88C VMESP 6F88C)
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+
+--OP 0x212  Addr: 0x1103dc44   	| 0xD89/0xE7F    3d007388
+VMR[11] = POP( FF3F0000 )
+VMR[3D] += 04 (6F88C += 04) (6F890)
+;next = 212
+stack (esp -0x10):
+0xff6f0000
+0x6f89c
+0xff4f0000
+0xff3f0000
+stack: (6F890 VMESP 6F890)
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0x11416791
+
+--OP 0x212  Addr: 0x1103dc44   	| 0xD9D/0xE7F    3d002c3b
+VMR[52] = POP( FF2F0000 )
+VMR[3D] += 04 (6F890 += 04) (6F894)
+;next = 33C
+stack (esp -0x10):
+0x6f89c
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F894 VMESP 6F894)
+0xff1f0000
+0xff0f0000
+0x11416791
+0x10e77c78
+
+--OP 0x33C  Addr: 0x1103e0ec   	| 0xDB1/0xE7F    9c4d1100
+VMR[90] = POP( FF1F0000 )
+VMR[3D] += 04 (6F894 += 04) (6F898)
+;next = 446
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+stack: (6F898 VMESP 6F898)
+0xff0f0000
+0x11416791
+0x10e77c78
+0x24
+
+--OP 0x446  Addr: 0x1103e514   	| 0xDB9/0xE7F    eec87500
+VMR[75] = POP( FF0F0000 )
+VMR[3D] += 04 (6F898 += 04) (6F89C)
+;next = 46A
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F89C VMESP 6F89C)
+0x11416791
+0x10e77c78
+0x24
+0xff7f0000
+
+--OP 0x46A  Addr: 0x1103e5a4   	| 0xDBF/0xE7F    0577083d
+VMR[3D] += 08 (6F89C += 08) (6F8A4)
+#esp += 0x08
+;next = 3A6
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416791
+0x10e77c78
+stack: (6F8A4 VMESP 6F8A4)
+0x24
+0xff7f0000
+0x30
+0x0
+
+--OP 0x3A6  Addr: 0x1103e294   	| 0xDC4/0xE7F    82bf50d5
+VMR[00] = VMR[82] (FF6F0000)
+;next = 3B4
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416791
+0x10e77c78
+stack: (6F8A4 VMESP 6F8A4)
+0x24
+0xff7f0000
+0x30
+0x0
+
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0xDCA/0xE7F    63a38738
+VMR[00] += FFFFFFDD (FF6F0000 += FFFFFFDD) (FF6EFFDD)
+;next = 39E
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416791
+0x10e77c78
+stack: (6F8A4 VMESP 6F8A4)
+0x24
+0xff7f0000
+0x30
+0x0
+
+--OP 0x39E  Addr: 0x1103e274   	| 0xDDA/0xE7F    54bf903f
+VMR[28] = b, [VMR[00]] ([FF6EFFDD] --> 00)  #MOVZX
+;next = 2FC
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416791
+0x10e77c78
+stack: (6F8A4 VMESP 6F8A4)
+0x24
+0xff7f0000
+0x30
+0x0
+
+--OP 0x2FC  Addr: 0x1103dfec   	| 0xDE0/0xE7F    75001526
+VMR[00] = VMR[82] (FF6F0000)
+;next = 3B4
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416791
+0x10e77c78
+stack: (6F8A4 VMESP 6F8A4)
+0x24
+0xff7f0000
+0x30
+0x0
+
+--OP 0x3B4  Addr: 0x1103e2cc   	| 0xDEA/0xE7F    366f0f26
+VMR[00] += FFFFFFAD (FF6F0000 += FFFFFFAD) (FF6EFFAD)
+;next = 39E
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416791
+0x10e77c78
+stack: (6F8A4 VMESP 6F8A4)
+0x24
+0xff7f0000
+0x30
+0x0
+
+--OP 0x39E  Addr: 0x1103e274   	| 0xDFA/0xE7F    651f34ab
+VMR[90] = b, [VMR[00]] ([FF6EFFAD] --> 00)  #MOVZX
+;next = 1AC
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416791
+0x10e77c78
+stack: (6F8A4 VMESP 6F8A4)
+0x24
+0xff7f0000
+0x30
+0x0
+
+--OP 0x1AC  Addr: 0x1103daac   	| 0xE00/0xE7F    e205c04e
+VMR[3D] += 10 (6F8A4 += 10) (6F8B4)
+VMR[75] = eflags
+;next = 29C
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416791
+0x10e77c78
+stack: (6F8A4 VMESP 6F8B4)
+0x24
+0xff7f0000
+0x30
+0x0
+
+--OP 0x29C  Addr: 0x1103de6c   	| 0xE0A/0xE7F    3d001c85
+#esp = VMR[3D] (6F8B4)
+;next = 454
+stack (esp -0x10):
+0x24
+0xff7f0000
+0x30
+0x0
+stack: (6F8B4 VMESP 6F8B4)
+0x0
+0x0
+0x0
+0x0
+
+--OP 0x454  Addr: 0x1103e54c   	| 0xE0E/0xE7F    41009000
+VMR[90] <=> VMR[41] (00 <=> FF8F0000)   (VMR[90] = FF8F0000  VMR[41] = 00)
+VMR[28] ^= VMR[41] (00 ^= 00) (00)
+VMR[75] = eflags
+;next = 1A0
+stack (esp -0x10):
+0x24
+0xff7f0000
+0x30
+0x0
+stack: (6F8B4 VMESP 6F8B4)
+0x0
+0x0
+0x0
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xE1A/0xE7F    8506dc42
+#push VMR[41] (00)
+VMR[3D] -= 4
+;next = 276
+stack (esp -0x10):
+0x10e77c78
+0x24
+0xff7f0000
+0x30
+stack: (6F8B0 VMESP 6F8B0)
+0x0
+0x0
+0x0
+0x0
+
+--OP 0x276  Addr: 0x1103ddd4   	| 0xE20/0xE7F    dbdc7500
+#push VMR[75] (FF0F0000)
+VMR[3D] -= 4 (=6F8AC)
+;next = 1A0
+stack (esp -0x10):
+0x11416791
+0x10e77c78
+0x24
+0xff7f0000
+stack: (6F8AC VMESP 6F8AC)
+0xff0f0000
+0x0
+0x0
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xE2A/0xE7F    87c80642
+#push VMR[41] (00)
+VMR[3D] -= 4
+;next = 1A0
+stack (esp -0x10):
+0xff0f0000
+0x11416791
+0x10e77c78
+0x24
+stack: (6F8A8 VMESP 6F8A8)
+0x0
+0xff0f0000
+0x0
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xE30/0xE7F    76c80642
+#push VMR[52] (FF2F0000)
+VMR[3D] -= 4
+;next = 1A0
+stack (esp -0x10):
+0xff1f0000
+0xff0f0000
+0x11416791
+0x10e77c78
+stack: (6F8A4 VMESP 6F8A4)
+0xff2f0000
+0x0
+0xff0f0000
+0x0
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xE36/0xE7F    30000242
+#push VMR[11] (FF3F0000)
+VMR[3D] -= 4
+;next = 19C
+stack (esp -0x10):
+0xff2f0000
+0xff1f0000
+0xff0f0000
+0x11416791
+stack: (6F8A0 VMESP 6F8A0)
+0xff3f0000
+0xff2f0000
+0x0
+0xff0f0000
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0xE3C/0xE7F    7b163cd5
+#push VMR[7A] (FF4F0000)
+VMR[3D] -= 4
+;next = 361
+stack (esp -0x10):
+0xff3f0000
+0xff2f0000
+0xff1f0000
+0xff0f0000
+stack: (6F89C VMESP 6F89C)
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0x0
+
+--OP 0x361  Addr: 0x1103e180   	| 0xE42/0xE7F    a35c7500
+#push VMR[82] (FF6F0000)
+VMR[3D] -= 4   (6F898)
+;next = 19C
+stack (esp -0x10):
+0xff4f0000
+0xff3f0000
+0xff2f0000
+0xff1f0000
+stack: (6F898 VMESP 6F898)
+0xff6f0000
+0xff4f0000
+0xff3f0000
+0xff2f0000
+
+--OP 0x19C  Addr: 0x1103da6c   	| 0xE4C/0xE7F    ba1479fd
+#push VMR[28] (00)
+VMR[3D] -= 4
+;next = 1A0
+stack (esp -0x10):
+0x6f89c
+0xff4f0000
+0xff3f0000
+0xff2f0000
+stack: (6F894 VMESP 6F894)
+0x0
+0xff6f0000
+0xff4f0000
+0xff3f0000
+
+--OP 0x1A0  Addr: 0x1103da7c   	| 0xE52/0xE7F    f734d642
+#push VMR[90] (FF8F0000)
+VMR[3D] -= 4
+;next = 270
+stack (esp -0x10):
+0xff6f0000
+0x6f89c
+0xff4f0000
+0xff3f0000
+stack: (6F890 VMESP 6F890)
+0xff8f0000
+0x0
+0xff6f0000
+0xff4f0000
+
+--OP 0x270  Addr: 0x1103ddbc   	| 0xE58/0xE7F    7a005200
+VMR[90] = VMR[90] (FF8F0000)
+VMR[28] = VMR[28] (00)
+VMR[41] = VMR[11] (FF3F0000)
+VMR[52] = VMR[52] (FF2F0000)
+VMR[7A] = VMR[7A] (FF4F0000)
+VMR[11] = VMR[41] (00)
+;next = 4F2
+stack (esp -0x10):
+0xff6f0000
+0x6f89c
+0xff4f0000
+0xff3f0000
+stack: (6F890 VMESP 6F890)
+0xff8f0000
+0x0
+0xff6f0000
+0xff4f0000
+
+--OP 0x4F2  Addr: 0x1103e7c4   	| 0xE72/0xE7F    51f03a4e
+;next = 38E
+stack (esp -0x10):
+0xff6f0000
+0x6f89c
+0xff4f0000
+0xff3f0000
+stack: (6F890 VMESP 6F890)
+0xff8f0000
+0x0
+0xff6f0000
+0xff4f0000
+
+--OP 0x38E  Addr: 0x1103e234   	| 0xE74/0xE7F    3a4e5900
+#[esp+20h] = 10594E3A
+#pop EDI FF8F0000
+#pop ESI 00
+#pop EBP FF6F0000
+#pop EBX FF4F0000
+#pop EDX FF3F0000
+#pop ECX FF2F0000
+#pop EAX 00
+#pop EFLAGS FF0F0000
+;RET!  10594E3A
+
+
+#OnEnd E74
+
+
+stack (esp -0x10):
+0xff2f0000
+0x0
+0xff0f0000
+0x10594e3a
+stack: (6F8B4 VMESP 6F890)
+0x0
+0x0
+0x0
+0x0
+

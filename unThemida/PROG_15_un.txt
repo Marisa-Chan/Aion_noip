@@ -1,0 +1,115 @@
+
+
+41 EAX
+90 EBX
+VMR[41] <=> VMR[90]
+push 30                                                PUSH 0x30
+
+11 EDI
+7A ESI
+VMR[7A] <=> VMR[11] 
+VMR[00] = VMR[3D] (6F8A8)
+VMR[00] += 6C (6F8A8 += 6C) (6F914)
+VMR[90] = VMR[00] (6F914)                              LEA EAX,[ESP + 0x6C]
+push VMR[41] (FF4F0000)                                PUSH EBX
+push VMR[90] (6F914)                                   PUSH EAX
+
+VMR[90] = VMR[7A] (FF8F0000) 7A EDI
+VMR[28] = VMR[11] (282A921A) 11 ESI
+VMR[41] = VMR[52] (FF2F0000) 52 EDX
+VMR[52] = VMR[28] (00)       28 ECX
+VMR[7A] = VMR[41] (FF4F0000) 41 EBX
+VMR[11] = VMR[90] (6F914)    90 EAX
+
+memset                                                 CALL memset
+
+#0x1167
+VMR[3D] += 0C                                          ADD ESP, 0xC
+push 30                                                PUSH 0x30
+
+VMR[00] = VMR[3D] (6F8AC)
+VMR[00] += 6C (6F8AC += 6C) (6F918)
+VMR[11] = VMR[00] (6F918)                              LEA ECX, [ESP + 0x6C]
+
+push VMR[11] (6F918)                                   PUSH ECX
+push VMR[28] (FF7F0000)                                PUSH ESI
+push VMR[04] (10E77C78)                                PUSH 0x10E77C78
+
+VMR[90] = VMR[90] (FF8F0000) 90 EDI
+VMR[28] = VMR[28] (FF7F0000) 28 ESI
+VMR[41] = VMR[41] (FF3F0000) 41 EDX
+VMR[52] = VMR[11] (6F918)    11 ECX
+VMR[7A] = VMR[7A] (FF4F0000) 7A EBX
+VMR[11] = VMR[52] (FF1F0000) 52 EAX
+
+FUN_100b0780                                           CALL FUN_100b0780
+
+#0x12A0
+VMR[3D] += 10 (6F8A4 += 10) (6F8B4)                    ADD ESP, 0x10
+push VMR[11] (FF4F0000)                                PUSH EBX
+
+VMR[00] = VMR[3D] (6F8B0)
+VMR[00] += 6C (6F8B0 += 6C) (6F91C)
+VMR[41] = VMR[00] (6F91C)                              LEA EAX,[ESP + 0x6C]
+
+VMR[90] = VMR[90] (FF8F0000) 90 EDI
+VMR[28] = VMR[28] (FF7F0000) 28 ESI
+VMR[41] = VMR[7A] (FF3F0000) 7A EDX
+VMR[52] = VMR[52] (FF2F0000) 52 ECX
+VMR[7A] = VMR[11] (FF4F0000) 11 EBX
+VMR[11] = VMR[41] (6F91C)    41 EAX
+
+FUN_1005a180                                           CALL FUN_1005a180
+
+#0x13A5
+push 30                								   PUSH 0x30
+push VMR[90] (FF4F0000)								   PUSH EBX
+push VMR[28] (FF7F0000)								   PUSH ESI
+
+VMR[90] = VMR[41] (FF8F0000) 41 EDI
+VMR[28] = VMR[28] (FF7F0000) 28 ESI
+VMR[41] = VMR[7A] (FF3F0000) 7A EDX
+VMR[52] = VMR[52] (FF2F0000) 52 ECX
+VMR[7A] = VMR[90] (FF4F0000) 90 EBX
+VMR[11] = VMR[11] (FF1F0000) 11 EAX
+
+memset												   CALL memset
+
+#0x14AE
+VMR[90] <=> VMR[41] (FF8F0000 <=> FF3F0000)   (VMR[90] = FF3F0000  VMR[41] = FF8F0000)
+VMR[3D] += 0C (6F8AC += 0C) (6F8B8)                    ADD ESP, 0xC
+
+push 30												   PUSH 0x30
+push VMR[7A] (FF7F0000)                                PUSH ESI
+VMR[00] = VMR[3D] (6F8B0)
+VMR[00] += 70 (6F8B0 += 70) (6F920)
+28 EBX
+90 EDX
+VMR[28] <=> VMR[90] (FF4F0000 <=> FF3F0000)
+VMR[28] = VMR[00] (6F920)                              LEA EDX, [ESP + 0x70]
+push VMR[28] (6F920)								   PUSH EDX
+push VMR[04] (10E77C78)                                PUSH 0x10E77C78
+
+VMR[90] = VMR[41] (FF8F0000) 41 EDI
+VMR[28] = VMR[7A] (FF7F0000) 7A ESI
+VMR[41] = VMR[28] (6F920)    28 EDX
+VMR[52] = VMR[52] (FF2F0000) 52 ECX
+VMR[7A] = VMR[90] (FF4F0000) 90 EBX
+VMR[11] = VMR[11] (FF1F0000) 11 EAX
+
+FUN_100b06c0										   CALL FUN_100b06c0
+
+#0x1607
+11 ECX
+7A ESI
+VMR[7A] <=> VMR[11] (FF7F0000 <=> FF2F0000) 
+VMR[3D] += 10 (6F8AC += 10) (6F8BC)                    ADD ESP, 0x10
+
+VMR[90] = VMR[41] (FF8F0000) 41 EDI
+VMR[28] = VMR[11] (FF7F0000) 11 ESI
+VMR[41] = VMR[52] (FF3F0000) 52 EDX
+VMR[52] = VMR[7A] (FF2F0000) 7A ECX
+VMR[7A] = VMR[90] (FF4F0000) 90 EBX
+VMR[11] = VMR[28] (FF1F0000) 28 EAX
+
+10594B6D

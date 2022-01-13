@@ -1,0 +1,282 @@
+VMR[11] = 02                                MOV EAX, 2
+
+VMR[90] = VMR[7A] (FF8F0000) 7A EDI
+VMR[28] = VMR[28] (282A921A) 28 ESI
+VMR[41] = VMR[52] (FF3F0000) 52 EDX
+VMR[52] = VMR[90] (FF1F0000) 90 ECX
+VMR[7A] = VMR[41] (FF4F0000) 41 EBX
+VMR[11] = VMR[11] (02)       11 EAX
+
+#F6F
+VMR[00] = VMR[11] (02)
+VMR[00] += FFFFFFFE (02 += FFFFFFFE) (00)
+VMR[52] = VMR[00] (00)                      LEA ECX, [EAX - 2]
+VMR[52] &= 0F  (00 &= 0F) (00)              AND ECX, 0xF
+
+VMR[00] = VMR[3D] (6F8AC)
+VMR[00] += VMR[52] (6F8AC += 00) (6F8AC)
+VMR[00] += 58 (6F8AC += 58) (6F904)
+VMR[41] = b, [VMR[00]]                      MOVZX EDX, byte ptr [ESP + ECX * 1 + 0x58]
+
+VMR[00] = VMR[3D] (6F8AC)
+VMR[00] += 18 (6F8AC += 18) (6F8C4)
+b, [VMR[00]] = VMR[41]  ([6F8C4] = 00)      MOV byte ptr[ESP + 0x18], DL 
+
+11 EAX
+28 ESI
+VMR[11] <=> VMR[28] 
+VMR[00] = VMR[28] (02)
+VMR[00] += FFFFFFFF (02 += FFFFFFFF) (01)
+VMR[52] = VMR[00] (01)                      LEA ECX, [EAX - 1]
+VMR[52] &= 0F (01 &= 0F) (01)               AND ECX, 0xF
+
+VMR[00] = VMR[3D] (6F8AC)
+28 EAX
+7A EBX
+VMR[28] <=> VMR[7A] 
+VMR[00] += VMR[52] (6F8AC += 01) (6F8AD)
+VMR[00] += 58 (6F8AD += 58) (6F905)
+VMR[41] = b, [VMR[00]]                      MOVZX EDX, byte ptr [ESP + ECX * 1 + 0x58]
+
+VMR[00] = VMR[3D] (6F8AC)
+VMR[00] += 18 (6F8AC += 18) (6F8C4)
+b, [VMR[00]] = VMR[41]  ([6F8C4] = 00)      MOV byte ptr[ESP + 0x18], DL
+
+VMR[52] = VMR[7A] (02)                      MOV ECX, EAX
+VMR[52] &= 0F (02 &= 0F) (02)               AND ECX, 0xF
+
+VMR[00] = VMR[3D] (6F8AC)
+VMR[00] += VMR[52] (6F8AC += 02) (6F8AE)
+VMR[00] += 58 (6F8AE += 58) (6F906)
+VMR[41] = b, [VMR[00]]                      MOVZX EDX, byte ptr [ESP + ECX * 1 + 0x58]
+
+VMR[00] = VMR[7A] (02)
+VMR[00] += 01 (02 += 01) (03)
+VMR[52] = VMR[00] (03)                      LEA ECX, [EAX + 1]
+
+VMR[52] &= 0F  (03 &= 0F) (03)              AND ECX, 0xF
+
+VMR[00] = VMR[3D] (6F8AC)
+VMR[00] += 18 (6F8AC += 18) (6F8C4)
+b, [VMR[00]] = VMR[41]  ([6F8C4] = 00)      MOV byte ptr[ESP + 0x18], DL
+
+#0x10F7
+28 EBX
+52 ECX
+VMR[28] <=> VMR[52] (FF4F0000 <=> 03)   
+VMR[00] = VMR[3D] (6F8AC)
+90 EDI
+28 ECX
+VMR[90] <=> VMR[28] (FF8F0000 <=> 03)  
+VMR[00] += VMR[90] (6F8AC += 03) (6F8AF)
+VMR[00] += 58 (6F8AF += 58) (6F907)         
+VMR[41] = b, [VMR[00]]                      MOVZX EDX, byte ptr[ESP + ECX * 1 + 0x58]
+
+VMR[00] = VMR[7A] (02)
+VMR[00] += 02 (02 += 02) (04)
+VMR[90] = VMR[00] (04)                      LEA ECX, [EAX + 2]
+
+VMR[90] &= 0F  (04 &= 0F) (04)              AND ECX, 0xF
+
+VMR[00] = VMR[3D] (6F8AC)
+VMR[00] += 18 (6F8AC += 18) (6F8C4)
+90 ECX
+7A EAX
+VMR[90] <=> VMR[7A]
+b, [VMR[00]] = VMR[41]  ([6F8C4] = 00)      MOV byte ptr[ESP + 0x18], DL
+
+VMR[00] = VMR[3D] (6F8AC)
+VMR[00] += VMR[7A] (6F8AC += 04) (6F8B0)
+VMR[00] += 58 (6F8B0 += 58) (6F908)
+VMR[41] = b, [VMR[00]]                      MOVZX EDX, byte ptr[ESP + ECX * 1 + 0x58]
+
+VMR[00] = VMR[90] (02)
+VMR[00] += 03 (02 += 03) (05)
+VMR[7A] = VMR[00] (05)                      LEA ECX, [EAX + 3]
+
+7A ECX
+90 EAX
+VMR[7A] <=> VMR[90] (05 <=> 02) 
+VMR[90] &= 0F (05 &= 0F) (05)               AND ECX, 0xF
+
+VMR[00] = VMR[3D] (6F8AC)
+VMR[00] += 18 (6F8AC += 18) (6F8C4)
+41 EDX
+90 ECX
+VMR[90] <=> VMR[41]
+b, [VMR[00]] = VMR[90]  ([6F8C4] = 00)      MOV byte ptr[ESP + 0x18], DL
+
+#0x11F1
+VMR[00] = VMR[3D] (6F8AC)
+VMR[00] += VMR[41] (6F8AC += 05) (6F8B1)
+VMR[00] += 58 (6F8B1 += 58) (6F909)
+VMR[90] = b, [VMR[00]]                      MOVZX EDX, byte ptr[ESP + ECX * 1 + 0x58]
+
+VMR[7A] += 06 (02 += 06) (08)               ADD EAX, 6
+
+VMR[00] = VMR[7A] (08)
+VMR[00] += FFFFFFFE (08 += FFFFFFFE) (06)
+VMR[41] = VMR[00] (06)                      LEA ECX,[EAX - 2]
+
+VMR[75] = EFLAGS CMP TEST VMR[41](06), 30    CMP ECX,0x30
+
+VMR[00] = VMR[3D] (6F8AC)
+VMR[00] += 18 (6F8AC += 18) (6F8C4)
+b, [VMR[00]] = VMR[90]  ([6F8C4] = 00)     MOV byte ptr[ESP + 0x18], DL
+
+VMR[90] = VMR[28] (FF8F0000) 28 EDI
+VMR[28] = VMR[11] (282A921A) 11 ESI
+VMR[41] = VMR[90] (00)       90 EDX
+VMR[52] = VMR[41] (06)       41 ECX
+VMR[7A] = VMR[52] (FF4F0000) 52 EBX
+VMR[11] = VMR[7A] (08)       7A EAX
+
+JL/JNGE [SF != OF]  to -324(EIP:F6F)       JL 
+
+push VMR[04] (10A43504)                    PUSH 0x10A43504
+
+VMR[90] = VMR[90] (FF8F0000) 90 EDI
+VMR[28] = VMR[28] (282A921A) 28 ESI
+VMR[41] = VMR[41] (00)       41 EDX
+VMR[52] = VMR[52] (06)       52 ECX
+VMR[7A] = VMR[7A] (FF4F0000) 7A EBX
+VMR[11] = VMR[11] (08)       11 EAX
+
+InterlockedIncrement                       CALL ESI
+
+7A EAX
+90 EDI
+VMR[90] <=> VMR[7A]
+VMR[41] = VMR[90] (FF1F0000)               MOV EDX, EAX
+VMR[90] += FFFFFFFD                        SUB EAX, 3
+
+52 ECX
+7A EDI
+90 EAX
+41 EDX
+VMR[52] <=> VMR[7A]
+VMR[90] <=> VMR[41]
+VMR[90] &= 1F (FF1F0000 &= 1F) (00)        AND EDX, 0x1F
+
+VMR[00] = VMR[90] (00)
+VMR[00] <<= 02 (00 <<= 02) (00)
+VMR[00] += 10A51DE8
+
+11 EBX
+7A ECX
+VMR[7A] <=> VMR[11]
+VMR[11] = VMR[00] (10A51DE8)               LEA ECX, [EDX*4 + 0x10A51DE8]
+
+
+VMR[41] &= 1F (FF1EFFFD &= 1F) (1D)        AND EAX, 0x1F
+
+90 EDX
+52 EDI
+VMR[90] <=> VMR[52] (00 <=> FF8F0000)  
+
+VMR[00] = VMR[41] (1D)
+VMR[00] <<= 02 (1D <<= 02) (74)
+VMR[00] += 10A51DE8
+VMR[41] = [ VMR[00] ]                      MOV EAX, dword ptr[EAX*4 + 0x10A51DE8]
+
+[VMR[11]] += VMR[41] ([10A51DE8] += 00)    ADD dword ptr[ECX], EAX
+VMR[41] = [ VMR[11] ]   ([10A51DE8]) (00)  MOV EAX, dword ptr[ECX]
+
+28 ESI
+90 EDI
+VMR[90] <=> VMR[28] 
+VMR[41] >>= 01 (00 >>= 01) (00)            SHR EAX, 1
+
+VMR[90] = VMR[28] (FF8F0000) 28 EDI
+VMR[28] = VMR[90] (FF7F0000) 90 ESI
+VMR[41] = VMR[52] (00)       52 EDX
+VMR[52] = VMR[11] (10A51DE8) 11 ECX
+VMR[7A] = VMR[7A] (FF4F0000) 7A EBX
+VMR[11] = VMR[41] (00)       41 EAX
+
+CDQ										   CDQ
+VMR[11] = 1B                               MOV ECX, 0x1B
+
+VMR[90] = VMR[90] (FF8F0000) 90 EDI
+VMR[28] = VMR[28] (FF7F0000) 28 ESI
+VMR[41] = VMR[41] (FF3F0000) 41 EDX
+VMR[52] = VMR[11] (1B)       11 ECX
+VMR[7A] = VMR[7A] (FF4F0000) 7A EBX
+VMR[11] = VMR[52] (FF1F0000) 52 EAX
+
+IDIV ECX                                   IDIV ECX
+
+#0x159D
+push 30                                    PUSH 0x30
+41 EDX
+90 ECX
+VMR[41] <=> VMR[90] 
+VMR[00] = VMR[28] (FF8F0000)
+VMR[00] += 24 (FF8F0000 += 24) (FF8F0024)
+VMR[11] = VMR[00] (FF8F0024)               LEA ESI, [EDI + 0x24]
+
+28 EDI
+52 EAX
+VMR[28] <=> VMR[52] (FF8F0000 <=> FF1F0000)
+b, VMR[90] += 33] (00 += 33) (33)          ADD DL, 0x33
+
+b, VMR[90] ^= VMR[7A] (33 ^= 00) (33)      XOR DL, BL
+
+VMR[7A] ^= VMR[7A] (FF4F0000 ^= FF4F0000)  XOR EBX,EBX
+
+41 ECX
+28 EAX
+VMR[41] <=> VMR[28]  
+b, [VMR[3D] + 1C] = VMR[90]                MOV byte ptr[ESP + 0x1C], DL
+
+#0x1675
+VMR[00] = VMR[3D] (6F8B8)
+VMR[00] += 4D (6F8B8 += 4D) (6F905)
+b, VMR[90] = b, [VMR[00]]                  MOV DL, byte ptr[ESP + 0x4D]
+
+push VMR[7A] (00)                          PUSH EBX
+push VMR[11] (FF8F0024)                    PUSH ESI
+
+VMR[00] = VMR[3D] (6F8B0)
+VMR[00] += 25 (6F8B0 += 25) (6F8D5)
+b, [VMR[00]] = VMR[90]  ([6F8D5] = 00)     MOV byte ptr[ESP + 0x25], DL
+
+VMR[90] = VMR[52] (FF8F0000) 52 EDI
+VMR[28] = VMR[11] (FF8F0024) 11 ESI
+VMR[41] = VMR[90] (FF3F0000) 90 EDX
+VMR[52] = VMR[28] (FF2F0000) 28 ECX
+VMR[7A] = VMR[7A] (00)       7A EBX
+VMR[11] = VMR[41] (FF1F0000) 41 EAX
+
+memset									   CALL memset
+
+VMR[3D] += 0C (6F8B4 += 0C) (6F8C0)        ADD ESP, 0xC
+
+push 30                                    PUSH 0x30
+push VMR[28] (FF7F0000)                    PUSH ESI
+
+VMR[11] = VMR[3D] + 20 (6F8D8)             LEA EAX,[ESP + 0x20]
+
+VMR[11] (6F8D8)                            PUSH EAX
+push VMR[04] (10E77C78)                    PUSH 0x10E77C78
+
+VMR[90] = VMR[90] (FF8F0000) EDI
+VMR[28] = VMR[28] (FF7F0000) ESI
+VMR[41] = VMR[41] (FF3F0000) EDX
+VMR[52] = VMR[52] (FF2F0000) ECX
+VMR[7A] = VMR[7A] (FF4F0000) EBX
+VMR[11] = VMR[11] (6F8D8)    EAX
+
+FUN_100b06c0                               CALL FUN_100b06c0
+
+#0x1866
+VMR[3D] += 10 (6F8B4 += 10) (6F8C4)        ADD ESP, 0x10
+
+VMR[90] = VMR[90] (FF8F0000)  90 EDI
+VMR[28] = VMR[28] (FF7F0000)  28 ESI
+VMR[41] = VMR[7A] (FF3F0000)  7A EDX
+VMR[52] = VMR[41] (FF2F0000)  41 ECX
+VMR[7A] = VMR[52] (FF4F0000)  52 EBX
+VMR[11] = VMR[11] (FF1F0000)  11 EAX
+
+;RET!  105949CD

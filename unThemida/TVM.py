@@ -307,6 +307,16 @@ class VMState:
 		if (efl != -1):
 			log.append("VMR[{:02X}] = eflags".format(efl))
 	
+	def VM_SUB_RM_V(self, log, r1, val, efl = -1):
+		adr = self.reg4[r1]
+		v1 = self.rMem4(adr)
+		res = U32(v1 - val)
+		log.append("[VMR[{0:02X}]] -= {1:02X} ([{2:02X}] -= {1:02X}) ({3:02X} -= {1:02X}) ({4:02X})".format(r1, val, adr, v1, res))
+		self.wMem4(adr, res)
+	
+		if (efl != -1):
+			log.append("VMR[{:02X}] = eflags".format(efl))
+	
 	def VM_ADD_R_V(self, log, r, val, efl = -1):
 		v1 = self.reg4[r]
 		res = U32(v1 + val)
@@ -454,6 +464,16 @@ class VMState:
 		if (efl != -1):
 			log.append("VMR[{:02X}] = eflags".format(efl))
 	
+	def VM_XOR_RM_V(self, log, r1, v2, efl = -1):
+		adr = self.reg4[r1]
+		v1 = self.rMem4(adr)
+		res = U32(v1 ^ v2)
+		log.append("[VMR[{0:02X}]] ^= {1:02X} ([{2:02X}]({3:02X}) ^= {1:02X}) ({4:02X})".format(r1, v2, adr, v1, res))
+		self.wMem4(adr, res)
+	
+		if (efl != -1):
+			log.append("VMR[{:02X}] = eflags".format(efl))
+	
 	def VM_SUB_BR_BR(self, log, r1, r2, efl = -1):
 		v1 = self.reg1[r1]
 		v2 = self.reg1[r2]
@@ -574,6 +594,16 @@ class VMState:
 		res = v1 & v2
 		log.append("VMR[{0:02X}] &= VMR[{1:02X}] ({2:02X} &= {3:02X}) ({4:02X})".format(r1, r2, v1, v2, res))
 		self.reg4[r1] = res
+	
+		if (efl != -1):
+			log.append("VMR[{:02X}] = eflags".format(efl))
+	
+	def VM_AND_WR_WR(self, log, r1, r2, efl = -1):
+		v1 = self.reg2[r1]
+		v2 = self.reg2[r2]
+		res = v1 & v2
+		log.append("VMR[{0:02X}] &= VMR[{1:02X}] ({2:02X} &= {3:02X}) ({4:02X})".format(r1, r2, v1, v2, res))
+		self.reg2[r1] = res
 	
 		if (efl != -1):
 			log.append("VMR[{:02X}] = eflags".format(efl))
@@ -7058,6 +7088,239 @@ def ASM_0x89(state, log):
 	state.next = t & 0xFFFF
 	log.append(";next = {:02X}".format(state.next))
 VMAsm[0x89] = ASM_0x89
+
+
+def ASM_0x406(state, log):
+	state.reg4[R_2c] &= 0x348dcd39
+	
+	uVar2 = U32(((state.read2(2)) ^ state.reg4[R_39]) - state.reg4[R_a7])
+	state.reg4[R_39] |= uVar2
+	state.reg4[R_69] &= 0x348dcd39
+	state.reg2[R_8a] += uVar2 & 0xFFFF
+	
+	iVar1 = U32(((state.read2(8)) + state.reg4[R_39]) - state.reg4[R_2c])
+	state.reg4[R_39] -= iVar1
+	state.reg2[R_9d] += iVar1 & 0xFFFF
+	state.reg4[R_39] |= 0xd4b8b74
+	state.reg4[R_69] += 0x4415d836
+	
+	r1 = (state.reg2[R_9d] + 0xaee8) & 0xFFFF
+	r2 = state.reg2[R_8a]
+	efl = state.read2(0)
+	state.VM_AND_WR_WR(log, r1, r2, efl)
+	
+	t = U32((state.read2(10) + state.reg4[R_39]) ^ 0x3a9995c3)
+	state.reg4[R_39] &= t
+	state.chEIP(+0xc)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x406] = ASM_0x406
+
+
+def ASM_0x350(state, log):
+	iVar2 = U32(state.read(0) - state.reg4[R_69])
+	state.reg4[R_39] -= iVar2
+	state.reg4[R_69] += 0x31f23b3a
+	state.reg4[R_8c] -= iVar2
+	state.reg4[R_a7] += iVar2
+	
+	uVar3 = U32(((state.read2(1)) - state.reg4[R_39]) + state.reg4[R_2c])
+	state.reg4[R_39] &= uVar3
+	state.reg4[R_69] ^= 0x370c1f6d
+	state.reg2[R_9d] += uVar3 & 0xFFFF
+	
+	if ((state.reg4[R_69] & 1)):
+		state.reg4[R_69] &= 0x15a03d26
+	
+	b = (state.reg4[R_8c] + 0x2e) & 0xFF
+	r = (state.reg2[R_9d] ^ 0x8984) & 0xFFFF
+	state.VM_XOR_BR_B(log, r, b)
+	
+	t = (state.read2(3))
+	state.reg4[R_39] -= t
+	state.chEIP(+5)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x350] = ASM_0x350
+
+def ASM_0x4F(state, log):
+	state.reg4[R_2c] ^= 0x7b076eb2
+	
+	iVar2 = U32(((state.read2(7)) ^ state.reg4[R_39]) + state.reg4[R_2c])
+	state.reg4[R_39] += iVar2
+	state.reg4[R_69] += 0x35ec50ca
+	state.reg2[R_9d] += iVar2 & 0xFFFF
+	state.reg4[R_2c] += 0x26db8a63
+	
+	uVar1 = U32(state.read(2) + state.reg4[R_39])
+	state.reg4[R_39] &= uVar1
+	state.reg4[R_69] += 0x44bb1d6c
+	state.reg4[R_8c] ^= uVar1
+	state.reg4[R_a7] &= uVar1
+	
+	t = U32(state.read2(0) + 0xb8960797)
+	state.reg4[R_39] ^= t
+	state.chEIP(+9)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x4F] = ASM_0x4F
+
+
+def ASM_0x3F9(state, log):
+	uVar2 = state.read2(0) ^ state.reg4[R_2c]
+	state.reg4[R_39] |= uVar2
+	state.reg4[R_69] += -0x2b7c144f
+	state.reg2[R_9d] += uVar2 & 0xFFFF
+	
+	r = (state.reg2[R_9d] + 0x69f6) & 0xFFFF
+	efl = state.read2(4)
+	state.VM_SUB_RM_V(log, r, 1, efl)
+	
+	t = U32((state.read2(2)) + 0xa8fd674d)
+	state.chEIP(+8)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x3F9] = ASM_0x3F9
+
+
+def ASM_0x42D(state, log):
+	uVar2 = U32((state.read2(4)) + state.reg4[R_39])
+	state.reg4[R_39] ^= uVar2
+	state.reg4[R_69] += 0xaad6e82
+	state.reg2[R_9d] -= uVar2 & 0xFFFF
+	
+	r1 = (state.reg2[R_9d] - 0x14c) & 0xFFFF
+	state.VM_POP_RM(log, r1)
+	
+	r2 = state.read2(6)
+	if (r1 != r2):
+		state.VM_ADD_R_V(log, r2, 4)
+				
+	state.reg4[R_a7] |= state.reg4[R_69]
+	
+	t = U32((state.read2(2) - state.reg4[R_39]) ^ 0x68884a9b)
+	state.reg4[R_39] ^= t
+	state.chEIP(+8)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x42D] = ASM_0x42D
+
+
+def ASM_0x2E9(state, log):
+	r1 = (state.read2(8))
+	r2 = (state.read2(10))
+	state.VM_XCHG_R_R(log, r1, r2)
+	
+	uVar6 = U32((state.read2(2)) + state.reg4[R_2c])
+	state.reg4[R_39] &= uVar6
+	state.reg4[R_69] |= 0x6bed534a
+	state.reg2[R_9d] += uVar6 & 0xFFFF
+	
+	uVar6 = U32(((state.read2(4)) ^ state.reg4[R_39]) - state.reg4[R_a7])
+	state.reg4[R_39] &= uVar6
+	state.reg4[R_69] += 0x2fe964cf
+	state.reg2[R_8a] -= uVar6 & 0xFFFF
+	
+	r1 = state.reg2[R_9d]
+	adr = state.reg4[r1]
+	v1 = state.rMem4(adr)
+	r2 = (state.reg2[R_8a] + 0x1db5) & 0xFFFF
+	v2 = state.reg4[r2]
+	efl = state.read2(0)
+	log.append("VMR[{:02X}] = CMP [VMR[{:02X}]]([{:02X}] -> {:02X}), VMR[{:02X}]({:02X})".format(efl, r1, adr, v1, r2, v2))
+		
+	uVar4 = state.reg4[R_69]
+	state.reg4[R_a7] &= uVar4
+	state.reg4[R_a7] += 0x57531ad2
+	state.reg4[R_2c] &= state.reg4[R_39]
+	
+	t = U32(((state.read2(6)) ^ state.reg4[R_39]) + 0xbafa58ea)
+	state.chEIP(+0xc)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x2E9] = ASM_0x2E9
+
+
+def ASM_0x2CD(state, log):
+	r1 = (state.read2(0x10))
+	r2 = (state.read2(0x12))
+	state.VM_XCHG_R_R(log, r1, r2)
+	
+	r1 = (state.read2(0xc))
+	r2 = (state.read2(2))
+	state.VM_XCHG_R_R(log, r1, r2)
+	
+	iVar3 = (state.read4(4))
+	iVar4 = state.reg4[R_69]
+	state.reg4[R_69] &= 0x792362ca
+	state.reg4[R_8c] += U32((iVar3 - state.reg4[R_39]) - iVar4)
+	
+	uVar6 = U32((state.read2(8)) ^ state.reg4[R_39] ^ state.reg4[R_2c])
+	state.reg4[R_39] += uVar6
+	state.reg4[R_69] ^= 0x3e2003f7
+	state.reg2[R_9d] += uVar6 & 0xFFFF
+	
+	r = (state.reg2[R_9d] + 0x6df1) & 0xFFFF
+	v = U32(state.reg4[R_8c] + 0x3db3268a)
+	efl = state.read2(10)
+	state.VM_XOR_RM_V(log, r, v, efl)
+	
+	state.reg4[R_a7] ^= state.reg4[R_69]
+	state.reg4[R_a7] += 0x4962a352
+	
+	t = U32(state.read2(0) + state.reg4[R_39] + 0x53fd9985)
+	state.reg4[R_39] += t
+	state.chEIP(+0x16)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x2CD] = ASM_0x2CD
+
+
+def ASM_0x487(state, log):
+	r1 = (state.read2(6))
+	r2 = (state.read2(4))
+	state.VM_XCHG_R_R(log, r1, r2)
+	
+	uVar3 = state.read2(0) ^ state.reg4[R_2c]
+	state.reg4[R_39] -= uVar3
+	state.reg2[R_9d] -= uVar3 & 0xFFFF
+	
+	r = (state.reg2[R_9d] + 0x5e0e) & 0xFFFF
+	efl = state.read2(2)
+	state.VM_NEG_R(log, r, efl)
+	
+	t = U32((state.read2(8)) + state.reg4[R_39] + 0x21fb9b1)
+	state.reg4[R_39] -= t
+	state.chEIP(+10)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x487] = ASM_0x487
+
+
+def ASM_0x31C(state, log):
+	uVar1 = (state.read2(2)) ^ state.reg4[R_a7]
+	state.reg4[R_39] ^= uVar1
+	state.reg4[R_69] += 0x7a0629d1
+	state.reg2[R_8a] -= uVar1 & 0xFFFF
+	state.reg4[R_39] += -0xfac98a8
+	state.reg4[R_69] ^= 0x29daed0
+	state.reg4[R_69] += 0x126c0f84
+	
+	uVar1 = U32(((state.read2(4)) - state.reg4[R_39]) + state.reg4[R_2c])
+	state.reg4[R_39] ^= uVar1
+	state.reg4[R_69] += -0x564e3673
+	state.reg2[R_9d] += uVar1 & 0xFFFF
+	
+	r2 = (state.reg2[R_8a] + 0x7799) & 0xFFFF
+	r1 = state.reg2[R_9d]
+	state.VM_SUB_R_RM(log, r1, r2)
+	
+	t = U32(state.read2(0) + state.reg4[R_39])
+	state.reg4[R_39] -= t
+	state.chEIP(+6)
+	state.next = t & 0xFFFF
+	log.append(";next = {:02X}".format(state.next))
+VMAsm[0x31C] = ASM_0x31C
 
 
 def Parse(state):
