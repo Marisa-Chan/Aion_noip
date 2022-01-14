@@ -7,8 +7,8 @@ import TVM
 
 def FNC(state, log):
 	eip = state.reg4[TVM.R_EIP]
-	if eip == 0xFBC:
-		log.append("\n#memset     \n")
+	if eip == 0xC38:
+		log.append("\n#FUN_10058950     \n")
 
 		tmp = state.esp
 		log.append(hex(state.esp))
@@ -22,10 +22,10 @@ def FNC(state, log):
 		state.push(0xFF7F0000) #esi
 		state.push(0xFF8F0000) #edi
 		
-		state.AddRoute(0x444, 0x141777a - 0x14167b4)
-		log.append("#Jump to route {:02X}".format(0x141777a - 0x14167b4))
-	elif eip == 0x10EF:
-		log.append("\n#FUN_100b0780     \n")
+		state.AddRoute(0x444, 0x14199df - 0x1418d9d)
+		log.append("#Jump to route {:02X}".format(0x14199df - 0x1418d9d))
+	elif eip == 0xDBC:
+		log.append("\n#FUN_10058950     \n")
 
 		tmp = state.esp
 		log.append(hex(state.esp))
@@ -39,10 +39,10 @@ def FNC(state, log):
 		state.push(0xFF7F0000) #esi
 		state.push(0xFF8F0000) #edi
 		
-		state.AddRoute(0x444, 0x14178ad - 0x14167b4)
-		log.append("#Jump to route {:02X}".format(0x14178ad - 0x14167b4))
-	elif eip == 0x11FE:
-		log.append("\n#FUN_1005a280     \n")
+		state.AddRoute(0x444, 0x1419b63 - 0x1418d9d)
+		log.append("#Jump to route {:02X}".format(0x1419b63 - 0x1418d9d))
+	elif eip == 0xF96:
+		log.append("\n#CALL EDX     \n")
 
 		tmp = state.esp
 		log.append(hex(state.esp))
@@ -56,8 +56,8 @@ def FNC(state, log):
 		state.push(0xFF7F0000) #esi
 		state.push(0xFF8F0000) #edi
 		
-		state.AddRoute(0x444, 0x14179bc - 0x14167b4)
-		log.append("#Jump to route {:02X}".format(0x14179bc - 0x14167b4))
+		state.AddRoute(0x444, 0x1419d3b - 0x1418d9d)
+		log.append("#Jump to route {:02X}".format(0x1419d3b - 0x1418d9d))
 	else:
 		log.append("\n\n#OnEnd {:02X}\n\n".format(eip))
 

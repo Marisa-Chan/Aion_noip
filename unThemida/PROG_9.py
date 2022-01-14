@@ -7,8 +7,59 @@ import TVM
 
 def FNC(state, log):
 	eip = state.reg4[TVM.R_EIP]
-	
-	log.append("\n\n#OnEnd {:02X}\n\n".format(eip))
+	if eip == 0xBDB:
+		log.append("\n#memset     \n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141ddb9 - 0x141d1d4)
+		log.append("#Jump to route {:02X}".format(0x141ddb9 - 0x141d1d4))
+	elif eip == 0xD06:
+		log.append("\n#FUN_100b0780     \n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141dee4 - 0x141d1d4)
+		log.append("#Jump to route {:02X}".format(0x141dee4 - 0x141d1d4))
+	elif eip == 0xE0B:
+		log.append("\n#FUN_1005a280     \n")
+
+		tmp = state.esp
+		log.append(hex(state.esp))
+		state.push(0xFF0F0000) #eflags
+		state.push(0xFF1F0000) #eax
+		state.push(0xFF2F0000) #ecx
+		state.push(0xFF3F0000) #edx
+		state.push(0xFF4F0000) #ebx
+		state.push(tmp) #esp
+		state.push(0xFF6F0000) #ebp
+		state.push(0xFF7F0000) #esi
+		state.push(0xFF8F0000) #edi
+		
+		state.AddRoute(0x444, 0x141dfe9 - 0x141d1d4)
+		log.append("#Jump to route {:02X}".format(0x141dfe9 - 0x141d1d4))
+	else:
+		log.append("\n\n#OnEnd {:02X}\n\n".format(eip))
 
 
 state = TVM.VMState()
