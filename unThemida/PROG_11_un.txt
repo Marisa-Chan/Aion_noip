@@ -1,0 +1,66 @@
+
+
+
+
+
+
+#0xC51
+7A EDI
+52 EBX
+VMR[52] <=> VMR[7A] 
+VMR[00] = VMR[82] (FF2F0000)
+VMR[00] += FFFFFFF8 (FF2F0000 += FFFFFFF8) (FF2EFFF8)
+VMR[41] = [ VMR[00] ]                                   MOV ECX, dword ptr[EBP + 0xFFFFFFF8]
+
+VMR[28] = VMR[52] (FF8F0000)                            MOV EAX, EDI
+
+VMR[28] &= 0F  (FF8F0000 &= 0F) (00)                    AND EAX, 0xF
+
+#0xC8D
+VMR[00] = VMR[28] (00)
+VMR[00] += E77C88 (00 += E77C88) (E77C88)
+VMR[00] += IMGBASE 10000000 (E77C88 += 10000000) (10E77C88)
+
+VMR[7A] = b, [VMR[00]]  (VMR[7A] = [10E77C88]) (00)     MOVZX EBX, byte ptr[ EAX + 0x10E77C88 ]
+
+VMR[7A] ^= [VMR[41]] (00 ^= [00]) (00 ^= 00) (00)       XOR EBX, dword ptr[ ECX ] 
+
+VMR[28] = [ VMR[90] ]                                   MOV EAX, dword ptr[ ESI ]
+
+VMR[7A] &= FF  (00 &= FF) (00)                          AND EBX, 0xFF
+
+VMR[00] = VMR[7A] (00)
+VMR[00] += 30 (00 += 30) (30)
+VMR[11] = VMR[00] (30)                                  LEA EDX, [EBX + 0x30]
+
+VMR[00] = VMR[82] (FF2F0000)
+VMR[00] += FFFFFFF4 (FF2F0000 += FFFFFFF4) (FF2EFFF4)
+VMR[41] = VMR[00] (FF2EFFF4)                            LEA ECX, [EBP + 0xFFFFFFF4]
+
+VMR[00] = VMR[82] (FF2F0000)
+VMR[00] += FFFFFFF4 (FF2F0000 += FFFFFFF4) (FF2EFFF4)
+w, [VMR[00]] = 11 ([FF2EFFF4] = 11)                     MOV word ptr[EBP + 0xFFFFFFF4], 0x11
+
+VMR[00] = VMR[28] (00)
+VMR[00] += 160 (00 += 160) (160)
+VMR[11] = [ VMR[00] ]   ([160]) (00)                    MOV EDX, dword ptr[EAX + 0x160]
+        
+push VMR[41] (FF2EFFF4)                                 PUSH ECX
+
+41 ECX
+28 EAX
+VMR[41] <=> VMR[28] 
+VMR[28] = VMR[90] (45571857)                            MOV ECX,ESI
+
+VMR[00] = VMR[82] (FF2F0000)
+VMR[00] += FFFFFFF6 (FF2F0000 += FFFFFFF6) (FF2EFFF6)
+w, [VMR[00]] = 00 ([FF2EFFF6] = 00)                     MOV word ptr[EBP + 0xFFFFFFF6], 0
+
+VMR[90] = VMR[52] (FF8F0000) 52 EDI
+VMR[28] = VMR[90] (45571857) 90 ESI
+VMR[41] = VMR[11] (00)       11 EDX
+VMR[52] = VMR[28] (45571857) 28 ECX
+VMR[7A] = VMR[7A] (00)       7A EBX
+VMR[11] = VMR[41] (00)       41 EAX
+
+CALL EDX                                               CALL EDX
