@@ -3365,7 +3365,7 @@ def ASM_0x502(state, log):
 	r2 = (state.reg2[R_8a] + 0x56d6) & 0xFFFF
 	adr = state.reg4[r1]
 	b = state.reg1[r2]
-	log.append("b, [VMR[{0:02X}]] = VMR[{1:02X}]  ([{2:02X}] = {3:02X})".format(r1, r2, adr, b))
+	log.append("b, [VMR[{0:02X}]] = b, VMR[{1:02X}]  ([{2:02X}] = {3:02X})".format(r1, r2, adr, b))
 	state.wMem1(adr, b)
 	
 	t = U32(state.read2(4) + state.reg4[R_39] + 0x7b3454e7)
@@ -7654,7 +7654,7 @@ def ASM_0x13A(state, log):
 	
 	r1 = (state.reg2[R_9d] ^ 0xb013) & 0xFFFF
 	r2 = (state.reg2[R_8a] ^ 0xe83) & 0xFFFF
-	state.VM_ASGN_WRM_W(log, r1, r2)
+	state.VM_ASGN_WRM_WR(log, r1, r2)
 	
 	t = U32(((state.read2(2)) ^ state.reg4[R_39]) + 0xd7c6a2e4)
 	state.chEIP(+10)

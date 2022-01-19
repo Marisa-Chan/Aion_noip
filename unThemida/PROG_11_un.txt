@@ -39,7 +39,7 @@ VMR[41] = VMR[00] (FF2EFFF4)                            LEA ECX, [EBP + 0xFFFFFF
 
 VMR[00] = VMR[82] (FF2F0000)
 VMR[00] += FFFFFFF4 (FF2F0000 += FFFFFFF4) (FF2EFFF4)
-w, [VMR[00]] = 11 ([FF2EFFF4] = 11)                     MOV word ptr[EBP + 0xFFFFFFF4], 0x11
+w, [VMR[00]] = VMR[11]                                  MOV word ptr[EBP + 0xFFFFFFF4], DX
 
 VMR[00] = VMR[28] (00)
 VMR[00] += 160 (00 += 160) (160)

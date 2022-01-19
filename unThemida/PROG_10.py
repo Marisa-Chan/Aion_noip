@@ -195,7 +195,7 @@ def FNC(state, log):
 		state.AddRoute(0x444, 0x141fa6b - 0x141e10f)
 		log.append("#Jump to route {:02X}".format(0x141fa6b - 0x141e10f))
 	elif eip == 0x1AD5:
-		log.append("\n#CALL EAX\n")
+		log.append("\n#JMP 10595E90\n")
 
 		tmp = state.esp
 		log.append(hex(state.esp))
@@ -208,9 +208,6 @@ def FNC(state, log):
 		state.push(0xFF6F0000) #ebp
 		state.push(0xFF7F0000) #esi
 		state.push(0xFF8F0000) #edi
-		
-		state.AddRoute(0x444, 0x141f95f - 0x141e10f)
-		log.append("#Jump to route {:02X}".format(0x141f95f - 0x141e10f))
 	elif eip == 0x1B97:
 		log.append("\n#IMUL ESI,ESI,0x68\n")
 

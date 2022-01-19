@@ -1,0 +1,121 @@
+123
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11 EAX
+7A EBX
+VMR[11] <=> VMR[7A]
+push 30														PUSH 0x30
+
+VMR[7A] = VMR[41] (282A921A)								MOV EAX,ESI
+push 00														PUSH 0
+#0xF42
+push VMR[7A] (282A921A)                                     PUSH EAX
+
+VMR[90] = VMR[28] (FF8F0000) 28 EDI
+VMR[28] = VMR[41] (282A921A) 41 ESI
+VMR[41] = VMR[90] (FF1F0000) 90 EDX
+VMR[52] = VMR[52] (FF2F0000) 52 ECX
+VMR[7A] = VMR[11] (FF4F0000) 11 EBX
+VMR[11] = VMR[7A] (282A921A) 7A EAX
+
+memset                                                      CALL memset
+
+11 EDX
+28 EBX
+VMR[28] <=> VMR[11]  
+VMR[3D] += 0C (6F8A4 += 0C) (6F8B0)							ADD ESP, 0xC
+
+41 EAX
+7A ESI
+VMR[41] <=> VMR[7A]
+push 30														PUSH 0x30
+
+VMR[52] = VMR[41] (FF7F0000)                                MOV ECX,ESI
+
+push VMR[52] (FF7F0000)                                     PUSH ECX
+
+VMR[00] = VMR[11] (FF4F0000)
+VMR[00] += 24 (FF4F0000 += 24) (FF4F0024)
+VMR[28] = VMR[00] (FF4F0024)                                LEA EDX,[EBX + 0x24]
+
+push VMR[28] (FF4F0024)                                     PUSH EDX
+push VMR[04] (10E77C78)										PUSH 0x10E77C78
+
+VMR[90] = VMR[90] (FF8F0000) 90 EDI
+VMR[28] = VMR[41] (FF7F0000) 41 ESI
+VMR[41] = VMR[28] (FF4F0024) 28 EDX
+VMR[52] = VMR[52] (FF7F0000) 52 ECX
+VMR[7A] = VMR[11] (FF4F0000) 11 EBX
+VMR[11] = VMR[7A] (FF1F0000) 7A EAX
+
+FUN_100b0780											    CALL FUN_100b0780
+
+#0x10F9
+
+VMR[3D] += 10 (6F8A4 += 10) (6F8B4)							ADD ESP, 0x10
+VMR[41] ^= VMR[41] (FF3F0000 ^= FF3F0000) (00)				XOR	EDX,EDX
+VMR[52] = VMR[28] (FF7F0000)								MOV ECX,ESI
+
+FUN_1005a280												CALL FUN_1005a280
+
+#0x1208
+
+VMR[90] = POP( FF8F0000 ) EDI
+VMR[28] = POP( FF7F0000 ) ESI
+VMR[82] = POP( FF6F0000 ) EBP
+VMR[7A] <=> VMR[28] 
+7A ESI
+VMR[28] = POP( FF4F0000 ) EBX
+VMR[41] = POP( FF3F0000 ) EDX
+VMR[52] = POP( FF2F0000 ) ECX
+VMR[7A] <=> VMR[52]
+7A ECX
+52 ESI
+VMR[11] = POP( FF1F0000 ) EAX
+
+#0x1261
+w, VMR[11] = b, VMR[11] (00)								MOVZX AX, AL
+VMR[52] = w, VMR[11] (00)									MOVZX ESI, AX
+
+
+
+
+
+
+
+VMR[90] = VMR[90] (FF8F0000) 90 EDI
+VMR[28] = VMR[52] (00)       52 ESI
+VMR[41] = VMR[41] (FF3F0000) 41 EDX
+VMR[52] = VMR[7A] (FF2F0000) 7A ECX
+VMR[7A] = VMR[28] (FF4F0000) 28 EBX
+VMR[11] = VMR[11] (FF1F0000) 11 EAX
+
+
+
+
+
+
+
+
+
+
+
+
+
+
