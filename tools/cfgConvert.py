@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
-f = open("system.cfg", "rb")
+import sys
+
+f = open(sys.argv[1], "rb")
+ou = open(sys.argv[2], "wb")
 fl = f.readlines()
 
 for l in fl:
@@ -11,5 +14,7 @@ for l in fl:
 		while i < len(l):
 			l[i] = (~l[i]) & 0xFF
 			i += 1
-	l = l.decode()		
-	print(l)
+	ou.write(l)
+	ou.write(b"\n")
+
+ou.close()
