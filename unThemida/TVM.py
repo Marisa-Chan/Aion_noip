@@ -8094,3 +8094,6 @@ def Parse(state):
 
 	print("\n\n#################################################\n\n")
 	return PARSED, ERR
+	
+if __name__ == "__main__":
+	print(len(VMAsm))

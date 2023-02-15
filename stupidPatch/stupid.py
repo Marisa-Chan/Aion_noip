@@ -214,6 +214,7 @@ for ln in f:
 		a[1] = a[1].strip()
 		
 		if a[0] == "target":
+			key = []
 			print("")
 			if not prefiles:
 				if (wfl != None):

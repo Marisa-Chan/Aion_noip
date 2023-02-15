@@ -34,6 +34,11 @@
 		sub     ebx, 77A782E2h
 		push    ebx
 		pop     dword ptr [ecx+edx]
+	
+	crysystem.dll
+		ADD EDI,0x3AA0F74A
+		XOR EDI,0x76FD700
+		XOR EDI,0x42241C02
 
 
 4.7.5.14 (47514.0924.1125.8752)
@@ -150,8 +155,20 @@
 		MOV DWORD PTR DS:[ECX+EDX],ESI
 
 
-
-
-
+Classic
+	aion.bin 4719d22419a17518d177945c1f11e008
+		add esi,3F832C5E
+		xor esi,134A0755
+		add esi,63B84588
+		
+	game.dll 36dc1b60b227901507ff4d2e02d71670
+		SUB ECX,0x7140CA16
+		SUB ECX,0x22F1594F
+		XOR ECX,0x26B8688D
+		
+	crysystem.dll 2901633c7a8db25866648e5d9fb8c8a8
+		ADD EDX,0x7C3F62E5
+		ADD EDX,0x51E85118
+		ADD EDX,0x5B084888
 
 

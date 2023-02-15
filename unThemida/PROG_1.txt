@@ -6271,7 +6271,7 @@ stack: (6F89C)
 0xff4f0000
 0x0
 
---OP 0x51  Addr: 0x1103d540   	| 0xE24/0x1931    4b003d00
+--OP 0x51  Addr: 0x1103d540   	| 0xE24/0x1931    4b003d00                FROM 863/DDB
 INIT REGZ 
 ;next = 4B
 stack (esp -0x10):
