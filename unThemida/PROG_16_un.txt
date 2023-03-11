@@ -74,7 +74,7 @@ VMR[41] = [ VMR[00] ]										MOV EDX, dword ptr[EBP + 8]
 
 VMR[00] = VMR[82] (FF6F0000)
 VMR[00] += FFFFFFF8 (FF6F0000 += FFFFFFF8) (FF6EFFF8)
-w, [VMR[00]] = w, VMR[7A]  ([FF6EFFF8] = 00)				MOV word ptr[EBP + 0xFFFFFFF8], DX
+w, [VMR[00]] = w, VMR[7A]  ([FF6EFFF8] = 00)				MOV word ptr[EBP + 0xFFFFFFF8], AX
 
 90 EDI
 41 EDX

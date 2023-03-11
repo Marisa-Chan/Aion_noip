@@ -270,12 +270,12 @@ VMR[52] += 01 (00 += 01) (01)                              ADD EAX, 1
 
 CMP VMR[52](01), 0A                                        CMP EAX, 0xA
 
-VMR[90] = VMR[90] (FF8F0000)
-VMR[28] = VMR[7A] (00)
-VMR[41] = VMR[41] (00)
-VMR[52] = VMR[11] (00)
-VMR[7A] = VMR[28] (FF4F0004)
-VMR[11] = VMR[52] (01)
+VMR[90] = VMR[90] (FF8F0000) 90 edi
+VMR[28] = VMR[7A] (00)       7a esi
+VMR[41] = VMR[41] (00)       41 edx
+VMR[52] = VMR[11] (00)       11 ecx
+VMR[7A] = VMR[28] (FF4F0004) 28 ebx
+VMR[11] = VMR[52] (01)       52 eax
 
 JL/JNGE [SF != OF]  to -377(EIP:EF7)                        JL
 

@@ -110,7 +110,7 @@ VMR[00] <<= 02 (00 <<= 02) (00)
 90 EDI
 VMR[7A] <=> VMR[90]
 VMR[00] += VMR[52] (00 += 00) (00)
-VMR[90] ^= [VMR[00]] (00 ^= [00]) (00 ^= 00) (00)				XOR EDI, dword ptr[ECX + EAX*4]
+VMR[90] ^= [VMR[00]] (00 ^= [00]) (00 ^= 00) (00)				XOR EDX, dword ptr[ECX + EAX*4]
 
 VMR[90] &= FF (00 &= FF) (00)									AND EDX, 0xFF
 push VMR[90] (00)												PUSH EDX
