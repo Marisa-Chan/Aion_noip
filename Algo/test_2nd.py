@@ -25,8 +25,6 @@ def RandomizeSecondPwdKey(xorkey):
 def RandomizeSecondPwdShuffleKey(xorkey):
 	key = bytearray(default2ndKey)
 	key[0] ^= xorkey[1]
-	j = 15
-	k = 2
 	for i in range(1, 16):
 		key[i] ^= staticKey[(16 - i) & 0x3F] ^ xorkey[ (i + 1) & 3 ] ^ key[ i - 1 ]
 	
