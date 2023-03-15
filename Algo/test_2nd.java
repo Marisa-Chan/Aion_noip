@@ -45,18 +45,16 @@ public class test_2nd{
 		
 		for(int i = 0; i < 3; i++)
 			System.arraycopy( TwoFish.decrypt( Arrays.copyOfRange(testdata, i * 16, (i + 1) * 16), SecondPwdKey ), 0, decr, i * 16, 16 );
-		
-		
-		byte[] decr2 = new byte[48];
-		
+
 		int strLen = decr[1] ^ SecondPwdShuffledKey[1];
 		int multiplier = decr[0] ^ SecondPwdShuffledKey[0];
+		
+		byte[] decr2 = new byte[strLen];
 		
 		for (int i = 0; i < strLen; i++) {
 			int index = 2 + ((multiplier * (i + 1)) % 43);
 			decr2[i] = (byte)(SecondPwdShuffledKey[index & 0xf] ^ decr[index]);
 		}
-		
-		System.out.println( new String(decr2) ); // Or limit decr2 with strLen
+		System.out.println( new String(decr2) );
       }
 }
