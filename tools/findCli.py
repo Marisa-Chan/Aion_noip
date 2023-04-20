@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 
-VERSION = "TEST"
+import sys
+
+
+VERSION = 475
+
+if len(sys.argv) > 1:
+	VERSION = int(sys.argv[1])
 
 pairs = list()
 unknown = list()
@@ -16,15 +22,21 @@ unknown = list()
 
 #C_LEVEL_READY	9 [game] send level_ready
 
+#C_PARTY  96(4.7.5) 97(7.7)   ConsoleClientMsgID(0x155f11 ....)
+#C_PARTY_BY_NAME 97		Call near FindByID(...., 0xdc46d)
+
+#C_PET_ORDER  121(4.7)
+
 #C_L2AUTH_LOGIN 149(4.7.5,4.8,4.9) 150(7.7)  [game] send login_l2 
 
 #C_RECONNECT_AUTH 183(4.7.5, 4.8, 4.9) 184(7.7) [game] send reconnect_auth
+#C_GROUP_ITEM_DIST 184(4.7.5...) 185(7.7)    after FindByID(....,0xdc137)  and  ConsoleClientMsgID(0x13d917 .....)
 
 #C_ACCUSE_CHAT_SPAMMER		(4.7.5, 4.8, 4.9 : 245,  7.7 : 246) near ConsoleClientMsgID(0xdcf7f,0,0,0,0);
-#
 
 
-A = 0  # in GetCmdS ( (id ^ xx) - A ). Near recv server packets and decrypt with "nKO/WctQ..................."
+
+A = None  # in GetCmdS ( (id ^ xx) - A ). Near recv server packets and decrypt with "nKO/WctQ..................."
 
 if VERSION == "TEST":
 	#4.7.5
@@ -85,6 +97,21 @@ elif VERSION == 49:
 	pairs.append( (245,0x1b3) ) #C_ACCUSE_CHAT_SPAMMER
 
 	A = 0xD0
+elif VERSION == 58:
+	A = None ## We don't know this ;)
+	pairs.append( (0,0xDB) ) #C_VERSION    
+	pairs.append( (3,0xCE) ) #C_ASK_QUIT
+	pairs.append( (4,0xCF) ) #C_READY_TO_QUIT
+	pairs.append( (8,0xC3) ) #CM_ENTER_WORLD
+	pairs.append( (15, 0xEA ) ) #CM_TELEPORT_DONE
+	pairs.append( (43, 0x2F6) ) #CM_EMOTION
+	pairs.append( (71, 0x102)) #CM_MOTION
+	pairs.append( (90, 0x111)) #CM_ITEM_REMODEL
+
+	unknown.append( (150, 0x15D) ) #C_L2AUTH_LOGIN 
+	unknown.append( (184, 0x173) ) #C_RECONNECT_AUTH
+	unknown.append( 0x127 ) #CM_SECURITY_TOKEN
+	
 elif VERSION == 77:
 	#7.7
 	pairs.append( (0,0xd6) ) #C_VERSION    
@@ -101,29 +128,32 @@ elif VERSION == 77:
 	pairs.append( (246,0x1b8) ) #C_ACCUSE_CHAT_SPAMMER
 	
 	A = 0xD8
-	
-	
-	
+
 
 #for A in range(0x80, 0x100):
 
 srt = list()
 nmax = 0
 
+R = range(0xC0, 0xE0)
 
-for B in range(0x80, 0x100):
-	for C in range(0x80, 0x100):
-		klkt = 0
-		for (ik, ok) in pairs:
-			compu = (((ik + A) ^ B) + 0xC) ^ C
-			if (compu == ok):
-				klkt += 1
+if A != None:
+	R = (A, )
+
+for A in R:
+	for B in range(0x80, 0x100):
+		for C in range(0x80, 0x100):
+			klkt = 0
+			for (ik, ok) in pairs:
+				compu = (((ik + A) ^ B) + 0xC) ^ C
+				if (compu == ok):
+					klkt += 1
 		
-		if klkt >= 1: #len(pairs) / 2:
-			srt.append( (klkt, "(((K + {:02X}) ^ {:02X}) + 0xC) ^ {:02X}".format(A,B,C), (A,B,C)) )
+			if klkt >= 1: #len(pairs) / 2:
+				srt.append( (klkt, "(((K + {:02X}) ^ {:02X}) + 0xC) ^ {:02X}".format(A,B,C), (A,B,C)) )
 		
-		if nmax < klkt:
-			nmax = klkt
+			if nmax < klkt:
+				nmax = klkt
 
 
 
