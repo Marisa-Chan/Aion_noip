@@ -15,6 +15,8 @@ unknown = list()
 
 #C_HOTSPOT		near ConsoleClientMsgID(0xdcf7f,0,0,0,0);
 
+A = 0  # in GetCmdS ( (id ^ xx) - A ). Near recv server packets and decrypt with "nKO/WctQ..................."
+
 if VERSION == 475:
 	#4.8
 	pairs.append( (0,0xc2) ) #C_VERSION    
