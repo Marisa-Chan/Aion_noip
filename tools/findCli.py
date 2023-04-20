@@ -1,31 +1,53 @@
 #!/usr/bin/python3
 
-VERSION = 49
+VERSION = "TEST"
 
 pairs = list()
 unknown = list()
 
-#unknown.append( (None, crypted) )
+#unknown.append( crypted )
+#unknown.append( (val+/-, crypted) )
 #unknown.append( ((from, to), crypted) )
 
-#C_VERSION		[game] send version
-#C_LOGOUT		[game] send login_out
-#C_ASK_QUIT		[game] send quit
-#C_READY_TO_QUIT	[game] send ready to quit
+#C_VERSION		0 [game] send version
+#C_LOGOUT		2 [game] send login_out
+#C_ASK_QUIT		3 [game] send quit
+#C_READY_TO_QUIT	4 [game] send ready to quit
 
-#C_HOTSPOT		near ConsoleClientMsgID(0xdcf7f,0,0,0,0);
+#C_LEVEL_READY	9 [game] send level_ready
+
+#C_L2AUTH_LOGIN 149(4.7.5,4.8,4.9) 150(7.7)  [game] send login_l2 
+
+#C_RECONNECT_AUTH 183(4.7.5, 4.8, 4.9) 184(7.7) [game] send reconnect_auth
+
+#C_ACCUSE_CHAT_SPAMMER		(4.7.5, 4.8, 4.9 : 245,  7.7 : 246) near ConsoleClientMsgID(0xdcf7f,0,0,0,0);
+#
+
 
 A = 0  # in GetCmdS ( (id ^ xx) - A ). Near recv server packets and decrypt with "nKO/WctQ..................."
 
-if VERSION == 475:
-	#4.8
+if VERSION == "TEST":
+	#4.7.5
 	pairs.append( (0,0xc2) ) #C_VERSION    
 	pairs.append( (2,0xa4) ) #C_LOGOUT
 	pairs.append( (3,0xa5) ) #C_ASK_QUIT
 	pairs.append( (4,0xa6) ) #C_READY_TO_QUIT
+	
+	unknown.append( (150, 0x177) ) #C_L2AUTH_LOGIN 
+	unknown.append( (184, 0x199) ) #C_RECONNECT_AUTH
+	
+	A = 0xCE
+elif VERSION == 475:
+	#4.7.5
+	pairs.append( (0,0xc2) ) #C_VERSION    
+	pairs.append( (2,0xa4) ) #C_LOGOUT
+	pairs.append( (3,0xa5) ) #C_ASK_QUIT
+	pairs.append( (4,0xa6) ) #C_READY_TO_QUIT
+	
+	pairs.append( (149,0x177) ) #C_L2AUTH_LOGIN
 
-	pairs.append( (245,0x1d7) ) #C_HOTSPOT
-
+	pairs.append( (245,0x1d7) ) #C_ACCUSE_CHAT_SPAMMER
+	
 	A = 0xCE
 elif VERSION == 48:
 	#4.8
@@ -34,7 +56,7 @@ elif VERSION == 48:
 	pairs.append( (3,0xa6) ) #C_ASK_QUIT
 	pairs.append( (4,0xa7) ) #C_READY_TO_QUIT
 
-	pairs.append( (245,0x1d8) ) #C_HOTSPOT
+	pairs.append( (245,0x1d8) ) #C_ACCUSE_CHAT_SPAMMER
 
 	A = 0xCF
 elif VERSION == 49:
@@ -60,10 +82,28 @@ elif VERSION == 49:
 
 	pairs.append( (209,0x1af) ) #C_COMPOUND_ENCHANT_ITEM
 
-	pairs.append( (245,0x1b3) ) #C_HOTSPOT
+	pairs.append( (245,0x1b3) ) #C_ACCUSE_CHAT_SPAMMER
 
 	A = 0xD0
+elif VERSION == 77:
+	#7.7
+	pairs.append( (0,0xd6) ) #C_VERSION    
+	pairs.append( (2,0xd4) ) #C_LOGOUT
+	pairs.append( (3,0xd5) ) #C_ASK_QUIT
+	pairs.append( (4,0xca) ) #C_READY_TO_QUIT
+	
+	pairs.append( (9, 0xdf) ) #C_LEVEL_READY
+	
+	
+	pairs.append( (150,0x158) ) #C_L2AUTH_LOGIN
 
+
+	pairs.append( (246,0x1b8) ) #C_ACCUSE_CHAT_SPAMMER
+	
+	A = 0xD8
+	
+	
+	
 
 #for A in range(0x80, 0x100):
 
@@ -108,16 +148,25 @@ if len(unknown) > 0:
 	cpi = dict()
 	for i in range(len(unknown)):
 		cpi[i] = list()
-		tpl = unknown[i][0]
-		crid = unknown[i][1]
 		
 		a = 0
 		b = 360
-		if type(tpl) is tuple:
-			a = tpl[0]
-			b = tpl[1] + 1
+		crid = 0
 		
-		print("\tFor {:02X} possible is: ".format(crid))
+		if type(unknown[i]) is tuple:
+			tpl = unknown[i][0]
+			crid = unknown[i][1]
+		
+			if type(tpl) is tuple:
+				a = tpl[0]
+				b = tpl[1] + 1
+			else:
+				a = tpl - 0xF
+				b = tpl + 0xF
+		else:
+			crid = unknown[i]
+		
+		print("\tFor 0x{:02X} possible is: ".format(crid))
 		
 		for p in range(len(maxl)):
 			pars = maxl[p]
