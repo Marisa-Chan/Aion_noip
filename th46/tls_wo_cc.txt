@@ -1,0 +1,1081 @@
+0	Start at 5101f1
+1	
+Op_24   (36)     RSI 5101f0 RBX 5101cd RBP f60
+2	POP VM[78] = RBP[0]  (0)
+3	
+Op_3d   (61)     RSI 5101ee RBX 510108 RBP f68
+4	LOAD 5a2e5dba
+5	
+Op_1f   (31)     RSI 5101e9 RBX 5a7f5c93 RBP f60
+6	RBP[1] (0) += RBP[0] (5a2e5dba) --> FLG[0]  RBP[1] (5a2e5dba)
+7	
+Op_24   (36)     RSI 5101e8 RBX 5a7f5c6f RBP f60
+8	POP VM[b0] = RBP[0]  (0)
+9	
+Op_24   (36)     RSI 5101e6 RBX 5a7f5cfb RBP f68
+10	POP VM[90] = RBP[0]  (5a2e5dba)
+11	
+Op_24   (36)     RSI 5101e4 RBX 5a7f5c67 RBP f70
+12	POP VM[18] = RBP[0]  (0)
+13	
+Op_24   (36)     RSI 5101e2 RBX 5a7f5c5b RBP f78
+14	POP VM[68] = RBP[0]  (0)
+15	
+Op_24   (36)     RSI 5101e0 RBX 5a7f5c9f RBP f80
+16	POP VM[10] = RBP[0]  (0)
+17	
+Op_24   (36)     RSI 5101de RBX 5a7f5c8b RBP f88
+18	POP VM[28] = RBP[0]  (0)
+19	
+Op_24   (36)     RSI 5101dc RBX 5a7f5c8f RBP f90
+20	POP VM[70] = RBP[0]  (0)
+21	
+Op_24   (36)     RSI 5101da RBX 5a7f5cdb RBP f98
+22	POP VM[88] = RBP[0]  (0)
+23	
+Op_24   (36)     RSI 5101d8 RBX 5a7f5c3f RBP fa0
+24	POP VM[48] = RBP[0]  (0)
+25	
+Op_24   (36)     RSI 5101d6 RBX 5a7f5c63 RBP fa8
+26	POP VM[38] = RBP[0]  (0)
+27	
+Op_24   (36)     RSI 5101d4 RBX 5a7f5c77 RBP fb0
+28	POP VM[b0] = RBP[0]  (0)
+29	
+Op_24   (36)     RSI 5101d2 RBX 5a7f5c03 RBP fb8
+30	POP VM[58] = RBP[0]  (0)
+31	
+Op_24   (36)     RSI 5101d0 RBX 5a7f5c37 RBP fc0
+32	POP VM[80] = RBP[0]  (0)
+33	
+Op_24   (36)     RSI 5101ce RBX 5a7f5c93 RBP fc8
+34	POP VM[30] = RBP[0]  (0)
+35	
+Op_24   (36)     RSI 5101cc RBX 5a7f5c9f RBP fd0
+36	POP VM[20] = RBP[0]  (0)
+37	
+Op_24   (36)     RSI 5101ca RBX 5a7f5c9b RBP fd8
+38	POP VM[50] = RBP[0]  (0)
+39	
+Op_24   (36)     RSI 5101c8 RBX 5a7f5cc7 RBP fe0
+40	POP VM[a0] = RBP[0]  (0)
+41	
+Op_24   (36)     RSI 5101c6 RBX 5a7f5c43 RBP fe8
+42	POP VM[8] = RBP[0]  (0)
+43	
+Op_24   (36)     RSI 5101c4 RBX 5a7f5c27 RBP ff0
+44	POP VM[b8] = RBP[0]  (0)
+45	
+Op_24   (36)     RSI 5101c2 RBX 5a7f5cbb RBP ff8
+46	POP VM[60] = RBP[0]  (0)
+47	
+Op_24   (36)     RSI 5101c0 RBX 5a7f5cf7 RBP 1000
+48	POP VM[98] = RBP[0]  (efeaf00)
+49	
+Op_1   (1)     RSI 5101be RBX 5a7f5c8e RBP 1008
+50	LOAD d704f629
+51	
+Op_1   (1)     RSI 5101b5 RBX 1318452b6 RBP 1000
+52	LOAD d70c9f43
+53	
+Op_2d   (45)     RSI 5101ac RBX 20890f1cc RBP ff8
+54	STORE RBP (ff8)
+55	
+Op_ad   (173)     RSI 5101ab RBX 20890f11f RBP ff0
+56	LOAD WRD 0
+57	
+Op_1c   (28)     RSI 5101a9 RBX 20890f103 RBP fee
+58	LOAD 585785
+59	
+Op_5e   (94)     RSI 5101a0 RBX 208e9482a RBP fe6
+60	LOAD WRD <-- byte, [RBP] ([585785] --> 0)
+61	
+Op_2d   (45)     RSI 51019f RBX 208e948fd RBP fec
+62	STORE RBP (fec)
+63	
+Op_d7   (215)     RSI 51019e RBX 208e94826 RBP fe4
+64	LOAD WRD <-- byte, [RBP] ([fec] --> 0)
+65	
+Op_fd   (253)     RSI 51019d RBX 208e94829 RBP fea
+66	~b, RBP[0] (ff) AND ~b,RBP[2] (ff) --> EFLAGS8 (286)  RES2 (ff)
+67	
+Op_24   (36)     RSI 51019c RBX 208e94805 RBP fe4
+68	POP VM[0] = RBP[0]  (286)
+69	
+Op_b9   (185)     RSI 51019a RBX 208e9484c RBP fec
+70	b, RBP[0] (ff) + b,RBP[2] (0) --> EFLAGS8  RES2 (ff)
+71	
+Op_24   (36)     RSI 510199 RBX 208e94828 RBP fe6
+72	POP VM[0] = RBP[0]  (0)
+73	
+Op_c3   (195)     RSI 510197 RBX 208e94865 RBP fee
+74	STORE RBP (fee)
+75	
+Op_25   (37)     RSI 510196 RBX 208e94840 RBP fe6
+76	LOAD WRD <-- byte, [RBP] ([fee] --> ff)
+77	
+Op_10   (16)     RSI 510195 RBX 208e94830 RBP fec
+78	~b, RBP[0] (0) AND ~b,RBP[2] (0) --> EFLAGS8 (246)  RES2 (0)
+79	
+Op_24   (36)     RSI 510194 RBX 208e9480c RBP fe6
+80	POP VM[40] = RBP[0]  (246)
+81	
+Op_b4   (180)     RSI 510192 RBX 208e94898 RBP fee
+82	POP byte, VM[60] <-- word, RBP[0] (0)
+83	
+Op_9   (9)     RSI 510190 RBX 208e9482f RBP ff0
+84	PUSH VM[0] (0)
+85	
+Op_c3   (195)     RSI 51018e RBX 208e9486c RBP fe8
+86	STORE RBP (fe8)
+87	
+Op_59   (89)     RSI 51018d RBX 208e94813 RBP fe0
+88	DEREF64  RBP[0] ([fe8] -->  0)
+89	
+Op_16   (22)     RSI 51018c RBX 208e948fd RBP fe0
+90	~RBP[0] (ffffffffffffffff)  AND   ~RBP[8] (ffffffffffffffff)  --> FLAGS  RES8 (ffffffffffffffff)
+91	
+Op_24   (36)     RSI 51018b RBX 208e948d9 RBP fe0
+92	POP VM[20] = RBP[0]  (286)
+93	
+Op_6f   (111)     RSI 510189 RBX 208e9488a RBP fe8
+94	LOAD QWRD fffffffffffff7ea
+95	
+Op_22   (34)     RSI 510186 RBX 208e94052 RBP fe0
+96	~RBP[0] (815)  AND   ~RBP[8] (0)  --> FLAGS  RES8 (0)
+97	
+Op_24   (36)     RSI 510185 RBX 208e9402e RBP fe0
+98	POP VM[a8] = RBP[0]  (246)
+99	
+Op_b2   (178)     RSI 510183 RBX 208e94024 RBP fe8
+100	PUSH VM[40] (246)
+101	
+Op_2d   (45)     RSI 510181 RBX 208e94037 RBP fe0
+102	STORE RBP (fe0)
+103	
+Op_a   (10)     RSI 510180 RBX 208e9402d RBP fd8
+104	DEREF64  RBP[0] ([fe0] -->  246)
+105	
+Op_e6   (230)     RSI 51017f RBX 208e94047 RBP fd8
+106	~RBP[0] (fffffffffffffdb9)  AND   ~RBP[8] (fffffffffffffdb9)  --> FLAGS  RES8 (fffffffffffffdb9)
+107	
+Op_24   (36)     RSI 51017e RBX 208e94023 RBP fd8
+108	POP VM[98] = RBP[0]  (286)
+109	
+Op_ac   (172)     RSI 51017c RBX 208e9400f RBP fe0
+110	LOAD QWRD 815
+111	
+Op_e6   (230)     RSI 510179 RBX 208e9483e RBP fd8
+112	~RBP[0] (fffffffffffff7ea)  AND   ~RBP[8] (246)  --> FLAGS  RES8 (242)
+113	
+Op_24   (36)     RSI 510178 RBX 208e9481a RBP fd8
+114	POP VM[20] = RBP[0]  (202)
+115	
+Op_cc   (204)     RSI 510176 RBX 208e9486e RBP fe0
+116	RBP[1] (0) += RBP[0] (242) --> FLG[0]  RBP[1] (242)
+117	
+Op_24   (36)     RSI 510175 RBX 208e9484a RBP fe0
+118	POP VM[18] = RBP[0]  (0)
+119	
+Op_24   (36)     RSI 510173 RBX 208e9483e RBP fe8
+120	POP VM[60] = RBP[0]  (242)
+121	
+Op_1e   (30)     RSI 510171 RBX 208e94880 RBP ff0
+122	LOAD WRD 3
+123	
+Op_14   (20)     RSI 51016f RBX 208e94869 RBP fee
+124	PUSH QWRD ffffffffffffffbf
+125	
+Op_21   (33)     RSI 51016d RBX 208e94889 RBP fe6
+126	PUSH VM[60] (242)
+127	
+Op_16   (22)     RSI 51016b RBX 208e948d3 RBP fde
+128	~RBP[0] (fffffffffffffdbd)  AND   ~RBP[8] (40)  --> FLAGS  RES8 (0)
+129	
+Op_24   (36)     RSI 51016a RBX 208e948af RBP fde
+130	POP VM[0] = RBP[0]  (246)
+131	
+Op_1b   (27)     RSI 510168 RBX 208e94894 RBP fe6
+132	SHR RBP[0] (0) >> b,RBP[8] (3)  ---> FLG RES8 (0)
+133	
+Op_24   (36)     RSI 510167 RBX 208e94870 RBP fe0
+134	POP VM[20] = RBP[0]  (0)
+135	
+Op_cd   (205)     RSI 510165 RBX 208e948c3 RBP fe8
+136	RBP[1] (ff8) += RBP[0] (0) --> FLG[0]  RBP[1] (ff8)
+137	
+Op_24   (36)     RSI 510164 RBX 208e9489f RBP fe8
+138	POP VM[18] = RBP[0]  (0)
+139	
+Op_fa   (250)     RSI 510162 RBX 208e948bd RBP ff0
+140	DEREF64  RBP[0] ([ff8] -->  d70c9f43)
+141	
+Op_24   (36)     RSI 510161 RBX 208e94899 RBP ff0
+142	POP VM[98] = RBP[0]  (d70c9f43)
+143	
+Op_24   (36)     RSI 51015f RBX 208e9480d RBP ff8
+144	POP VM[18] = RBP[0]  (d70c9f43)
+145	
+Op_24   (36)     RSI 51015d RBX 208e94801 RBP 1000
+146	POP VM[a8] = RBP[0]  (d704f629)
+147	
+Op_dc   (220)     RSI 51015b RBX 208e948cd RBP 1008
+148	PUSH VM[98] (d70c9f43)
+149	
+Op_2d   (45)     RSI 510159 RBX 208e94838 RBP 1000
+150	STORE RBP (1000)
+151	
+Op_2c   (44)     RSI 510158 RBX 208e9480c RBP ff8
+152	LOAD   dword,[1000] (d70c9f43)
+153	
+Op_23   (35)     RSI 510157 RBX 208e948e9 RBP ffc
+154	POP dw,VM[98] = dw,RBP[0] (d70c9f43)
+155	
+Op_f6   (246)     RSI 510155 RBX 208e9488b RBP 1000
+156	LOAD DWRD VM[98] (d70c9f43)
+157	
+Op_53   (83)     RSI 510153 RBX 208e948d0 RBP ffc
+158	~dw,RBP[0] (28f360bc) AND ~dw,RBP[4] (28f360bc) -> EFLG dw,RBP (28f360bc)
+159	
+Op_24   (36)     RSI 510152 RBX 208e948ac RBP ff8
+160	POP VM[18] = RBP[0]  (202)
+161	
+Op_d9   (217)     RSI 510150 RBX 208e948eb RBP 1000
+162	LOAD DWRD 28a2b0d3
+163	
+Op_5   (5)     RSI 51014b RBX 2204bf833 RBP ffc
+164	~dw,RBP[0] (d75d4f2c) AND ~dw,RBP[4] (d70c9f43) -> EFLG dw,RBP (d70c0f00)
+165	
+Op_24   (36)     RSI 51014a RBX 2204bf80f RBP ff8
+166	POP VM[20] = RBP[0]  (206)
+167	
+Op_d9   (217)     RSI 510148 RBX 2204bf856 RBP 1000
+168	LOAD DWRD d75d4f2c
+169	
+Op_58   (88)     RSI 510143 RBX 2f716b722 RBP ffc
+170	LOAD DWRD VM[98] (d70c9f43)
+171	
+Op_53   (83)     RSI 510141 RBX 2f716b767 RBP ff8
+172	~dw,RBP[0] (28f360bc) AND ~dw,RBP[4] (28a2b0d3) -> EFLG dw,RBP (28a22090)
+173	
+Op_24   (36)     RSI 510140 RBX 2f716b743 RBP ff4
+174	POP VM[20] = RBP[0]  (206)
+175	
+Op_5   (5)     RSI 51013e RBX 2f716b75e RBP ffc
+176	~dw,RBP[0] (d75ddf6f) AND ~dw,RBP[4] (28f3f0ff) -> EFLG dw,RBP (51d06f)
+177	
+Op_24   (36)     RSI 51013d RBX 2f716b73a RBP ff8
+178	POP VM[0] = RBP[0]  (206)
+179	
+Op_24   (36)     RSI 51013b RBX 2f716b716 RBP 1000
+180	POP VM[20] = RBP[0]  (51d06f)
+181	
+Op_21   (33)     RSI 510139 RBX 2f716b715 RBP 1008
+182	PUSH VM[b0] (0)
+183	
+Op_21   (33)     RSI 510137 RBX 2f716b7a4 RBP 1000
+184	PUSH VM[80] (0)
+185	
+Op_21   (33)     RSI 510135 RBX 2f716b703 RBP ff8
+186	PUSH VM[70] (0)
+187	
+Op_9   (9)     RSI 510133 RBX 2f716b76a RBP ff0
+188	PUSH VM[50] (0)
+189	
+Op_dc   (220)     RSI 510131 RBX 2f716b7de RBP fe8
+190	PUSH VM[a0] (0)
+191	
+Op_9   (9)     RSI 51012f RBX 2f716b775 RBP fe0
+192	PUSH VM[68] (0)
+193	
+Op_9   (9)     RSI 51012d RBX 2f716b7d4 RBP fd8
+194	PUSH VM[10] (0)
+195	
+Op_9   (9)     RSI 51012b RBX 2f716b7db RBP fd0
+196	PUSH VM[60] (242)
+197	
+Op_9   (9)     RSI 510129 RBX 2f716b732 RBP fc8
+198	PUSH VM[28] (0)
+199	
+Op_9   (9)     RSI 510127 RBX 2f716b751 RBP fc0
+200	PUSH VM[8] (0)
+201	
+Op_21   (33)     RSI 510125 RBX 2f716b738 RBP fb8
+202	PUSH VM[38] (0)
+203	
+Op_9   (9)     RSI 510123 RBX 2f716b767 RBP fb0
+204	PUSH VM[78] (0)
+205	
+Op_9   (9)     RSI 510121 RBX 2f716b7d6 RBP fa8
+206	PUSH VM[48] (0)
+207	
+Op_9   (9)     RSI 51011f RBX 2f716b715 RBP fa0
+208	PUSH VM[b8] (0)
+209	
+Op_9   (9)     RSI 51011d RBX 2f716b7c4 RBP f98
+210	PUSH VM[88] (0)
+211	
+Op_9   (9)     RSI 51011b RBX 2f716b743 RBP f90
+212	PUSH VM[30] (0)
+213	
+Op_b2   (178)     RSI 510119 RBX 2f716b7c1 RBP f88
+214	PUSH VM[58] (0)
+215	
+Op_9   (9)     RSI 510117 RBX 2f716b710 RBP f80
+216	PUSH VM[80] (0)
+217	
+Op_9   (9)     RSI 510115 RBX 2f716b787 RBP f78
+218	PUSH VM[b0] (0)
+219	
+Op_9   (9)     RSI 510113 RBX 2f716b72e RBP f70
+220	PUSH VM[90] (5a2e5dba)
+221	
+Op_3d   (61)     RSI 510111 RBX 2f716b781 RBP f68
+222	LOAD ffffffffa5d1a246
+223	
+Op_1f   (31)     RSI 51010c RBX 252c715a8 RBP f60
+224	RBP[1] (5a2e5dba) += RBP[0] (ffffffffa5d1a246) --> FLG[0]  RBP[1] (0)
+225	
+Op_24   (36)     RSI 51010b RBX 252c71584 RBP f60
+226	POP VM[40] = RBP[0]  (0)
+227	
+Op_9   (9)     RSI 510109 RBX 252c715bb RBP f68
+228	PUSH VM[78] (0)
+229	
+Op_44   (68)     RSI 510107 RBX 252c715ef RBP f60
+230	PUSH VM[20] (51d06f)
+231	
+Op_ab   (171)     RSI 510105 RBX 252c71564 RBP f58
+232	JMP 51d06f
+233	
+Op_24   (36)     RSI 51d06e RBX 51d04b RBP f60
+234	POP VM[78] = RBP[0]  (0)
+235	
+Op_64   (100)     RSI 51d06c RBX 51d05f RBP f68
+236	LOAD 5a2e5dba
+237	
+Op_1f   (31)     RSI 51d067 RBX 5a7f8dc6 RBP f60
+238	RBP[1] (0) += RBP[0] (5a2e5dba) --> FLG[0]  RBP[1] (5a2e5dba)
+239	
+Op_24   (36)     RSI 51d066 RBX 5a7f8da2 RBP f60
+240	POP VM[a8] = RBP[0]  (0)
+241	
+Op_24   (36)     RSI 51d064 RBX 5a7f8d26 RBP f68
+242	POP VM[48] = RBP[0]  (5a2e5dba)
+243	
+Op_24   (36)     RSI 51d062 RBX 5a7f8d4a RBP f70
+244	POP VM[a8] = RBP[0]  (0)
+245	
+Op_24   (36)     RSI 51d060 RBX 5a7f8dce RBP f78
+246	POP VM[a0] = RBP[0]  (0)
+247	
+Op_24   (36)     RSI 51d05e RBX 5a7f8d4a RBP f80
+248	POP VM[90] = RBP[0]  (0)
+249	
+Op_24   (36)     RSI 51d05c RBX 5a7f8db6 RBP f88
+250	POP VM[88] = RBP[0]  (0)
+251	
+Op_24   (36)     RSI 51d05a RBX 5a7f8d1a RBP f90
+252	POP VM[8] = RBP[0]  (0)
+253	
+Op_24   (36)     RSI 51d058 RBX 5a7f8dfe RBP f98
+254	POP VM[20] = RBP[0]  (0)
+255	
+Op_24   (36)     RSI 51d056 RBX 5a7f8dfa RBP fa0
+256	POP VM[98] = RBP[0]  (0)
+257	
+Op_7f   (127)     RSI 51d054 RBX 5a7f8d13 RBP fa8
+258	POP dw,VM[40] = dw,RBP[0] (0)
+259	
+Op_58   (88)     RSI 51d052 RBX 5a7f8dfb RBP fac
+260	LOAD DWRD VM[40] (0)
+261	
+Op_58   (88)     RSI 51d050 RBX 5a7f8de3 RBP fa8
+262	LOAD DWRD VM[40] (0)
+263	
+Op_53   (83)     RSI 51d04e RBX 5a7f8dd0 RBP fa4
+264	~dw,RBP[0] (ffffffff) AND ~dw,RBP[4] (ffffffff) -> EFLG dw,RBP (ffffffff)
+265	
+Op_24   (36)     RSI 51d04d RBX 5a7f8dac RBP fa0
+266	POP VM[10] = RBP[0]  (206)
+267	
+Op_95   (149)     RSI 51d04b RBX 5a7f8d27 RBP fa8
+268	LOAD DWRD 28a2b0d3
+269	
+Op_53   (83)     RSI 51d046 RBX 72dd3da1 RBP fa4
+270	~dw,RBP[0] (d75d4f2c) AND ~dw,RBP[4] (0) -> EFLG dw,RBP (0)
+271	
+Op_24   (36)     RSI 51d045 RBX 72dd3d7d RBP fa0
+272	POP VM[b8] = RBP[0]  (246)
+273	
+Op_95   (149)     RSI 51d043 RBX 72dd3da0 RBP fa8
+274	LOAD DWRD d75d4f2c
+275	
+Op_f6   (246)     RSI 51d03e RBX a5807296 RBP fa4
+276	LOAD DWRD VM[40] (0)
+277	
+Op_53   (83)     RSI 51d03c RBX a5807283 RBP fa0
+278	~dw,RBP[0] (ffffffff) AND ~dw,RBP[4] (28a2b0d3) -> EFLG dw,RBP (28a2b0d3)
+279	
+Op_24   (36)     RSI 51d03b RBX a580725f RBP f9c
+280	POP VM[50] = RBP[0]  (202)
+281	
+Op_5   (5)     RSI 51d039 RBX a58072aa RBP fa4
+282	~dw,RBP[0] (d75d4f2c) AND ~dw,RBP[4] (ffffffff) -> EFLG dw,RBP (d75d4f2c)
+283	
+Op_24   (36)     RSI 51d038 RBX a5807286 RBP fa0
+284	POP VM[b8] = RBP[0]  (202)
+285	
+Op_24   (36)     RSI 51d036 RBX a580721a RBP fa8
+286	POP VM[b8] = RBP[0]  (d75d4f2c)
+287	
+Op_24   (36)     RSI 51d034 RBX a58072ae RBP fb0
+288	POP VM[38] = RBP[0]  (0)
+289	
+Op_24   (36)     RSI 51d032 RBX a58072c2 RBP fb8
+290	POP VM[68] = RBP[0]  (0)
+291	
+Op_24   (36)     RSI 51d030 RBX a5807206 RBP fc0
+292	POP VM[18] = RBP[0]  (0)
+293	
+Op_24   (36)     RSI 51d02e RBX a58072fa RBP fc8
+294	POP VM[50] = RBP[0]  (242)
+295	
+Op_24   (36)     RSI 51d02c RBX a5807226 RBP fd0
+296	POP VM[70] = RBP[0]  (0)
+297	
+Op_24   (36)     RSI 51d02a RBX a5807272 RBP fd8
+298	POP VM[10] = RBP[0]  (0)
+299	
+Op_24   (36)     RSI 51d028 RBX a580725e RBP fe0
+300	POP VM[30] = RBP[0]  (0)
+301	
+Op_24   (36)     RSI 51d026 RBX a580726a RBP fe8
+302	POP VM[28] = RBP[0]  (0)
+303	
+Op_24   (36)     RSI 51d024 RBX a580726e RBP ff0
+304	POP VM[58] = RBP[0]  (0)
+305	
+Op_24   (36)     RSI 51d022 RBX a58072a2 RBP ff8
+306	POP VM[b0] = RBP[0]  (0)
+307	
+Op_24   (36)     RSI 51d020 RBX a580722e RBP 1000
+308	POP VM[60] = RBP[0]  (0)
+309	
+Op_21   (33)     RSI 51d01e RBX a580726d RBP 1008
+310	PUSH VM[50] (242)
+311	
+Op_21   (33)     RSI 51d01c RBX a580729c RBP 1000
+312	PUSH VM[90] (0)
+313	
+Op_21   (33)     RSI 51d01a RBX a580720b RBP ff8
+314	PUSH VM[38] (0)
+315	
+Op_9   (9)     RSI 51d018 RBX a580723a RBP ff0
+316	PUSH VM[a8] (0)
+317	
+Op_44   (68)     RSI 51d016 RBX a580729e RBP fe8
+318	PUSH VM[8] (0)
+319	
+Op_dc   (220)     RSI 51d014 RBX a58072ca RBP fe0
+320	PUSH VM[58] (0)
+321	
+Op_21   (33)     RSI 51d012 RBX a5807201 RBP fd8
+322	PUSH VM[a0] (0)
+323	
+Op_3e   (62)     RSI 51d010 RBX a5807263 RBP fd0
+324	LOAD ef70b3d1
+325	
+Op_1   (1)     RSI 51d007 RBX 194f12633 RBP fc8
+326	LOAD 585785
+327	
+Op_d4   (212)     RSI 51cffe RBX 195497de4 RBP fc0
+328	LOAD 400000
+329	
+Op_24   (36)     RSI 51cff9 RBX 195097dc0 RBP fb8
+330	POP VM[60] = RBP[0]  (400000)
+331	
+Op_8   (8)     RSI 51cff7 RBX 195097d18 RBP fc0
+332	PUSH QWRD 3c
+333	
+Op_b2   (178)     RSI 51cff5 RBX 195097d2a RBP fb8
+334	PUSH VM[60] (400000)
+335	
+Op_1f   (31)     RSI 51cff3 RBX 195097d6b RBP fb0
+336	RBP[1] (3c) += RBP[0] (400000) --> FLG[0]  RBP[1] (40003c)
+337	
+Op_24   (36)     RSI 51cff2 RBX 195097d47 RBP fb0
+338	POP VM[a0] = RBP[0]  (0)
+339	
+Op_50   (80)     RSI 51cff0 RBX 195097d97 RBP fb8
+340	DEREF32 RBP[0] (40003c)  e8
+341	
+Op_23   (35)     RSI 51cfef RBX 195097d74 RBP fbc
+342	POP dw,VM[90] = dw,RBP[0] (e8)
+343	
+Op_bb   (187)     RSI 51cfed RBX 195097d49 RBP fc0
+344	LOAD DWRD 0
+345	
+Op_7f   (127)     RSI 51cfeb RBX 195097dca RBP fbc
+346	POP dw,VM[94] = dw,RBP[0] (0)
+347	
+Op_44   (68)     RSI 51cfe9 RBX 195097d1a RBP fc0
+348	PUSH VM[90] (e8)
+349	
+Op_9   (9)     RSI 51cfe7 RBX 195097da1 RBP fb8
+350	PUSH VM[60] (400000)
+351	
+Op_cc   (204)     RSI 51cfe5 RBX 195097d35 RBP fb0
+352	RBP[1] (e8) += RBP[0] (400000) --> FLG[0]  RBP[1] (4000e8)
+353	
+Op_24   (36)     RSI 51cfe4 RBX 195097d11 RBP fb0
+354	POP VM[0] = RBP[0]  (0)
+355	
+Op_c3   (195)     RSI 51cfe2 RBX 195097d4e RBP fb8
+356	STORE RBP (fb8)
+357	
+Op_6d   (109)     RSI 51cfe1 RBX 195097de1 RBP fb0
+358	DEREF64  RBP[0] ([fb8] -->  4000e8)
+359	
+Op_24   (36)     RSI 51cfe0 RBX 195097dbd RBP fb0
+360	POP VM[0] = RBP[0]  (4000e8)
+361	
+Op_14   (20)     RSI 51cfde RBX 195097da9 RBP fb8
+362	PUSH QWRD 28
+363	
+Op_ea   (234)     RSI 51cfdc RBX 195097d97 RBP fb0
+364	RBP[1] (4000e8) += RBP[0] (28) --> FLG[0]  RBP[1] (400110)
+365	
+Op_24   (36)     RSI 51cfdb RBX 195097d73 RBP fb0
+366	POP VM[a0] = RBP[0]  (0)
+367	
+Op_df   (223)     RSI 51cfd9 RBX 195097d34 RBP fb8
+368	DEREF32 RBP[0] (400110)  17d832
+369	
+Op_5f   (95)     RSI 51cfd8 RBX 195097dd5 RBP fbc
+370	POP dw,VM[0] = dw,RBP[0] (17d832)
+371	
+Op_bb   (187)     RSI 51cfd6 RBX 195097d1a RBP fc0
+372	LOAD DWRD 0
+373	
+Op_23   (35)     RSI 51cfd4 RBX 195097df7 RBP fbc
+374	POP dw,VM[4] = dw,RBP[0] (0)
+375	
+Op_9   (9)     RSI 51cfd2 RBX 195097df2 RBP fc0
+376	PUSH VM[60] (400000)
+377	
+Op_21   (33)     RSI 51cfd0 RBX 195097d31 RBP fb8
+378	PUSH VM[0] (17d832)
+379	
+Op_ea   (234)     RSI 51cfce RBX 195097d47 RBP fb0
+380	RBP[1] (400000) += RBP[0] (17d832) --> FLG[0]  RBP[1] (57d832)
+381	
+Op_24   (36)     RSI 51cfcd RBX 195097d23 RBP fb0
+382	POP VM[a0] = RBP[0]  (0)
+383	
+Op_24   (36)     RSI 51cfcb RBX 195097d9f RBP fb8
+384	POP VM[a0] = RBP[0]  (57d832)
+385	
+Op_1e   (30)     RSI 51cfc9 RBX 195097d21 RBP fc0
+386	LOAD WRD cc
+387	
+Op_9   (9)     RSI 51cfc7 RBX 195097d4c RBP fbe
+388	PUSH VM[a0] (57d832)
+389	
+Op_5e   (94)     RSI 51cfc5 RBX 195097d8e RBP fb6
+390	LOAD WRD <-- byte, [RBP] ([57d832] --> e9)
+391	
+Op_2d   (45)     RSI 51cfc4 RBX 195097d61 RBP fbc
+392	STORE RBP (fbc)
+393	
+Op_d7   (215)     RSI 51cfc3 RBX 195097d8a RBP fb4
+394	LOAD WRD <-- byte, [RBP] ([fbc] --> e9)
+395	
+Op_62   (98)     RSI 51cfc2 RBX 195097d28 RBP fba
+396	~b, RBP[0] (16) AND ~b,RBP[2] (16) --> EFLAGS8 (202)  RES2 (16)
+397	
+Op_24   (36)     RSI 51cfc1 RBX 195097d04 RBP fb4
+398	POP VM[90] = RBP[0]  (202)
+399	
+Op_0   (0)     RSI 51cfbf RBX 195097d94 RBP fbc
+400	b, RBP[0] (16) + b,RBP[2] (cc) --> EFLAGS8  RES2 (e2)
+401	
+Op_24   (36)     RSI 51cfbe RBX 195097d70 RBP fb6
+402	POP VM[0] = RBP[0]  (0)
+403	
+Op_2d   (45)     RSI 51cfbc RBX 195097d43 RBP fbe
+404	STORE RBP (fbe)
+405	
+Op_85   (133)     RSI 51cfbb RBX 195097dbe RBP fb6
+406	LOAD WRD <-- byte, [RBP] ([fbe] --> e2)
+407	
+Op_62   (98)     RSI 51cfba RBX 195097d5c RBP fbc
+408	~b, RBP[0] (1d) AND ~b,RBP[2] (1d) --> EFLAGS8 (206)  RES2 (1d)
+409	
+Op_24   (36)     RSI 51cfb9 RBX 195097d38 RBP fb6
+410	POP VM[b0] = RBP[0]  (206)
+411	
+Op_b4   (180)     RSI 51cfb7 RBX 195097d34 RBP fbe
+412	POP byte, VM[50] <-- word, RBP[0] (1d)
+413	
+Op_9   (9)     RSI 51cfb5 RBX 195097ddb RBP fc0
+414	PUSH VM[0] (0)
+415	
+Op_21   (33)     RSI 51cfb3 RBX 195097dba RBP fb8
+416	PUSH VM[0] (0)
+417	
+Op_e6   (230)     RSI 51cfb1 RBX 195097dd4 RBP fb0
+418	~RBP[0] (ffffffffffffffff)  AND   ~RBP[8] (ffffffffffffffff)  --> FLAGS  RES8 (ffffffffffffffff)
+419	
+Op_24   (36)     RSI 51cfb0 RBX 195097db0 RBP fb0
+420	POP VM[90] = RBP[0]  (286)
+421	
+Op_6f   (111)     RSI 51cfae RBX 195097dd1 RBP fb8
+422	LOAD QWRD fffffffffffff7ea
+423	
+Op_22   (34)     RSI 51cfab RBX 195097599 RBP fb0
+424	~RBP[0] (815)  AND   ~RBP[8] (0)  --> FLAGS  RES8 (0)
+425	
+Op_24   (36)     RSI 51cfaa RBX 195097575 RBP fb0
+426	POP VM[50] = RBP[0]  (246)
+427	
+Op_9   (9)     RSI 51cfa8 RBX 1950975bc RBP fb8
+428	PUSH VM[b0] (206)
+429	
+Op_dc   (220)     RSI 51cfa6 RBX 195097590 RBP fb0
+430	PUSH VM[b0] (206)
+431	
+Op_e6   (230)     RSI 51cfa4 RBX 19509755a RBP fa8
+432	~RBP[0] (fffffffffffffdf9)  AND   ~RBP[8] (fffffffffffffdf9)  --> FLAGS  RES8 (fffffffffffffdf9)
+433	
+Op_24   (36)     RSI 51cfa3 RBX 195097536 RBP fa8
+434	POP VM[90] = RBP[0]  (282)
+435	
+Op_ac   (172)     RSI 51cfa1 RBX 19509751a RBP fb0
+436	LOAD QWRD 815
+437	
+Op_16   (22)     RSI 51cf9e RBX 195097d19 RBP fa8
+438	~RBP[0] (fffffffffffff7ea)  AND   ~RBP[8] (206)  --> FLAGS  RES8 (202)
+439	
+Op_24   (36)     RSI 51cf9d RBX 195097df5 RBP fa8
+440	POP VM[90] = RBP[0]  (206)
+441	
+Op_cc   (204)     RSI 51cf9b RBX 195097db9 RBP fb0
+442	RBP[1] (0) += RBP[0] (202) --> FLG[0]  RBP[1] (202)
+443	
+Op_24   (36)     RSI 51cf9a RBX 195097d95 RBP fb0
+444	POP VM[80] = RBP[0]  (0)
+445	
+Op_24   (36)     RSI 51cf98 RBX 195097df1 RBP fb8
+446	POP VM[90] = RBP[0]  (202)
+447	
+Op_24   (36)     RSI 51cf96 RBX 195097d5d RBP fc0
+448	POP VM[80] = RBP[0]  (585785)
+449	
+Op_1   (1)     RSI 51cf94 RBX 195097ddc RBP fc8
+450	LOAD ef70b200
+451	
+Op_2d   (45)     RSI 51cf8b RBX 2847a2faf RBP fc0
+452	STORE RBP (fc0)
+453	
+Op_ad   (173)     RSI 51cf8a RBX 2847a2f02 RBP fb8
+454	LOAD WRD 3
+455	
+Op_9   (9)     RSI 51cf88 RBX 2847a2ff6 RBP fb6
+456	PUSH VM[90] (202)
+457	
+Op_c3   (195)     RSI 51cf86 RBX 2847a2fc3 RBP fae
+458	STORE RBP (fae)
+459	
+Op_a   (10)     RSI 51cf85 RBX 2847a2fb9 RBP fa6
+460	DEREF64  RBP[0] ([fae] -->  202)
+461	
+Op_16   (22)     RSI 51cf84 RBX 2847a2fa3 RBP fa6
+462	~RBP[0] (fffffffffffffdfd)  AND   ~RBP[8] (fffffffffffffdfd)  --> FLAGS  RES8 (fffffffffffffdfd)
+463	
+Op_24   (36)     RSI 51cf83 RBX 2847a2f7f RBP fa6
+464	POP VM[0] = RBP[0]  (286)
+465	
+Op_8   (8)     RSI 51cf81 RBX 2847a2f77 RBP fae
+466	PUSH QWRD ffffffffffffffbf
+467	
+Op_e6   (230)     RSI 51cf7f RBX 2847a2fd2 RBP fa6
+468	~RBP[0] (40)  AND   ~RBP[8] (202)  --> FLAGS  RES8 (0)
+469	
+Op_24   (36)     RSI 51cf7e RBX 2847a2fae RBP fa6
+470	POP VM[50] = RBP[0]  (246)
+471	
+Op_ed   (237)     RSI 51cf7c RBX 2847a2f11 RBP fae
+472	SHR RBP[0] (0) >> b,RBP[8] (3)  ---> FLG RES8 (0)
+473	
+Op_24   (36)     RSI 51cf7b RBX 2847a2fed RBP fa8
+474	POP VM[b8] = RBP[0]  (0)
+475	
+Op_cd   (205)     RSI 51cf79 RBX 2847a2fd8 RBP fb0
+476	RBP[1] (fc0) += RBP[0] (0) --> FLG[0]  RBP[1] (fc0)
+477	
+Op_24   (36)     RSI 51cf78 RBX 2847a2fb4 RBP fb0
+478	POP VM[38] = RBP[0]  (0)
+479	
+Op_a   (10)     RSI 51cf76 RBX 2847a2fe2 RBP fb8
+480	DEREF64  RBP[0] ([fc0] -->  ef70b200)
+481	
+Op_24   (36)     RSI 51cf75 RBX 2847a2fbe RBP fb8
+482	POP VM[38] = RBP[0]  (ef70b200)
+483	
+Op_24   (36)     RSI 51cf73 RBX 2847a2fd2 RBP fc0
+484	POP VM[50] = RBP[0]  (ef70b200)
+485	
+Op_24   (36)     RSI 51cf71 RBX 2847a2ffe RBP fc8
+486	POP VM[0] = RBP[0]  (ef70b3d1)
+487	
+Op_9   (9)     RSI 51cf6f RBX 2847a2ff5 RBP fd0
+488	PUSH VM[38] (ef70b200)
+489	
+Op_2d   (45)     RSI 51cf6d RBX 2847a2f00 RBP fc8
+490	STORE RBP (fc8)
+491	
+Op_3   (3)     RSI 51cf6c RBX 2847a2ffd RBP fc0
+492	LOAD   dword,[fc8] (ef70b200)
+493	
+Op_5f   (95)     RSI 51cf6b RBX 2847a2f9e RBP fc4
+494	POP dw,VM[38] = dw,RBP[0] (ef70b200)
+495	
+Op_58   (88)     RSI 51cf69 RBX 2847a2f7e RBP fc8
+496	LOAD DWRD VM[38] (ef70b200)
+497	
+Op_5   (5)     RSI 51cf67 RBX 2847a2fb1 RBP fc4
+498	~dw,RBP[0] (108f4dff) AND ~dw,RBP[4] (108f4dff) -> EFLG dw,RBP (108f4dff)
+499	
+Op_24   (36)     RSI 51cf66 RBX 2847a2f8d RBP fc0
+500	POP VM[50] = RBP[0]  (206)
+501	
+Op_95   (149)     RSI 51cf64 RBX 2847a2f48 RBP fc8
+502	LOAD DWRD 10de8765
+503	
+Op_53   (83)     RSI 51cf5f RBX 294a4a8da RBP fc4
+504	~dw,RBP[0] (ef21789a) AND ~dw,RBP[4] (ef70b200) -> EFLG dw,RBP (ef203000)
+505	
+Op_24   (36)     RSI 51cf5e RBX 294a4a8b6 RBP fc0
+506	POP VM[b8] = RBP[0]  (206)
+507	
+Op_f6   (246)     RSI 51cf5c RBX 294a4a878 RBP fc8
+508	LOAD DWRD VM[38] (ef70b200)
+509	
+Op_d9   (217)     RSI 51cf5a RBX 294a4a8d7 RBP fc4
+510	LOAD DWRD ef21789a
+511	
+Op_53   (83)     RSI 51cf55 RBX 27b85d0fa RBP fc0
+512	~dw,RBP[0] (10de8765) AND ~dw,RBP[4] (108f4dff) -> EFLG dw,RBP (108e0565)
+513	
+Op_24   (36)     RSI 51cf54 RBX 27b85d0d6 RBP fbc
+514	POP VM[0] = RBP[0]  (202)
+515	
+Op_53   (83)     RSI 51cf52 RBX 27b85d083 RBP fc4
+516	~dw,RBP[0] (ef71fa9a) AND ~dw,RBP[4] (10dfcfff) -> EFLG dw,RBP (51ca9a)
+517	
+Op_24   (36)     RSI 51cf51 RBX 27b85d05f RBP fc0
+518	POP VM[40] = RBP[0]  (202)
+519	
+Op_24   (36)     RSI 51cf4f RBX 27b85d07b RBP fc8
+520	POP VM[50] = RBP[0]  (51ca9a)
+521	
+Op_9   (9)     RSI 51cf4d RBX 27b85d0c2 RBP fd0
+522	PUSH VM[90] (202)
+523	
+Op_9   (9)     RSI 51cf4b RBX 27b85d049 RBP fc8
+524	PUSH VM[30] (0)
+525	
+Op_9   (9)     RSI 51cf49 RBX 27b85d070 RBP fc0
+526	PUSH VM[a0] (57d832)
+527	
+Op_9   (9)     RSI 51cf47 RBX 27b85d007 RBP fb8
+528	PUSH VM[30] (0)
+529	
+Op_9   (9)     RSI 51cf45 RBX 27b85d02e RBP fb0
+530	PUSH VM[28] (0)
+531	
+Op_9   (9)     RSI 51cf43 RBX 27b85d04d RBP fa8
+532	PUSH VM[18] (0)
+533	
+Op_9   (9)     RSI 51cf41 RBX 27b85d05c RBP fa0
+534	PUSH VM[88] (0)
+535	
+Op_9   (9)     RSI 51cf3f RBX 27b85d0db RBP f98
+536	PUSH VM[8] (0)
+537	
+Op_9   (9)     RSI 51cf3d RBX 27b85d0da RBP f90
+538	PUSH VM[10] (0)
+539	
+Op_9   (9)     RSI 51cf3b RBX 27b85d0e1 RBP f88
+540	PUSH VM[68] (0)
+541	
+Op_9   (9)     RSI 51cf39 RBX 27b85d040 RBP f80
+542	PUSH VM[90] (202)
+543	
+Op_9   (9)     RSI 51cf37 RBX 27b85d0c7 RBP f78
+544	PUSH VM[98] (0)
+545	
+Op_9   (9)     RSI 51cf35 RBX 27b85d056 RBP f70
+546	PUSH VM[70] (0)
+547	
+Op_44   (68)     RSI 51cf33 RBX 27b85d082 RBP f68
+548	PUSH VM[80] (585785)
+549	
+Op_21   (33)     RSI 51cf31 RBX 27b85d0e1 RBP f60
+550	PUSH VM[58] (0)
+551	
+Op_21   (33)     RSI 51cf2f RBX 27b85d018 RBP f58
+552	PUSH VM[20] (0)
+553	
+Op_9   (9)     RSI 51cf2d RBX 27b85d02f RBP f50
+554	PUSH VM[60] (400000)
+555	
+Op_9   (9)     RSI 51cf2b RBX 27b85d086 RBP f48
+556	PUSH VM[a8] (0)
+557	
+Op_9   (9)     RSI 51cf29 RBX 27b85d025 RBP f40
+558	PUSH VM[78] (0)
+559	
+Op_64   (100)     RSI 51cf27 RBX 27b85d039 RBP f38
+560	LOAD ffffffffa5d1a246
+561	
+Op_dc   (220)     RSI 51cf22 RBX 2de5472a3 RBP f30
+562	PUSH VM[48] (5a2e5dba)
+563	
+Op_cd   (205)     RSI 51cf20 RBX 2de54721e RBP f28
+564	RBP[1] (ffffffffa5d1a246) += RBP[0] (5a2e5dba) --> FLG[0]  RBP[1] (0)
+565	
+Op_24   (36)     RSI 51cf1f RBX 2de5472fa RBP f28
+566	POP VM[b8] = RBP[0]  (0)
+567	
+Op_9   (9)     RSI 51cf1d RBX 2de5472a9 RBP f30
+568	PUSH VM[78] (0)
+569	
+Op_9   (9)     RSI 51cf1b RBX 2de547218 RBP f28
+570	PUSH VM[50] (51ca9a)
+571	
+Op_ab   (171)     RSI 51cf19 RBX 2de5472bd RBP f20
+572	JMP 51ca9a
+573	
+Op_24   (36)     RSI 51ca99 RBX 51ca76 RBP f28
+574	POP VM[90] = RBP[0]  (0)
+575	
+Op_3d   (61)     RSI 51ca97 RBX 51cac9 RBP f30
+576	LOAD 5a2e5dba
+577	
+Op_1f   (31)     RSI 51ca92 RBX 5a7f9754 RBP f28
+578	RBP[1] (0) += RBP[0] (5a2e5dba) --> FLG[0]  RBP[1] (5a2e5dba)
+579	
+Op_24   (36)     RSI 51ca91 RBX 5a7f9730 RBP f28
+580	POP VM[b0] = RBP[0]  (0)
+581	
+Op_24   (36)     RSI 51ca8f RBX 5a7f97bc RBP f30
+582	POP VM[20] = RBP[0]  (5a2e5dba)
+583	
+Op_66   (102)     RSI 51ca8d RBX 5a7f9776 RBP f38
+584	POP dw,VM[70] = dw,RBP[0] (0)
+585	
+Op_58   (88)     RSI 51ca8b RBX 5a7f978e RBP f3c
+586	LOAD DWRD VM[70] (0)
+587	
+Op_c3   (195)     RSI 51ca89 RBX 5a7f973b RBP f38
+588	STORE RBP (f38)
+589	
+Op_2c   (44)     RSI 51ca88 RBX 5a7f970f RBP f30
+590	LOAD   dword,[f38] (0)
+591	
+Op_53   (83)     RSI 51ca87 RBX 5a7f97bc RBP f34
+592	~dw,RBP[0] (ffffffff) AND ~dw,RBP[4] (ffffffff) -> EFLG dw,RBP (ffffffff)
+593	
+Op_24   (36)     RSI 51ca86 RBX 5a7f9798 RBP f30
+594	POP VM[b0] = RBP[0]  (206)
+595	
+Op_95   (149)     RSI 51ca84 RBX 5a7f97b3 RBP f38
+596	LOAD DWRD 10de8765
+597	
+Op_5   (5)     RSI 51ca7f RBX 4aa110d1 RBP f34
+598	~dw,RBP[0] (ef21789a) AND ~dw,RBP[4] (0) -> EFLG dw,RBP (0)
+599	
+Op_24   (36)     RSI 51ca7e RBX 4aa110ad RBP f30
+600	POP VM[98] = RBP[0]  (246)
+601	
+Op_95   (149)     RSI 51ca7c RBX 4aa110b0 RBP f38
+602	LOAD DWRD ef21789a
+603	
+Op_f6   (246)     RSI 51ca77 RBX a5806834 RBP f34
+604	LOAD DWRD VM[70] (0)
+605	
+Op_53   (83)     RSI 51ca75 RBX a5806851 RBP f30
+606	~dw,RBP[0] (ffffffff) AND ~dw,RBP[4] (10de8765) -> EFLG dw,RBP (10de8765)
+607	
+Op_24   (36)     RSI 51ca74 RBX a580682d RBP f2c
+608	POP VM[68] = RBP[0]  (202)
+609	
+Op_53   (83)     RSI 51ca72 RBX a5806842 RBP f34
+610	~dw,RBP[0] (ef21789a) AND ~dw,RBP[4] (ffffffff) -> EFLG dw,RBP (ef21789a)
+611	
+Op_24   (36)     RSI 51ca71 RBX a580681e RBP f30
+612	POP VM[98] = RBP[0]  (202)
+613	
+Op_24   (36)     RSI 51ca6f RBX a5806892 RBP f38
+614	POP VM[98] = RBP[0]  (ef21789a)
+615	
+Op_24   (36)     RSI 51ca6d RBX a5806806 RBP f40
+616	POP VM[28] = RBP[0]  (0)
+617	
+Op_24   (36)     RSI 51ca6b RBX a580680a RBP f48
+618	POP VM[b0] = RBP[0]  (400000)
+619	
+Op_24   (36)     RSI 51ca69 RBX a5806896 RBP f50
+620	POP VM[78] = RBP[0]  (0)
+621	
+Op_24   (36)     RSI 51ca67 RBX a58068ea RBP f58
+622	POP VM[68] = RBP[0]  (0)
+623	
+Op_24   (36)     RSI 51ca65 RBX a580682e RBP f60
+624	POP VM[50] = RBP[0]  (585785)
+625	
+Op_24   (36)     RSI 51ca63 RBX a580685a RBP f68
+626	POP VM[10] = RBP[0]  (0)
+627	
+Op_24   (36)     RSI 51ca61 RBX a5806846 RBP f70
+628	POP VM[a0] = RBP[0]  (0)
+629	
+Op_24   (36)     RSI 51ca5f RBX a58068c2 RBP f78
+630	POP VM[80] = RBP[0]  (202)
+631	
+Op_24   (36)     RSI 51ca5d RBX a580681e RBP f80
+632	POP VM[b8] = RBP[0]  (0)
+633	
+Op_24   (36)     RSI 51ca5b RBX a58068b2 RBP f88
+634	POP VM[a8] = RBP[0]  (0)
+635	
+Op_24   (36)     RSI 51ca59 RBX a5806836 RBP f90
+636	POP VM[48] = RBP[0]  (0)
+637	
+Op_24   (36)     RSI 51ca57 RBX a580685a RBP f98
+638	POP VM[60] = RBP[0]  (0)
+639	
+Op_24   (36)     RSI 51ca55 RBX a5806896 RBP fa0
+640	POP VM[58] = RBP[0]  (0)
+641	
+Op_24   (36)     RSI 51ca53 RBX a58068ca RBP fa8
+642	POP VM[88] = RBP[0]  (0)
+643	
+Op_24   (36)     RSI 51ca51 RBX a580682e RBP fb0
+644	POP VM[18] = RBP[0]  (0)
+645	
+Op_24   (36)     RSI 51ca4f RBX a5806822 RBP fb8
+646	POP VM[0] = RBP[0]  (57d832)
+647	
+Op_24   (36)     RSI 51ca4d RBX a58068fe RBP fc0
+648	POP VM[8] = RBP[0]  (0)
+649	
+Op_24   (36)     RSI 51ca4b RBX a58068e2 RBP fc8
+650	POP VM[40] = RBP[0]  (202)
+651	
+Op_24   (36)     RSI 51ca49 RBX a58068fe RBP fd0
+652	POP VM[40] = RBP[0]  (0)
+653	
+Op_24   (36)     RSI 51ca47 RBX a580681a RBP fd8
+654	POP VM[b0] = RBP[0]  (0)
+655	
+Op_24   (36)     RSI 51ca45 RBX a58068a6 RBP fe0
+656	POP VM[38] = RBP[0]  (0)
+657	
+Op_24   (36)     RSI 51ca43 RBX a58068ba RBP fe8
+658	POP VM[8] = RBP[0]  (0)
+659	
+Op_24   (36)     RSI 51ca41 RBX a580689e RBP ff0
+660	POP VM[30] = RBP[0]  (0)
+661	
+Op_24   (36)     RSI 51ca3f RBX a58068aa RBP ff8
+662	POP VM[28] = RBP[0]  (0)
+663	
+Op_24   (36)     RSI 51ca3d RBX a58068ae RBP 1000
+664	POP VM[50] = RBP[0]  (242)
+665	
+Op_dc   (220)     RSI 51ca3b RBX a5806822 RBP 1008
+666	PUSH VM[50] (242)
+667	
+Op_9   (9)     RSI 51ca39 RBX a5806869 RBP 1000
+668	PUSH VM[50] (242)
+669	
+Op_e6   (230)     RSI 51ca37 RBX a58068d3 RBP ff8
+670	~RBP[0] (fffffffffffffdbd)  AND   ~RBP[8] (fffffffffffffdbd)  --> FLAGS  RES8 (fffffffffffffdbd)
+671	
+Op_24   (36)     RSI 51ca36 RBX a58068af RBP ff8
+672	POP VM[48] = RBP[0]  (282)
+673	
+Op_9f   (159)     RSI 51ca34 RBX a5806858 RBP 1000
+674	LOAD QWRD 8ff
+675	
+Op_e6   (230)     RSI 51ca31 RBX a5807171 RBP ff8
+676	~RBP[0] (fffffffffffff700)  AND   ~RBP[8] (242)  --> FLAGS  RES8 (200)
+677	
+Op_24   (36)     RSI 51ca30 RBX a580714d RBP ff8
+678	POP VM[0] = RBP[0]  (202)
+679	
+Op_e0   (224)     RSI 51ca2e RBX a580716d RBP 1000
+680	POPFQ RBP[0] (200)
+681	
+Op_9   (9)     RSI 51ca2d RBX a5807164 RBP 1008
+682	PUSH VM[78] (0)
+683	
+Op_9   (9)     RSI 51ca2b RBX a58071d3 RBP 1000
+684	PUSH VM[b8] (0)
+685	
+Op_21   (33)     RSI 51ca29 RBX a580716a RBP ff8
+686	PUSH VM[18] (0)
+687	
+Op_9   (9)     RSI 51ca27 RBX a5807179 RBP ff0
+688	PUSH VM[88] (0)
+689	
+Op_44   (68)     RSI 51ca25 RBX a58071bd RBP fe8
+690	PUSH VM[98] (ef21789a)
+691	
+Op_21   (33)     RSI 51ca23 RBX a5807134 RBP fe0
+692	PUSH VM[60] (0)
+693	
+Op_21   (33)     RSI 51ca21 RBX a5807173 RBP fd8
+694	PUSH VM[40] (0)
+695	
+Op_21   (33)     RSI 51ca1f RBX a5807192 RBP fd0
+696	PUSH VM[28] (0)
+697	
+Op_b2   (178)     RSI 51ca1d RBX a5807108 RBP fc8
+698	PUSH VM[8] (0)
+699	
+Op_dc   (220)     RSI 51ca1b RBX a5807134 RBP fc0
+700	PUSH VM[30] (0)
+701	
+Op_44   (68)     RSI 51ca19 RBX a5807120 RBP fb8
+702	PUSH VM[a0] (0)
+703	
+Op_dc   (220)     RSI 51ca17 RBX a58071e4 RBP fb0
+704	PUSH VM[38] (0)
+705	
+Op_21   (33)     RSI 51ca15 RBX a58071fb RBP fa8
+706	PUSH VM[b0] (0)
+707	
+Op_21   (33)     RSI 51ca13 RBX a580718a RBP fa0
+708	PUSH VM[58] (0)
+709	
+Op_21   (33)     RSI 51ca11 RBX a58071c1 RBP f98
+710	PUSH VM[10] (0)
+711	
+Op_21   (33)     RSI 51ca0f RBX a58071b0 RBP f90
+712	PUSH VM[a8] (0)
+713	
+Op_9   (9)     RSI 51ca0d RBX a580714f RBP f88
+714	PUSH VM[50] (242)
+715	
+Op_21   (33)     RSI 51ca0b RBX a580717e RBP f80
+716	PUSH VM[28] (0)
+717	
+Op_dc   (220)     RSI 51ca09 RBX a58071ca RBP f78
+718	PUSH VM[a8] (0)
+719	
+Op_ce   (206)     RSI 51ca07 RBX a58071a4 RBP f70
+720	RET TO [1008] -> 0

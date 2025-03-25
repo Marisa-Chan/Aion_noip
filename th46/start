@@ -1,0 +1,152 @@
+ 
+        00516d4c 68 00 af        0           PUSH            0x90A9AF00 #0
+
+        0059b2c3 68 f1 99        0           PUSH            0x259799f1 #8
+
+        0059d27e 55              0           PUSH            RBP #10
+		 
+        0059eb0d 41 51           0           PUSH            R9 #18
+		
+        0059f703 41 54           0           PUSH            R12 #20
+		
+        0059eea6 41 50           0           PUSH            R8 #28
+		
+        0059ceef 52              0           PUSH            RDX #30
+		
+        0059d229 41 57           0           PUSH            R15 #38
+		
+        0059f186 56              0           PUSH            RSI #40
+		
+        0059d7d0 50                           PUSH            RAX #48
+		
+        0059da92 51                           PUSH            RCX #50
+		
+        0059fca7 53                           PUSH            RBX #58
+		
+        005a019b 41 53                        PUSH            R11 #60
+
+		 
+        0059ff5c 0f 84 bd                     JZ              FUN_0059eb3e
+                 d0 ff ff
+        0059ff62 52                           PUSH            RDX #68
+		
+        0059e900 57                           PUSH            RDI #70
+		
+        0059e904 41 52                        PUSH            R10 #78
+		
+		
+        0059e906 48 be ea                     MOV             RSI,0xFFFFFFFF980154EA
+                 54 01 98 
+                 ff ff ff ff
+        0059e910 41 56                        PUSH            R14 #80
+		
+        0059e912 f7 d7                        NOT             EDI
+                 9d 0c ce 
+                 e0 7a
+        0059e91f 41 55                        PUSH            R13 #88
+        0059e924 f3 9c                        PUSHFQ              #90
+		
+        0059e93a ff 35 7e                     PUSH            qword ptr [DAT_0059edbe]    #98
+		
+        0059e949 48 b8 00                     MOV             RAX,0x0
+		
+        0059e957 49 89 c5                     MOV             R13,RAX
+		
+        0059e95c 50                           PUSH            RAX                          #a0
+		
+        0059e968 8b b4 24                     MOV             ESI,dword ptr [RSP + 0xa0]   #0x90A9AF00
+		
+        0059e974 f7 d6                        NOT             ESI
+  
+        0059e97e ff c6                        INC             ESI
+		
+        0059e989 0f ce                        BSWAP           ESI                          #RSI  script
+		
+        0059e994 48 89 e5                     MOV             RBP,RSP                      #RBP  SAVE ESP
+		
+        0059e9a1 48 81 ec                     SUB             RSP,0x140            
+        0059e9b2 48 83 e4 f0                  AND             RSP,-0x10
+		
+        0059e9bb 48 89 e7                     MOV             RDI,RSP                      #RDI  vm esp?
+		
+        0059e9c9 4c 8d 25                     LEA             R12,[PTR_ARRAY_0059df7c]     #R12   iat
+		
+        0059e9d6 48 b8 00                     MOV             RAX,0x0
+                 00 00 00 
+                 00 00 00 00
+				 
+        0059e9ed 48 01 c6                     ADD             RSI,RAX
+		
+        0059e9fa 48 89 f3                     MOV             RBX,RSI                      #
+		
+        0059ea01 48 03 75 00                  ADD             RSI,qword ptr [RBP]
+		
+		
+		
+		
+		
+                             FUN_0059eb3e                                    XREF[1]:     0059d01f(c)  
+        0059eb3e 52              0           PUSH            RDX  #68
+		
+        0059eb50 57            008           PUSH            RDI  #70 
+		
+        0059eb61 41 52         010           PUSH            R10  #78
+		
+        0059eb72 41 56         018           PUSH            R14  #80
+		
+        0059eb89 41 55         020           PUSH            R13  #88
+        0059eb97 f3 9c         028           PUSHFQ               #90
+				 
+        0059ef31 ff 35 87        0           PUSH            qword ptr [DAT_0059edbe]    #98
+                 fe ff ff
+				 
+        0059ef3b 48 b8 00      008           MOV             RAX,0x0
+                 00 00 00 
+                 00 00 00 00
+				 
+        0059ebcc 49 89 c5                     MOV             R13,RAX                    
+		
+        0059ebd2 50                           PUSH            RAX						 #a0
+		
+        0059ebdb 8b b4 24                     MOV             ESI,dword ptr [RSP + 0xa0] 
+                 a0 00 00 00
+        0059ebf1 f7 d6                        NOT             ESI
+        0059ebf9 ff c6                        INC             ESI
+		
+        0059ec02 0f ce                        BSWAP           ESI
+		
+        0059ec0b 48 89 e5                     MOV             RBP,RSP
+        0059f0be 48 81 ec                     SUB             RSP,0x140
+        0059f0d0 48 83 e4 f0                  AND             RSP,-0x10
+		
+        0059f0d6 48 89 e7                     MOV             RDI,RSP
+		
+        0059f0dd 4c 8d 25                     LEA             R12,[PTR_ARRAY_0059df7c]
+                 98 ee ff ff
+				 
+        0059f0e6 48 b8 00                     MOV             RAX,0x0
+                 00 00 00 
+                 00 00 00 00
+        0059f0f9 48 01 c6                     ADD             RSI,RAX
+		
+        0059f107 48 89 f3                     MOV             RBX,RSI
+		
+        0059f116 48 03 75 00                  ADD             RSI,qword ptr [RBP]
+		
+		
+        0059f11e 8a 46 ff                     MOV             AL,byte ptr [RSI + -0x1]
+        0059f128 28 d8                        SUB             AL,BL
+		
+        0059f891 f6 d8           0           NEG             AL
+        0059f898 04 0a           0           ADD             AL,0xa
+        0059f89d d0 c8           0           ROR             AL,0x1
+		
+        0059f8b0 48 ff ce        0           DEC             RSI
+		
+        0059f8bd 28 c3           0           SUB             BL,AL
+		
+        0059f8c2 48 0f b6 c0     0           MOVZX           RAX,AL
+        0059f8cb 49 8b 0c c4     0           MOV             RCX,qword ptr [R12 + RAX*0x8]
+        0059f8d6 48 f7 d9        0           NEG             RCX
+        0059f8d9 ff e1           0           JMP             RCX
+
